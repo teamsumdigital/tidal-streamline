@@ -69,19 +69,19 @@ show_usage() {
 cmd_status() {
     print_header
     print_info "Checking system status..."
-    python manage_pinecone_data.py status
+    source venv/bin/activate && python3 manage_pinecone_data.py status
 }
 
 cmd_test() {
     print_header
     print_info "Running system tests..."
-    python manage_pinecone_data.py test
+    source venv/bin/activate && python3 manage_pinecone_data.py test
 }
 
 cmd_setup() {
     print_header
     print_info "Creating Pinecone index..."
-    python scripts/setup_pinecone_index.py --create
+    source venv/bin/activate && python3 scripts/setup_pinecone_index.py --create
     
     if [[ $? -eq 0 ]]; then
         print_success "Index created successfully!"
@@ -105,7 +105,7 @@ cmd_populate() {
         exit 0
     fi
     
-    python populate_pinecone_historical.py --verify
+    source venv/bin/activate && python3 populate_pinecone_historical.py --verify
     
     if [[ $? -eq 0 ]]; then
         print_success "Population completed successfully!"
@@ -118,19 +118,19 @@ cmd_populate() {
 cmd_populate_dry() {
     print_header
     print_info "Running dry run population (no data will be uploaded)..."
-    python populate_pinecone_historical.py --dry-run
+    source venv/bin/activate && python3 populate_pinecone_historical.py --dry-run
 }
 
 cmd_verify() {
     print_header
     print_info "Verifying index data..."
-    python scripts/setup_pinecone_index.py --verify
+    source venv/bin/activate && python3 scripts/setup_pinecone_index.py --verify
 }
 
 cmd_info() {
     print_header
     print_info "Getting index information..."
-    python scripts/setup_pinecone_index.py --info
+    source venv/bin/activate && python3 scripts/setup_pinecone_index.py --info
 }
 
 cmd_clean() {
@@ -143,7 +143,7 @@ cmd_clean() {
     
     if [[ "$response" == "DELETE" ]]; then
         print_info "Deleting and recreating index..."
-        python scripts/setup_pinecone_index.py --force-recreate
+        source venv/bin/activate && python3 scripts/setup_pinecone_index.py --force-recreate
         
         if [[ $? -eq 0 ]]; then
             print_success "Index recreated successfully!"
