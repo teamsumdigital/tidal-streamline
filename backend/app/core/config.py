@@ -23,9 +23,10 @@ class Settings(BaseSettings):
     OPENAI_MODEL: str = Field(default="gpt-4", description="OpenAI model to use")
     
     # Vector Store (Pinecone)
-    PINECONE_API_KEY: Optional[str] = Field(default=None, description="Pinecone API key")
-    PINECONE_ENVIRONMENT: Optional[str] = Field(default=None, description="Pinecone environment")
-    PINECONE_INDEX_NAME: str = Field(default="tidal-market-scans", description="Pinecone index name")
+    PINECONE_API_KEY: str = Field(default="pcsk_2asZaU_4JFVKA6KRDqh2i37Vn8bcWRx5cPhhGDhYcDmcemg3GGpG2m44TPouFMVkEzQqBe", description="Pinecone API key")
+    PINECONE_INDEX_NAME: str = Field(default="tidal-streamline", description="Pinecone index name")
+    EMBEDDING_MODEL: str = Field(default="text-embedding-3-small", description="OpenAI embedding model")
+    EMBEDDING_DIMENSION: int = Field(default=1536, description="Embedding vector dimension")
     
     # Application Configuration
     API_V1_PREFIX: str = "/api/v1"

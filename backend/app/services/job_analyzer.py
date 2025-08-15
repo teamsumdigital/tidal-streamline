@@ -1,12 +1,15 @@
 """
-Job Analyzer Service - AI-powered job analysis using OpenAI
+Job Analyzer Service - AI-powered job analysis using OpenAI with semantic matching
 """
 
 import openai
 import os
 import json
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Tuple, Optional
+from datetime import datetime
 from app.models.market_scan import JobAnalysis, RoleCategory, ExperienceLevel, Region
+from app.services.vector_search import vector_search_service
+from loguru import logger
 
 class JobAnalyzer:
     """AI-powered job analysis service"""
@@ -32,8 +35,151 @@ class JobAnalyzer:
             return self._parse_analysis_response(analysis_text)
             
         except Exception as e:
+            logger.error(f"AI job analysis failed: {str(e)}")
             # Fallback to rule-based analysis if AI fails
             return self._fallback_analysis(job_title, job_description)
+    
+    async def analyze_job_with_similar_scans(
+        self, 
+        job_title: str, 
+        job_description: str, 
+        hiring_challenges: str = None,
+        scan_id: Optional[str] = None
+    ) -> Tuple[JobAnalysis, List[Dict[str, Any]], float]:
+        """
+        Analyze job and find similar historical scans using semantic matching
+        
+        Returns:
+            Tuple of (job_analysis, similar_scans, confidence_score)
+        """
+        try:
+            logger.info(f"Analyzing job with semantic matching: {job_title[:50]}...")
+            
+            # Perform standard job analysis
+            job_analysis = await self.analyze_job(job_title, job_description, hiring_challenges)
+            
+            # Find similar scans using vector search
+            similar_scans, confidence_score = await vector_search_service.find_similar_market_scans(
+                job_title=job_title,
+                job_description=job_description,
+                current_scan_id=scan_id,
+                similarity_threshold=0.70,  # Adjust threshold as needed
+                max_results=5
+            )
+            
+            # Enhance job analysis with insights from similar scans
+            enhanced_analysis = await self._enhance_analysis_with_similar_scans(
+                job_analysis, similar_scans
+            )
+            
+            logger.info(f"Job analysis completed. Found {len(similar_scans)} similar scans with confidence: {confidence_score:.2f}")
+            
+            return enhanced_analysis, similar_scans, confidence_score
+            
+        except Exception as e:
+            logger.error(f"Error in analyze_job_with_similar_scans: {str(e)}")
+            # Fallback to basic analysis
+            job_analysis = await self.analyze_job(job_title, job_description, hiring_challenges)
+            return job_analysis, [], 0.0
+    
+    async def _enhance_analysis_with_similar_scans(
+        self, 
+        job_analysis: JobAnalysis, 
+        similar_scans: List[Dict[str, Any]]
+    ) -> JobAnalysis:
+        """Enhance job analysis using insights from similar scans"""
+        try:
+            if not similar_scans:
+                return job_analysis
+            
+            # Extract insights from similar scans
+            similar_skills = set()
+            similar_regions = set()
+            complexity_scores = []
+            
+            for scan in similar_scans:
+                # Collect skills from similar scans
+                scan_skills = scan.get("must_have_skills", [])
+                similar_skills.update(scan_skills)
+                
+                # Collect regions
+                scan_regions = scan.get("recommended_regions", [])
+                similar_regions.update(scan_regions)
+                
+                # Collect complexity scores
+                complexity = scan.get("complexity_score", 5)
+                complexity_scores.append(complexity)
+            
+            # Create enhanced job analysis
+            enhanced_analysis = JobAnalysis(
+                role_category=job_analysis.role_category,
+                experience_level=job_analysis.experience_level,
+                years_experience_required=job_analysis.years_experience_required,
+                must_have_skills=job_analysis.must_have_skills,
+                nice_to_have_skills=job_analysis.nice_to_have_skills,
+                key_responsibilities=job_analysis.key_responsibilities,
+                remote_work_suitability=job_analysis.remote_work_suitability,
+                complexity_score=job_analysis.complexity_score,
+                recommended_regions=job_analysis.recommended_regions,
+                unique_challenges=job_analysis.unique_challenges,
+                salary_factors=job_analysis.salary_factors
+            )
+            
+            # Enhance with similar scan insights if they provide valuable additions
+            if len(similar_scans) >= 2:  # Only enhance if we have good similar data
+                # Add skills that appear in multiple similar scans but not in current analysis
+                current_skills = set(job_analysis.must_have_skills + job_analysis.nice_to_have_skills)
+                frequent_similar_skills = [skill for skill in similar_skills 
+                                         if skill not in current_skills and 
+                                         sum(1 for scan in similar_scans if skill in scan.get("must_have_skills", [])) >= 2]
+                
+                # Add up to 2 additional skills to nice_to_have
+                enhanced_analysis.nice_to_have_skills.extend(frequent_similar_skills[:2])
+                
+                # Adjust complexity score based on similar scans (weighted average)
+                if complexity_scores:
+                    similar_avg_complexity = sum(complexity_scores) / len(complexity_scores)
+                    # Blend original score (70%) with similar scans average (30%)
+                    adjusted_complexity = int(job_analysis.complexity_score * 0.7 + similar_avg_complexity * 0.3)
+                    enhanced_analysis.complexity_score = max(1, min(10, adjusted_complexity))
+            
+            return enhanced_analysis
+            
+        except Exception as e:
+            logger.error(f"Error enhancing analysis with similar scans: {str(e)}")
+            return job_analysis
+    
+    async def store_analysis_vector(
+        self,
+        scan_id: str,
+        job_title: str,
+        job_description: str,
+        job_analysis: JobAnalysis,
+        company_domain: str,
+        client_name: str
+    ) -> bool:
+        """Store the job analysis in vector database for future semantic matching"""
+        try:
+            success = await vector_search_service.store_market_scan_vector(
+                scan_id=scan_id,
+                job_title=job_title,
+                job_description=job_description,
+                job_analysis=job_analysis,
+                company_domain=company_domain,
+                client_name=client_name,
+                created_at=datetime.now()
+            )
+            
+            if success:
+                logger.info(f"Stored analysis vector for scan: {scan_id}")
+            else:
+                logger.warning(f"Failed to store analysis vector for scan: {scan_id}")
+            
+            return success
+            
+        except Exception as e:
+            logger.error(f"Error storing analysis vector: {str(e)}")
+            return False
     
     def _create_analysis_prompt(self, job_title: str, job_description: str, hiring_challenges: str = None) -> str:
         """Create structured prompt for job analysis"""

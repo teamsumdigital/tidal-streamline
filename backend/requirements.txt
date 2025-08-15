@@ -9,6 +9,7 @@ supabase
 
 # AI and ML
 openai
+pinecone>=7.0.0
 
 # Data Processing
 pydantic

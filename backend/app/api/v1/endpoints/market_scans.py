@@ -172,9 +172,13 @@ async def delete_market_scan(scan_id: str):
         raise HTTPException(status_code=500, detail=f"Failed to delete market scan: {str(e)}")
 
 @router.get("/{scan_id}/similar")
-async def get_similar_scans(scan_id: str, limit: int = Query(5, ge=1, le=20)):
+async def get_similar_scans(
+    scan_id: str, 
+    limit: int = Query(5, ge=1, le=20),
+    similarity_threshold: float = Query(0.70, ge=0.0, le=1.0, description="Minimum similarity score")
+):
     """
-    Get similar market scans for comparison
+    Get similar market scans using semantic matching
     """
     try:
         # Get the original scan
@@ -182,22 +186,23 @@ async def get_similar_scans(scan_id: str, limit: int = Query(5, ge=1, le=20)):
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
-        # Find similar scans
-        similar_scans = await db.search_similar_scans(
+        # Use vector search to find semantically similar scans
+        from app.services.vector_search import vector_search_service
+        similar_scans, confidence_score = await vector_search_service.find_similar_market_scans(
             job_title=scan_data['job_title'],
-            job_description=scan_data['job_description']
+            job_description=scan_data['job_description'],
+            current_scan_id=scan_id,
+            similarity_threshold=similarity_threshold,
+            max_results=limit
         )
-        
-        # Filter out the original scan and limit results
-        similar_scans = [
-            scan for scan in similar_scans 
-            if scan['id'] != scan_id
-        ][:limit]
         
         return {
             "scan_id": scan_id,
             "similar_scans": similar_scans,
-            "total_found": len(similar_scans)
+            "total_found": len(similar_scans),
+            "confidence_score": confidence_score,
+            "similarity_threshold": similarity_threshold,
+            "search_method": "semantic_matching"
         }
         
     except HTTPException:
@@ -205,6 +210,48 @@ async def get_similar_scans(scan_id: str, limit: int = Query(5, ge=1, le=20)):
     except Exception as e:
         logger.error(f"❌ Failed to get similar scans for {scan_id}: {e}")
         raise HTTPException(status_code=500, detail=f"Failed to get similar scans: {str(e)}")
+
+@router.get("/analytics/trends")
+async def get_market_trends(
+    lookback_days: int = Query(90, ge=1, le=365, description="Days to analyze")
+):
+    """
+    Get market trends and analytics from semantic search data
+    """
+    try:
+        from app.services.vector_search import vector_search_service
+        trends = await vector_search_service.get_market_trends(lookback_days)
+        
+        return {
+            "trends": trends,
+            "generated_at": datetime.utcnow().isoformat(),
+            "lookback_days": lookback_days
+        }
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to get market trends: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to get market trends: {str(e)}")
+
+@router.get("/analytics/vector-stats")
+async def get_vector_stats():
+    """
+    Get vector database statistics
+    """
+    try:
+        from app.services.embedding_service import embedding_service
+        stats = await embedding_service.get_index_stats()
+        
+        return {
+            "vector_stats": stats,
+            "index_name": embedding_service.index_name,
+            "embedding_model": embedding_service.embedding_model,
+            "embedding_dimension": embedding_service.embedding_dimension,
+            "retrieved_at": datetime.utcnow().isoformat()
+        }
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to get vector stats: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to get vector stats: {str(e)}")
 
 # Background processing function
 async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest):
@@ -216,22 +263,27 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
     try:
         logger.info(f"🔄 Starting analysis for market scan {scan_id}")
         
-        # Step 1: AI Job Analysis using JobAnalyzer
+        # Step 1: AI Job Analysis with Semantic Matching using enhanced JobAnalyzer
         job_analyzer = JobAnalyzer()
-        job_analysis = await job_analyzer.analyze_job(
+        job_analysis, similar_scans, confidence_score = await job_analyzer.analyze_job_with_similar_scans(
             job_title=request.job_title,
             job_description=request.job_description,
-            hiring_challenges=request.hiring_challenges or ""
+            hiring_challenges=request.hiring_challenges or "",
+            scan_id=scan_id
         )
         
         # Step 2: Generate Salary Recommendations using SalaryCalculator
         salary_calculator = SalaryCalculator()
         salary_recommendations = await salary_calculator.calculate_salary_recommendations(job_analysis)
         
-        # Step 3: Find Similar Historical Scans
-        similar_scans = await db.search_similar_scans(
+        # Step 3: Store analysis in vector database for future semantic matching
+        await job_analyzer.store_analysis_vector(
+            scan_id=scan_id,
             job_title=request.job_title,
-            job_description=request.job_description
+            job_description=request.job_description,
+            job_analysis=job_analysis,
+            company_domain=request.company_domain,
+            client_name=request.client_name
         )
         
         # Step 4: Create basic skills recommendations
@@ -258,7 +310,7 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
             'role_category': job_analysis.role_category.value,
             'experience_level': job_analysis.experience_level.value,
             'recommended_regions': [r.value for r in job_analysis.recommended_regions],
-            'confidence_score': 0.85  # TODO: Calculate actual confidence score
+            'confidence_score': confidence_score
         }
         
         # Update database with completed analysis
