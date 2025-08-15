@@ -13,6 +13,10 @@ export { CTASection } from './CTASection'
 // Report Generation Component
 export { ReportGenerationButton } from './ReportGenerationButton'
 
+// Market Scan Action Components
+export { GenerateNewScanButton, QuickScanButton, MarketScanActions } from './GenerateNewScanButton'
+export { FloatingActionButton, FloatingNewScanButton } from './FloatingActionButton'
+
 // Demo Components
 export { MarketScanResultsDemo } from './MarketScanResultsDemo'
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { apiService } from '../services/api'
 import { MarketScanResponse } from '../services/types'
-import { RegionCards, SkillsSection, JobAnalysisSection, NextStepsSection, ReportGenerationButton } from '../components/ui'
+import { RegionCards, SkillsSection, JobAnalysisSection, NextStepsSection, ReportGenerationButton, MarketScanActions, FloatingNewScanButton } from '../components/ui'
 
 export const MarketScanResults: React.FC = () => {
   const { scanId } = useParams<{ scanId: string }>()
@@ -124,27 +124,49 @@ export const MarketScanResults: React.FC = () => {
               </div>
             </div>
             
-            {/* Status & Confidence */}
-            <div className="flex items-center gap-4">
-              <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${
-                scan.status === 'completed' ? 'bg-green-50 text-green-700' :
-                scan.status === 'analyzing' ? 'bg-blue-50 text-blue-700' :
-                scan.status === 'failed' ? 'bg-red-50 text-red-700' :
-                'bg-yellow-50 text-yellow-700'
-              }`}>
-                {scan.status === 'completed' && <span>✅</span>}
-                {scan.status === 'analyzing' && <span className="animate-spin">⚙️</span>}
-                {scan.status === 'failed' && <span>❌</span>}
-                {scan.status === 'pending' && <span>⏳</span>}
-                <span className="font-medium capitalize">{scan.status}</span>
+            {/* Status & Confidence + Header Actions */}
+            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
+              {/* Status */}
+              <div className="flex items-center gap-4">
+                <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${
+                  scan.status === 'completed' ? 'bg-green-50 text-green-700' :
+                  scan.status === 'analyzing' ? 'bg-blue-50 text-blue-700' :
+                  scan.status === 'failed' ? 'bg-red-50 text-red-700' :
+                  'bg-yellow-50 text-yellow-700'
+                }`}>
+                  {scan.status === 'completed' && <span>✅</span>}
+                  {scan.status === 'analyzing' && <span className="animate-spin">⚙️</span>}
+                  {scan.status === 'failed' && <span>❌</span>}
+                  {scan.status === 'pending' && <span>⏳</span>}
+                  <span className="font-medium capitalize">{scan.status}</span>
+                </div>
+                
+                {scan.confidence_score && (
+                  <div className="text-right">
+                    <div className="text-sm text-[#555555]">Confidence</div>
+                    <div className="text-xl font-bold text-[#1A1A1A]">{Math.round(scan.confidence_score * 100)}%</div>
+                  </div>
+                )}
               </div>
               
-              {scan.confidence_score && (
-                <div className="text-right">
-                  <div className="text-sm text-[#555555]">Confidence</div>
-                  <div className="text-xl font-bold text-[#1A1A1A]">{Math.round(scan.confidence_score * 100)}%</div>
-                </div>
-              )}
+              {/* Header Actions */}
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  to="/"
+                  className="inline-flex items-center justify-center bg-[#7B61FF] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors group"
+                >
+                  <span className="mr-2">🔍</span>
+                  Generate New Scan
+                  <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
+                </Link>
+                <Link
+                  to="/admin"
+                  className="inline-flex items-center justify-center bg-white text-[#7B61FF] border border-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
+                >
+                  <span className="mr-2">📊</span>
+                  View All Scans
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -311,6 +333,18 @@ export const MarketScanResults: React.FC = () => {
                 </div>
               </div>
 
+              {/* Market Scan Actions */}
+              <div className="bg-white rounded-xl border border-[#E5E5E7] p-6">
+                <h3 className="font-semibold text-[#1A1A1A] mb-4">Create New Scan</h3>
+                <MarketScanActions 
+                  existingScanData={{
+                    job_title: scan.job_title,
+                    company_domain: scan.company_domain,
+                    job_description: scan.job_description
+                  }}
+                />
+              </div>
+
               {/* Quick Contact */}
               <div className="bg-[#F7F7F9] rounded-xl border border-[#E5E5E7] p-6">
                 <h3 className="font-semibold text-[#1A1A1A] mb-2">Have Questions?</h3>
@@ -359,6 +393,9 @@ export const MarketScanResults: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Floating Action Button for Easy Access */}
+      <FloatingNewScanButton />
     </div>
   )
 }

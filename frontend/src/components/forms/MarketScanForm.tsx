@@ -182,6 +182,36 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
     }
   }, [isSuccess, reset])
 
+  // Check for pre-filled data from localStorage (Quick Scan feature)
+  useEffect(() => {
+    const prefillData = localStorage.getItem('tidal_prefill_scan')
+    if (prefillData) {
+      try {
+        const data = JSON.parse(prefillData)
+        if (data.prefilled) {
+          // Pre-fill the form with existing scan data
+          reset({
+            client_name: '',
+            client_email: '',
+            company_domain: data.company_domain || '',
+            job_title: data.job_title || '',
+            job_description: data.job_description || '',
+            hiring_challenges: ''
+          })
+          
+          // Clear the localStorage after pre-filling
+          localStorage.removeItem('tidal_prefill_scan')
+          
+          // Show a helpful message
+          console.log('Pre-filled form with similar scan data')
+        }
+      } catch (error) {
+        console.error('Error parsing pre-fill data:', error)
+        localStorage.removeItem('tidal_prefill_scan')
+      }
+    }
+  }, [reset])
+
   const onFormSubmit = async (data: FormData) => {
     // Clean up company domain
     const cleanedData: MarketScanRequest = {
