@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { apiService } from '../services/api'
 import { MarketScanResponse } from '../services/types'
-import { RegionCards, SkillsSection, JobAnalysisSection, NextStepsSection } from '../components/ui'
+import { RegionCards, SkillsSection, JobAnalysisSection, NextStepsSection, ReportGenerationButton } from '../components/ui'
 
 export const MarketScanResults: React.FC = () => {
   const { scanId } = useParams<{ scanId: string }>()
@@ -88,48 +88,64 @@ export const MarketScanResults: React.FC = () => {
   }
 
   return (
-    <div className="market-scan-results">
-      {/* Header Section - Improved with Tidal branding */}
-      <div className="scan-header">
-        <div className="header-content">
-          <div className="header-info">
-            <div className="breadcrumb">
-              <Link to="/" className="breadcrumb-link">Market Scans</Link>
-              <span className="breadcrumb-separator">/</span>
-              <span className="breadcrumb-current">Results</span>
-            </div>
-            <h1 className="scan-title">{scan.job_title}</h1>
-            <div className="scan-meta">
-              <span className="company-info">
-                <span className="company-icon" role="img" aria-label="company">🏢</span>
-                {scan.company_domain}
-              </span>
-              <span className="scan-date">
-                <span className="date-icon" role="img" aria-label="calendar">📅</span>
-                {new Date(scan.created_at).toLocaleDateString('en-US', { 
-                  month: 'long', 
-                  day: 'numeric', 
-                  year: 'numeric' 
-                })}
-              </span>
-            </div>
+    <div className="min-h-screen bg-[#F7F7F9]">
+      {/* Page Header - Clear Purpose & Benefits */}
+      <div className="bg-white border-b border-[#E5E5E7]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-sm text-[#555555] mb-4">
+            <Link to="/" className="hover:text-[#7B61FF] transition-colors">Market Scans</Link>
+            <span>/</span>
+            <span className="text-[#1A1A1A] font-medium">Results</span>
           </div>
-          <div className="header-status">
-            <div className={`status-badge ${scan.status}`}>
-              {scan.status === 'completed' && <span className="status-icon">✅</span>}
-              {scan.status === 'analyzing' && <span className="status-icon animate-spin">⚙️</span>}
-              {scan.status === 'failed' && <span className="status-icon">❌</span>}
-              {scan.status === 'pending' && <span className="status-icon">⏳</span>}
-              <span className="status-text">
-                {scan.status.charAt(0).toUpperCase() + scan.status.slice(1)}
-              </span>
-            </div>
-            {scan.confidence_score && (
-              <div className="confidence-score">
-                <span className="confidence-label">Confidence</span>
-                <span className="confidence-value">{Math.round(scan.confidence_score * 100)}%</span>
+          
+          {/* Clear Page Purpose */}
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div>
+              <h1 className="text-3xl font-bold text-[#1A1A1A] mb-2 font-sans">
+                Your {scan.job_title} Hiring Insights
+              </h1>
+              <p className="text-lg text-[#555555] mb-4">
+                Review salary ranges, skill requirements, and candidate recommendations below, then book a call to see qualified candidates.
+              </p>
+              <div className="flex items-center gap-6 text-sm text-[#555555]">
+                <div className="flex items-center gap-2">
+                  <span role="img" aria-label="company">🏢</span>
+                  <span>{scan.company_domain}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span role="img" aria-label="calendar">📅</span>
+                  <span>{new Date(scan.created_at).toLocaleDateString('en-US', { 
+                    month: 'long', 
+                    day: 'numeric', 
+                    year: 'numeric' 
+                  })}</span>
+                </div>
               </div>
-            )}
+            </div>
+            
+            {/* Status & Confidence */}
+            <div className="flex items-center gap-4">
+              <div className={`flex items-center gap-2 px-4 py-2 rounded-full ${
+                scan.status === 'completed' ? 'bg-green-50 text-green-700' :
+                scan.status === 'analyzing' ? 'bg-blue-50 text-blue-700' :
+                scan.status === 'failed' ? 'bg-red-50 text-red-700' :
+                'bg-yellow-50 text-yellow-700'
+              }`}>
+                {scan.status === 'completed' && <span>✅</span>}
+                {scan.status === 'analyzing' && <span className="animate-spin">⚙️</span>}
+                {scan.status === 'failed' && <span>❌</span>}
+                {scan.status === 'pending' && <span>⏳</span>}
+                <span className="font-medium capitalize">{scan.status}</span>
+              </div>
+              
+              {scan.confidence_score && (
+                <div className="text-right">
+                  <div className="text-sm text-[#555555]">Confidence</div>
+                  <div className="text-xl font-bold text-[#1A1A1A]">{Math.round(scan.confidence_score * 100)}%</div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -167,138 +183,146 @@ export const MarketScanResults: React.FC = () => {
         </div>
       )}
 
-      {/* Main Results Content - Following Tidal PRD Section Order */}
+      {/* Main Results Content */}
       {scan.status === 'completed' && scan.salary_recommendations && (
-        <div className="results-layout">
-          {/* Main Content Column */}
-          <div className="main-content">
-            {/* 1. Region Cards (First per PRD requirements) */}
-            <section className="results-section region-section">
-              <div className="section-header">
-                <h2 className="section-title">Regional Pay Ranges</h2>
-                <div className="section-meta">
-                  <span className="meta-icon" role="img" aria-label="updated">🔄</span>
-                  <span className="meta-text">
-                    Updated {scan.processing_time_seconds ? `${Math.round(scan.processing_time_seconds)}s ago` : 'recently'}
-                  </span>
-                </div>
-              </div>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+          <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
+            {/* Main Content - 3/4 width */}
+            <div className="xl:col-span-3 space-y-12">
               
-              <RegionCards 
-                salaryRecommendations={scan.salary_recommendations.salary_recommendations}
-                isLoading={false}
-              />
-            </section>
-
-            {/* 2. Skills Section (Second per PRD requirements) */}
-            {scan.skills_recommendations && (
-              <SkillsSection 
-                skillsRecommendations={scan.skills_recommendations}
-                isLoading={false}
-              />
-            )}
-
-            {/* 3. Job Analysis Section (Third per PRD requirements) */}
-            {scan.job_analysis && (
-              <JobAnalysisSection 
-                jobAnalysis={scan.job_analysis}
-                isLoading={false}
-              />
-            )}
-
-            {/* 4. Next Steps Section (Fourth per PRD requirements) */}
-            <NextStepsSection 
-              jobTitle={scan.job_title}
-              isLoading={false}
-            />
-          </div>
-
-          {/* Sidebar - Right Column */}
-          <div className="sidebar-content">
-            <div className="sidebar-sticky">
-              {/* How Tidal Hires Card */}
-              <div className="tidal-process-card">
-                <h3 className="process-card-title">How Tidal Hires</h3>
-                
-                {/* Evaluation Process */}
-                <div className="process-section evaluation">
-                  <div className="process-header">
-                    <div className="process-icon">
-                      <span role="img" aria-label="evaluation">🎯</span>
-                    </div>
-                    <h4 className="process-title">Robust Evaluation Process</h4>
-                  </div>
-                  <div className="process-features">
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Video introductions for every candidate</span>
-                    </div>
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Skills assessments already completed</span>
-                    </div>
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Reference checks verified</span>
-                    </div>
-                  </div>
+              {/* Section 1: Salary Insights */}
+              <section>
+                <div className="mb-6">
+                  <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">💰 Salary Insights</h2>
+                  <p className="text-[#555555]">Compare regional pay rates and potential savings</p>
                 </div>
+                <RegionCards 
+                  salaryRecommendations={scan.salary_recommendations.salary_recommendations}
+                  isLoading={false}
+                />
+              </section>
 
-                {/* Intangibles */}
-                <div className="process-section intangibles">
-                  <div className="process-header">
-                    <div className="process-icon">
-                      <span role="img" aria-label="personality">✨</span>
-                    </div>
-                    <h4 className="process-title">Intangibles We Look For</h4>
+              {/* Section 2: Skills & Tools */}
+              {scan.skills_recommendations && (
+                <section>
+                  <div className="mb-6">
+                    <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">🛠️ Skills & Tools</h2>
+                    <p className="text-[#555555]">Must-have requirements and nice-to-have qualifications</p>
                   </div>
-                  <div className="process-features">
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Curious & motivated to learn</span>
-                    </div>
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Proactive self-starters</span>
-                    </div>
-                    <div className="feature-item">
-                      <span className="feature-check">✅</span>
-                      <span className="feature-text">Hungry for growth</span>
-                    </div>
-                  </div>
-                </div>
+                  <SkillsSection 
+                    skillsRecommendations={scan.skills_recommendations}
+                    isLoading={false}
+                  />
+                </section>
+              )}
 
-                {/* 6 Month Guarantee */}
-                <div className="process-section guarantee">
-                  <div className="process-header">
-                    <div className="process-icon">
-                      <span role="img" aria-label="guarantee">🛡️</span>
-                    </div>
-                    <h4 className="process-title">6 Month Guarantee</h4>
+              {/* Section 3: Job Analysis */}
+              {scan.job_analysis && (
+                <section>
+                  <div className="mb-6">
+                    <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">📊 Job Analysis</h2>
+                    <p className="text-[#555555]">Role complexity, responsibilities, and key factors</p>
                   </div>
-                  <p className="guarantee-text">
-                    If your hire doesn't work out within 6 months, we'll find you another 
-                    candidate at no additional cost.
-                  </p>
+                  <JobAnalysisSection 
+                    jobAnalysis={scan.job_analysis}
+                    isLoading={false}
+                  />
+                </section>
+              )}
+
+              {/* Section 4: Next Steps */}
+              <section>
+                <div className="mb-6">
+                  <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">🚀 Your Next Steps</h2>
+                  <p className="text-[#555555]">Ready to find your perfect candidate? Here's how to get started</p>
                 </div>
+                <NextStepsSection 
+                  jobTitle={scan.job_title}
+                  isLoading={false}
+                />
+              </section>
+            </div>
+
+            {/* Sidebar - Right Column */}
+            <div className="space-y-6">
+              
+              {/* Report Generation CTA */}
+              <div className="bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] rounded-xl p-6 text-white">
+                <h3 className="text-lg font-semibold mb-2">Generate Professional Report</h3>
+                <p className="text-white/90 text-sm mb-4">
+                  Create a branded Tidal report matching your client's format with all analysis data.
+                </p>
+                <ReportGenerationButton 
+                  scanId={scan.id}
+                  clientName={scan.company_domain.replace('.com', '').toUpperCase()}
+                  roleTitle={scan.job_title}
+                />
               </div>
 
-              {/* CTA Card - Analysis Complete */}
-              <div className="sidebar-cta-card">
-                <div className="cta-status">
-                  <span className="sidebar-cta-badge">Analysis Complete</span>
-                  <h3 className="sidebar-cta-title">Ready to Start Hiring?</h3>
-                </div>
-                <p className="sidebar-cta-description">
-                  Book a 15-minute strategy call to discuss your {scan.job_title} role 
-                  and see qualified candidates from our pre-vetted talent pool.
+              {/* Primary CTA */}
+              <div className="bg-white rounded-xl border border-[#E5E5E7] p-6">
+                <h3 className="text-lg font-semibold text-[#1A1A1A] mb-2">Ready to Start Hiring?</h3>
+                <p className="text-[#555555] text-sm mb-4">
+                  Book a 15-minute call to see qualified {scan.job_title} candidates from our vetted talent pool.
                 </p>
                 <a 
-                  href={`mailto:connect@hiretidal.com?subject=Strategy Call - ${scan.job_title}`}
-                  className="cta-button"
+                  href={`mailto:connect@hiretidal.com?subject=Strategy Call - ${scan.job_title}&body=Hi! I'd like to schedule a call to discuss hiring for the ${scan.job_title} role and see qualified candidates.`}
+                  className="inline-flex items-center justify-center w-full bg-[#7B61FF] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors"
                 >
-                  <span className="cta-button-text">Book Strategy Call</span>
-                  <span className="cta-button-icon" role="img" aria-label="arrow">→</span>
+                  Book Strategy Call
+                  <span className="ml-2">→</span>
+                </a>
+              </div>
+
+              {/* How Tidal Works - Simplified */}
+              <div className="bg-white rounded-xl border border-[#E5E5E7] p-6">
+                <h3 className="font-semibold text-[#1A1A1A] mb-4">Why Choose Tidal</h3>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#7B61FF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm">🎯</span>
+                    </div>
+                    <div>
+                      <div className="font-medium text-[#1A1A1A] text-sm">Pre-Vetted Talent</div>
+                      <div className="text-xs text-[#555555]">Video interviews, skills assessments, and reference checks completed</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#00C6A2]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm">💰</span>
+                    </div>
+                    <div>
+                      <div className="font-medium text-[#1A1A1A] text-sm">Cost Savings</div>
+                      <div className="text-xs text-[#555555]">Save 48-71% vs US rates while maintaining quality</div>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[#7B61FF]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm">🛡️</span>
+                    </div>
+                    <div>
+                      <div className="font-medium text-[#1A1A1A] text-sm">6-Month Guarantee</div>
+                      <div className="text-xs text-[#555555]">Risk-free replacement if hire doesn't work out</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quick Contact */}
+              <div className="bg-[#F7F7F9] rounded-xl border border-[#E5E5E7] p-6">
+                <h3 className="font-semibold text-[#1A1A1A] mb-2">Have Questions?</h3>
+                <p className="text-sm text-[#555555] mb-3">
+                  Speak with our hiring experts about your specific needs.
+                </p>
+                <a 
+                  href="mailto:connect@hiretidal.com?subject=Questions about Hiring"
+                  className="inline-flex items-center text-[#7B61FF] font-medium text-sm hover:text-[#6B51E5] transition-colors"
+                >
+                  connect@hiretidal.com
+                  <span className="ml-1">↗</span>
                 </a>
               </div>
             </div>
@@ -308,23 +332,26 @@ export const MarketScanResults: React.FC = () => {
 
       {/* Failed State */}
       {scan.status === 'failed' && (
-        <div className="failed-state">
-          <div className="failed-container">
-            <div className="failed-icon">
-              <span role="img" aria-label="failed">❌</span>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+          <div className="bg-white rounded-xl border border-red-200 p-8 text-center">
+            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span className="text-2xl" role="img" aria-label="failed">❌</span>
             </div>
-            <h2 className="failed-title">Analysis Failed</h2>
-            <p className="failed-description">
+            <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">Analysis Failed</h2>
+            <p className="text-[#555555] mb-8 max-w-2xl mx-auto">
               We encountered an issue analyzing your job requirements. Our team has been 
               notified and will investigate. Please try creating a new scan or contact support.
             </p>
-            <div className="failed-actions">
-              <Link to="/" className="btn-primary">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                to="/" 
+                className="bg-[#7B61FF] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors"
+              >
                 Create New Scan
               </Link>
               <a 
                 href="mailto:connect@hiretidal.com?subject=Market Scan Error"
-                className="btn-outline"
+                className="border border-[#7B61FF] text-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
               >
                 Contact Support
               </a>

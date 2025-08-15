@@ -122,9 +122,9 @@ export const RegionCards: React.FC<RegionCardsProps> = ({
         {regionData.map((data, index) => (
           <div 
             key={data.region} 
-            className="bg-white rounded-xl border border-[#E5E5E7] p-6 hover:shadow-md transition-all duration-300 group"
+            className="bg-white rounded-xl border border-[#E5E5E7] p-6 hover:shadow-md transition-all duration-300 group relative"
           >
-            {/* Header with Flag and Savings */}
+            {/* Header with Flag and Savings - Consistent Position */}
             <div className="flex items-center justify-between mb-6">
               <div className="w-12 h-12 bg-[#F7F7F9] rounded-full flex items-center justify-center">
                 <span className="text-2xl" role="img" aria-label={`${data.region} flag`}>
@@ -132,12 +132,19 @@ export const RegionCards: React.FC<RegionCardsProps> = ({
                 </span>
               </div>
               
-              {data.savingsPercent && (
-                <div className="bg-[#00C6A2]/10 px-3 py-1 rounded-full flex items-center gap-1">
-                  <span className="text-sm" role="img" aria-label="savings">👋</span>
-                  <span className="text-[#00C6A2] text-sm font-medium">{data.savingsPercent}% savings</span>
-                </div>
-              )}
+              {/* Savings Badge - Always in same position */}
+              <div className="h-7 flex items-center">
+                {data.savingsPercent ? (
+                  <div className="bg-[#00C6A2]/10 px-3 py-1 rounded-full flex items-center gap-1">
+                    <span className="text-sm" role="img" aria-label="savings">👋</span>
+                    <span className="text-[#00C6A2] text-sm font-medium">{data.savingsPercent}% savings</span>
+                  </div>
+                ) : (
+                  <div className="bg-[#7B61FF]/10 px-3 py-1 rounded-full">
+                    <span className="text-[#7B61FF] text-sm font-medium">Baseline</span>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Card Content */}
@@ -146,10 +153,25 @@ export const RegionCards: React.FC<RegionCardsProps> = ({
               <div className="space-y-1">
                 <div className="text-3xl font-bold text-[#1A1A1A]">
                   {formatSalaryRange(data.payRange)}
-                  <span className="text-sm font-normal text-[#555555] ml-1">/{data.payRange.period === 'annual' ? 'hour' : 'hour'}</span>
+                  <span className="text-sm font-normal text-[#555555] ml-1">/hour</span>
                 </div>
               </div>
-              <p className="text-[#555555] leading-relaxed">{data.description}</p>
+              <p className="text-[#555555] text-sm leading-relaxed">{data.description}</p>
+              
+              {/* Info Tooltip */}
+              <div className="pt-2">
+                <div className="group/tooltip relative inline-block">
+                  <button className="text-[#7B61FF] text-xs font-medium hover:text-[#6B51E5] transition-colors">
+                    Why choose this region? ℹ️
+                  </button>
+                  <div className="absolute bottom-full left-0 mb-2 hidden group-hover/tooltip:block bg-[#1A1A1A] text-white text-xs rounded-lg p-3 w-64 z-10">
+                    {data.region === 'United States' && 'Same timezone, native English speakers, direct market knowledge. Best for complex roles requiring deep cultural understanding.'}
+                    {data.region === 'Latin America' && 'Similar timezones to US, high English proficiency, strong work ethic. Great balance of cost savings and communication ease.'}
+                    {data.region === 'Philippines' && 'Excellent English skills, cultural alignment with US business practices, tech-savvy workforce. Maximum cost savings without sacrificing quality.'}
+                    <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#1A1A1A]"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         ))}

@@ -235,5 +235,6 @@ export const API_ENDPOINTS = {
   ANALYSIS: '/api/v1/analysis',
   RECOMMENDATIONS: '/api/v1/recommendations',
   CANDIDATES: '/api/v1/candidates',
-  ADMIN: '/api/v1/admin'
+  ADMIN: '/api/v1/admin',
+  REPORTS: '/api/v1/reports'
 } as const

@@ -79,15 +79,31 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
           </div>
           
           <div className="space-y-3">
-            {skillsRecommendations.must_have_skills.map((skill, index) => (
-              <div 
-                key={index} 
-                className="flex items-center justify-between bg-red-50 border border-red-200 rounded-lg px-4 py-3"
-              >
-                <span className="text-red-800 font-medium">{skill}</span>
-                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-              </div>
-            ))}
+            {skillsRecommendations.must_have_skills.map((skill, index) => {
+              const isShopifySkill = skill.toLowerCase().includes('shopify') || skill.toLowerCase().includes('platform')
+              return (
+                <div 
+                  key={index} 
+                  className={`flex items-center justify-between rounded-lg px-4 py-3 ${
+                    isShopifySkill 
+                      ? 'bg-[#7B61FF]/10 border border-[#7B61FF]/30' 
+                      : 'bg-red-50 border border-red-200'
+                  }`}
+                >
+                  <span className={`font-medium ${
+                    isShopifySkill ? 'text-[#7B61FF]' : 'text-red-800'
+                  }`}>
+                    {skill}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    {isShopifySkill && <span className="text-xs text-[#7B61FF]">Platform</span>}
+                    <div className={`w-2 h-2 rounded-full ${
+                      isShopifySkill ? 'bg-[#7B61FF]' : 'bg-red-500'
+                    }`}></div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
 
@@ -112,15 +128,31 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
           </div>
           
           <div className="space-y-3">
-            {skillsRecommendations.nice_to_have_skills.map((skill, index) => (
-              <div 
-                key={index} 
-                className="flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg px-4 py-3"
-              >
-                <span className="text-blue-800 font-medium">{skill}</span>
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-              </div>
-            ))}
+            {skillsRecommendations.nice_to_have_skills.map((skill, index) => {
+              const isBusinessSkill = skill.toLowerCase().includes('marketing') || skill.toLowerCase().includes('design') || skill.toLowerCase().includes('logistics')
+              return (
+                <div 
+                  key={index} 
+                  className={`flex items-center justify-between rounded-lg px-4 py-3 ${
+                    isBusinessSkill 
+                      ? 'bg-[#00C6A2]/10 border border-[#00C6A2]/30' 
+                      : 'bg-blue-50 border border-blue-200'
+                  }`}
+                >
+                  <span className={`font-medium ${
+                    isBusinessSkill ? 'text-[#00C6A2]' : 'text-blue-800'
+                  }`}>
+                    {skill}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    {isBusinessSkill && <span className="text-xs text-[#00C6A2]">Business</span>}
+                    <div className={`w-2 h-2 rounded-full ${
+                      isBusinessSkill ? 'bg-[#00C6A2]' : 'bg-blue-500'
+                    }`}></div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>

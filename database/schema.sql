@@ -297,9 +297,34 @@ INSERT INTO skills (skill_name, category, is_technical) VALUES
 -- CREATE POLICY "Clients can view their own market scans" ON market_scans
 --     FOR SELECT USING (client_email = current_setting('app.current_user_email'));
 
+-- Generated Reports Table
+CREATE TABLE generated_reports (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    scan_id UUID NOT NULL REFERENCES market_scans(id) ON DELETE CASCADE,
+    report_url VARCHAR(500) NOT NULL,
+    preview_url VARCHAR(500),
+    client_name VARCHAR(100) NOT NULL,
+    role_title VARCHAR(200) NOT NULL,
+    pages INTEGER DEFAULT 1,
+    format VARCHAR(20) DEFAULT 'canva' CHECK (format IN ('canva', 'pdf', 'pptx')),
+    generated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Indexes for generated reports
+CREATE INDEX idx_generated_reports_scan_id ON generated_reports(scan_id);
+CREATE INDEX idx_generated_reports_created_at ON generated_reports(created_at DESC);
+CREATE INDEX idx_generated_reports_client_name ON generated_reports(client_name);
+
+-- Trigger for generated reports
+CREATE TRIGGER update_generated_reports_updated_at BEFORE UPDATE ON generated_reports
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
 COMMENT ON TABLE market_scans IS 'Main table storing market scan requests and analysis results';
 COMMENT ON TABLE roles IS 'Role standardization and title mapping data';
 COMMENT ON TABLE salary_benchmarks IS 'Regional salary benchmark data by role and experience';
 COMMENT ON TABLE candidate_profiles IS 'Example candidate profiles for client reference';
 COMMENT ON TABLE historical_scans IS 'Imported historical market scan data for training and analysis';
 COMMENT ON TABLE client_requests IS 'Log of all client API requests for analytics and debugging';
+COMMENT ON TABLE generated_reports IS 'Generated professional reports for market scans';

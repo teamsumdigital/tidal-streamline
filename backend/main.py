@@ -13,7 +13,7 @@ from loguru import logger
 from dotenv import load_dotenv
 
 from app.core.config import settings
-from app.api.v1.endpoints import market_scans, analysis, recommendations, admin, candidates
+from app.api.v1.endpoints import market_scans, analysis, recommendations, admin, candidates, reports
 
 # Load environment variables
 load_dotenv()
@@ -77,6 +77,12 @@ app.include_router(
     candidates.router,
     prefix="/api/v1/candidates",
     tags=["Candidate Profiles"]
+)
+
+app.include_router(
+    reports.router,
+    prefix="/api/v1/reports",
+    tags=["Report Generation"]
 )
 
 # Health check endpoints

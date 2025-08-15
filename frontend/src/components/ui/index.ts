@@ -10,6 +10,9 @@ export { JobAnalysisSection } from './JobAnalysisSection'
 export { NextStepsSection } from './NextStepsSection'
 export { CTASection } from './CTASection'
 
+// Report Generation Component
+export { ReportGenerationButton } from './ReportGenerationButton'
+
 // Demo Components
 export { MarketScanResultsDemo } from './MarketScanResultsDemo'
 

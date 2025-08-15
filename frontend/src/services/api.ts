@@ -327,6 +327,91 @@ class APIService {
     })
   }
 
+  // Reports API
+  async generateReport(data: {
+    scan_id: string
+    client_name?: string
+    report_format?: 'canva' | 'pdf' | 'pptx'
+    include_candidate_profiles?: boolean
+    custom_branding?: any
+  }): Promise<{
+    success: boolean
+    report_id?: string
+    report_url?: string
+    preview_url?: string
+    download_url?: string
+    pages?: number
+    generated_at: string
+    client_name?: string
+    role_title?: string
+    error?: string
+  }> {
+    return this.request(`${API_ENDPOINTS.REPORTS}/generate`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    })
+  }
+
+  async getReportStatus(reportId: string): Promise<{
+    success: boolean
+    report_id: string
+    status: string
+    report_url?: string
+    preview_url?: string
+    client_name?: string
+    role_title?: string
+    pages?: number
+    generated_at?: string
+    format?: string
+  }> {
+    return this.request(`${API_ENDPOINTS.REPORTS}/status/${reportId}`)
+  }
+
+  async downloadReport(reportId: string): Promise<{
+    success: boolean
+    download_url?: string
+    filename?: string
+    generated_at?: string
+  }> {
+    return this.request(`${API_ENDPOINTS.REPORTS}/download/${reportId}`)
+  }
+
+  async getScanReports(scanId: string): Promise<{
+    success: boolean
+    scan_id: string
+    reports: Array<{
+      report_id: string
+      report_url: string
+      preview_url?: string
+      client_name: string
+      pages: number
+      generated_at: string
+      format: string
+    }>
+    total_reports: number
+  }> {
+    return this.request(`${API_ENDPOINTS.REPORTS}/scan/${scanId}/reports`)
+  }
+
+  async previewTemplateData(scanId: string): Promise<{
+    success: boolean
+    scan_id: string
+    template_data: any
+    data_fields: {
+      client_name: string
+      role_title: string
+      regions_count: number
+      candidate_profiles_count: number
+      similar_roles_count: number
+      required_tools_count: number
+    }
+  }> {
+    return this.request(`${API_ENDPOINTS.REPORTS}/template/preview`, {
+      method: 'POST',
+      body: JSON.stringify({ scan_id: scanId }),
+    })
+  }
+
   // Health check
   async healthCheck(): Promise<{ status: string }> {
     return this.request('/health')
