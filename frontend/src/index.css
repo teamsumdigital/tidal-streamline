@@ -232,10 +232,1608 @@
   }
 }
 
+/* SkillsSection Component Styles - Following Tidal PRD */
+@layer components {
+  .skills-section {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12 mb-16;
+  }
+
+  .skills-header {
+    @apply mb-8 text-center;
+  }
+
+  .skills-title {
+    @apply text-3xl font-bold text-dark-navy-text mb-3;
+  }
+
+  .skills-subtitle {
+    @apply text-lg text-medium-gray-text;
+  }
+
+  .skills-grid {
+    @apply grid gap-8 tablet:grid-cols-2;
+  }
+
+  .skills-card {
+    @apply bg-white rounded-xl border border-card-border-gray p-6 transition-all duration-300 
+           hover:shadow-lg hover:border-tidal-purple/20 overflow-hidden relative;
+  }
+
+  .skills-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+  }
+
+  .skills-card.must-have::before {
+    @apply bg-gradient-to-br from-red-50/80 to-orange-50/80;
+  }
+
+  .skills-card.nice-to-have::before {
+    @apply bg-gradient-to-br from-blue-50/80 to-tidal-purple/5;
+  }
+
+  .skills-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .skills-card-header {
+    @apply flex items-center justify-between mb-6 relative z-10;
+  }
+
+  .skills-icon {
+    @apply w-10 h-10 rounded-lg flex items-center justify-center text-xl mr-4;
+  }
+
+  .must-have-icon {
+    @apply bg-red-100 text-red-600;
+  }
+
+  .nice-to-have-icon {
+    @apply bg-blue-100 text-blue-600;
+  }
+
+  .skills-card-title-group {
+    @apply flex-1;
+  }
+
+  .skills-card-title {
+    @apply text-lg font-bold text-dark-navy-text;
+  }
+
+  .skills-card-subtitle {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  .skills-update-btn {
+    @apply text-sm text-medium-gray-text hover:text-tidal-purple flex items-center gap-1 
+           transition-colors duration-200 p-2 rounded-lg hover:bg-light-gray-bg;
+  }
+
+  .skills-list {
+    @apply space-y-3 relative z-10;
+  }
+
+  .skill-pill {
+    @apply flex items-center justify-between px-4 py-3 rounded-lg border transition-all duration-300 
+           cursor-pointer hover:scale-[1.02] overflow-hidden relative;
+    animation: slideInLeft 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .must-have-pill {
+    @apply bg-red-50/80 border-red-200/60 text-red-800 hover:bg-red-100 hover:border-red-300;
+  }
+
+  .nice-to-have-pill {
+    @apply bg-blue-50/80 border-blue-200/60 text-blue-800 hover:bg-blue-100 hover:border-blue-300;
+  }
+
+  .skill-text {
+    @apply font-medium flex-1;
+  }
+
+  .skill-priority-indicator {
+    @apply w-2 h-2 rounded-full ml-3;
+  }
+
+  .must-have-indicator {
+    @apply bg-red-500;
+  }
+
+  .nice-to-have-indicator {
+    @apply bg-blue-500;
+  }
+
+  .certifications-section {
+    @apply mt-8 pt-8 border-t border-card-border-gray;
+  }
+
+  .certifications-title {
+    @apply text-xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .certifications-list {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .certification-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-br from-tidal-purple/10 to-tidal-aqua/10 
+           border border-tidal-purple/20 rounded-lg text-tidal-purple font-medium transition-all duration-300 
+           hover:from-tidal-purple/20 hover:to-tidal-aqua/20 hover:border-tidal-purple/30;
+    animation: fadeInScale 0.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .certification-icon {
+    @apply text-base;
+  }
+
+  .certification-text {
+    @apply text-sm;
+  }
+}
+
+/* JobAnalysisSection Component Styles - Following Tidal PRD */
+@layer components {
+  .job-analysis-section {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12 mb-16;
+  }
+
+  .job-analysis-header {
+    @apply mb-8 text-center;
+  }
+
+  .job-analysis-title {
+    @apply text-3xl font-bold text-dark-navy-text mb-3;
+  }
+
+  .job-analysis-subtitle {
+    @apply text-lg text-medium-gray-text;
+  }
+
+  .job-analysis-grid {
+    @apply grid gap-6 tablet:grid-cols-2 desktop:grid-cols-3 mb-8;
+  }
+
+  .job-analysis-metric {
+    @apply bg-white rounded-xl border border-card-border-gray p-6 transition-all duration-300 
+           hover:shadow-lg hover:border-tidal-purple/20 relative overflow-hidden;
+  }
+
+  .job-analysis-metric::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-tidal-purple/5 to-tidal-aqua/5 
+           opacity-0 transition-opacity duration-300;
+  }
+
+  .job-analysis-metric:hover::before {
+    @apply opacity-100;
+  }
+
+  .metric-icon-wrapper {
+    @apply w-12 h-12 rounded-lg flex items-center justify-center text-xl mb-4 relative z-10;
+  }
+
+  .metric-icon-wrapper.category {
+    @apply bg-blue-100 text-blue-600;
+  }
+
+  .metric-icon-wrapper.experience {
+    @apply bg-green-100 text-green-600;
+  }
+
+  .metric-icon-wrapper.complexity.low {
+    @apply bg-green-100 text-green-600;
+  }
+
+  .metric-icon-wrapper.complexity.medium {
+    @apply bg-yellow-100 text-yellow-600;
+  }
+
+  .metric-icon-wrapper.complexity.high {
+    @apply bg-red-100 text-red-600;
+  }
+
+  .metric-content {
+    @apply relative z-10;
+  }
+
+  .metric-label {
+    @apply text-sm font-medium text-medium-gray-text mb-2;
+  }
+
+  .metric-value {
+    @apply text-lg font-bold text-dark-navy-text mb-1 capitalize;
+  }
+
+  .metric-description {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  .complexity-score-display {
+    @apply flex items-baseline gap-1;
+  }
+
+  .complexity-score {
+    @apply text-2xl font-bold text-tidal-purple;
+  }
+
+  .complexity-scale {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  .remote-work-indicator {
+    @apply bg-light-gray-bg rounded-xl p-6 mb-8;
+  }
+
+  .remote-work-header {
+    @apply flex items-center gap-3 mb-3;
+  }
+
+  .remote-work-icon {
+    @apply text-xl;
+  }
+
+  .remote-work-title {
+    @apply text-lg font-bold text-dark-navy-text;
+  }
+
+  .remote-work-description {
+    @apply text-medium-gray-text;
+  }
+
+  .responsibilities-section, 
+  .challenges-section, 
+  .recommended-regions-section, 
+  .salary-factors-section {
+    @apply bg-white rounded-xl border border-card-border-gray p-6 mb-6;
+  }
+
+  .responsibilities-title, 
+  .challenges-title, 
+  .recommended-regions-title, 
+  .salary-factors-title {
+    @apply text-lg font-bold text-dark-navy-text mb-4;
+  }
+
+  .challenges-header {
+    @apply flex items-center gap-3 mb-4;
+  }
+
+  .challenges-icon {
+    @apply text-xl;
+  }
+
+  .challenges-description {
+    @apply text-medium-gray-text leading-relaxed;
+  }
+
+  .responsibilities-list, 
+  .salary-factors-list {
+    @apply space-y-3;
+  }
+
+  .responsibility-item, 
+  .salary-factor-item {
+    @apply flex items-start gap-3 transition-all duration-300;
+    animation: slideInLeft 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  @keyframes slideInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .responsibility-bullet {
+    @apply w-2 h-2 bg-tidal-purple rounded-full mt-2 flex-shrink-0;
+  }
+
+  .responsibility-text, 
+  .salary-factor-text {
+    @apply text-medium-gray-text;
+  }
+
+  .salary-factor-icon {
+    @apply text-base mt-0.5;
+  }
+
+  .recommended-regions-list {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .recommended-region-badge {
+    @apply inline-flex items-center px-4 py-2 bg-tidal-purple/10 border border-tidal-purple/20 
+           rounded-lg text-tidal-purple font-medium transition-all duration-300 
+           hover:bg-tidal-purple/20 hover:border-tidal-purple/30;
+    animation: fadeInScale 0.5s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .region-badge-text {
+    @apply text-sm;
+  }
+}
+
+/* NextStepsSection Component Styles - Following Tidal PRD */
+@layer components {
+  .next-steps-section {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12 mb-16;
+  }
+
+  .next-steps-header {
+    @apply mb-8 text-center;
+  }
+
+  .next-steps-title {
+    @apply text-3xl font-bold text-dark-navy-text mb-3;
+  }
+
+  .next-steps-subtitle {
+    @apply text-lg text-medium-gray-text;
+  }
+
+  .next-steps-list {
+    @apply space-y-6 mb-12;
+  }
+
+  .next-step-item {
+    @apply flex gap-6 p-6 bg-white rounded-xl border border-card-border-gray 
+           transition-all duration-300 hover:shadow-lg hover:border-tidal-purple/20;
+    animation: slideInUp 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes slideInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .step-number-wrapper {
+    @apply flex flex-col items-center;
+  }
+
+  .step-number {
+    @apply w-10 h-10 bg-tidal-purple text-white rounded-full flex items-center justify-center 
+           font-bold text-lg transition-all duration-300 group-hover:scale-110;
+  }
+
+  .step-number-text {
+    @apply font-bold;
+  }
+
+  .step-connector {
+    @apply w-0.5 h-8 bg-gradient-to-b from-tidal-purple to-transparent mt-2;
+  }
+
+  .next-step-item:last-child .step-connector {
+    @apply hidden;
+  }
+
+  .step-content {
+    @apply flex-1 flex flex-col gap-4;
+  }
+
+  .step-header {
+    @apply flex gap-4;
+  }
+
+  .step-icon-wrapper {
+    @apply w-12 h-12 bg-light-gray-bg rounded-lg flex items-center justify-center text-xl 
+           border border-card-border-gray transition-all duration-300;
+  }
+
+  .next-step-item:hover .step-icon-wrapper {
+    @apply border-tidal-purple/30 bg-tidal-purple/5;
+  }
+
+  .step-icon {
+    @apply text-xl;
+  }
+
+  .step-title-group {
+    @apply flex-1;
+  }
+
+  .step-title {
+    @apply text-lg font-bold text-dark-navy-text mb-2;
+  }
+
+  .step-description {
+    @apply text-medium-gray-text leading-relaxed;
+  }
+
+  .step-action-btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-tidal-purple/10 text-tidal-purple 
+           border border-tidal-purple/20 rounded-lg font-medium transition-all duration-300 
+           hover:bg-tidal-purple hover:text-white hover:border-tidal-purple 
+           focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:ring-offset-2 
+           self-start;
+  }
+
+  .action-btn-icon {
+    @apply w-4 h-4;
+  }
+
+  .next-steps-cta {
+    @apply bg-gradient-to-br from-tidal-purple to-gradient-purple-end rounded-xl p-8 text-white;
+  }
+
+  .cta-content {
+    @apply text-center mb-8;
+  }
+
+  .cta-title {
+    @apply text-2xl font-bold mb-3;
+  }
+
+  .cta-description {
+    @apply text-white/90 leading-relaxed;
+  }
+
+  .cta-actions {
+    @apply flex flex-col tablet:flex-row gap-4 justify-center;
+  }
+
+  .cta-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-tidal-purple 
+           rounded-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 
+           focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-tidal-purple;
+  }
+
+  .cta-primary-text {
+    @apply font-semibold;
+  }
+
+  .cta-primary-icon {
+    @apply w-5 h-5;
+  }
+
+  .cta-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white/30 
+           text-white rounded-lg font-medium transition-all duration-300 
+           hover:border-white hover:bg-white/10 
+           focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-tidal-purple;
+  }
+
+  .cta-secondary-text {
+    @apply font-medium;
+  }
+
+  .cta-secondary-icon {
+    @apply w-4 h-4;
+  }
+}
+
+/* MarketScanResults Page Styles - Following Tidal PRD */
+@layer components {
+  .market-scan-results {
+    @apply min-h-screen bg-light-gray-bg;
+  }
+
+  /* Loading State */
+  .market-scan-loading {
+    @apply min-h-screen flex items-center justify-center bg-light-gray-bg px-6;
+  }
+
+  .loading-container {
+    @apply max-w-md mx-auto text-center;
+  }
+
+  .loading-spinner {
+    @apply mb-8 flex justify-center;
+  }
+
+  .spinner-circle {
+    @apply w-16 h-16 border-4 border-tidal-purple/20 border-t-tidal-purple rounded-full animate-spin;
+  }
+
+  .loading-title {
+    @apply text-2xl font-bold text-dark-navy-text mb-3;
+  }
+
+  .loading-description {
+    @apply text-lg text-medium-gray-text mb-8;
+  }
+
+  .loading-progress {
+    @apply space-y-4;
+  }
+
+  .progress-bar {
+    @apply w-full h-2 bg-gray-200 rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-tidal-purple to-tidal-aqua rounded-full animate-pulse;
+    width: 75%;
+    animation: progressFill 2s ease-in-out infinite;
+  }
+
+  @keyframes progressFill {
+    0%, 100% { width: 25%; }
+    50% { width: 75%; }
+  }
+
+  .progress-text {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  /* Error State */
+  .market-scan-error {
+    @apply min-h-screen flex items-center justify-center bg-light-gray-bg px-6;
+  }
+
+  .error-container {
+    @apply max-w-md mx-auto text-center;
+  }
+
+  .error-icon {
+    @apply text-6xl mb-6;
+  }
+
+  .error-title {
+    @apply text-2xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .error-description {
+    @apply text-lg text-medium-gray-text mb-8;
+  }
+
+  .error-actions {
+    @apply flex flex-col tablet:flex-row gap-4 justify-center;
+  }
+
+  /* Header Section */
+  .scan-header {
+    @apply bg-white border-b border-card-border-gray px-6 desktop:px-12 py-8;
+  }
+
+  .header-content {
+    @apply max-w-7xl mx-auto flex items-start justify-between;
+  }
+
+  .header-info {
+    @apply flex-1;
+  }
+
+  .breadcrumb {
+    @apply flex items-center text-sm text-medium-gray-text mb-4;
+  }
+
+  .breadcrumb-link {
+    @apply hover:text-tidal-purple transition-colors duration-200;
+  }
+
+  .breadcrumb-separator {
+    @apply mx-2;
+  }
+
+  .breadcrumb-current {
+    @apply text-dark-navy-text font-medium;
+  }
+
+  .scan-title {
+    @apply text-4xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .scan-meta {
+    @apply flex items-center gap-6 text-medium-gray-text;
+  }
+
+  .company-info,
+  .scan-date {
+    @apply flex items-center gap-2;
+  }
+
+  .company-icon,
+  .date-icon {
+    @apply text-base;
+  }
+
+  .header-status {
+    @apply flex flex-col items-end gap-4;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium border;
+  }
+
+  .status-badge.completed {
+    @apply bg-success-green/10 text-success-green border-success-green/20;
+  }
+
+  .status-badge.analyzing {
+    @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+  }
+
+  .status-badge.failed {
+    @apply bg-red-100 text-red-800 border-red-200;
+  }
+
+  .status-badge.pending {
+    @apply bg-gray-100 text-gray-800 border-gray-200;
+  }
+
+  .status-icon {
+    @apply text-sm;
+  }
+
+  .status-text {
+    @apply font-semibold;
+  }
+
+  .confidence-score {
+    @apply flex items-center gap-2 text-sm;
+  }
+
+  .confidence-label {
+    @apply text-medium-gray-text;
+  }
+
+  .confidence-value {
+    @apply font-bold text-tidal-purple;
+  }
+
+  /* Processing Banner */
+  .processing-banner {
+    @apply bg-gradient-to-r from-yellow-50 to-orange-50 border-b border-yellow-200 px-6 desktop:px-12 py-8;
+  }
+
+  .processing-content {
+    @apply max-w-7xl mx-auto flex gap-6;
+  }
+
+  .processing-spinner .spinner-circle.analyzing {
+    @apply w-12 h-12 border-4 border-yellow-200 border-t-yellow-600;
+  }
+
+  .processing-info {
+    @apply flex-1;
+  }
+
+  .processing-title {
+    @apply text-xl font-bold text-yellow-800 mb-2;
+  }
+
+  .processing-description {
+    @apply text-yellow-700 mb-4;
+  }
+
+  .processing-stats {
+    @apply flex gap-6;
+  }
+
+  .stat-item {
+    @apply flex items-center gap-2 text-sm text-yellow-700;
+  }
+
+  .stat-icon {
+    @apply text-base;
+  }
+
+  .stat-text {
+    @apply font-medium;
+  }
+
+  /* Results Layout */
+  .results-layout {
+    @apply max-w-7xl mx-auto px-6 desktop:px-12 py-8 grid gap-8;
+    grid-template-columns: 1fr 320px;
+  }
+
+  @screen tablet {
+    .results-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .main-content {
+    @apply space-y-0;
+    min-width: 0;
+  }
+
+  .results-section {
+    @apply mb-16;
+  }
+
+  .section-header {
+    @apply flex items-center justify-between mb-8;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-dark-navy-text;
+  }
+
+  .section-meta {
+    @apply flex items-center gap-2 text-sm text-medium-gray-text;
+  }
+
+  .meta-icon {
+    @apply text-base;
+  }
+
+  .meta-text {
+    @apply font-medium;
+  }
+
+  /* Sidebar */
+  .sidebar-content {
+    @apply w-80;
+  }
+
+  @screen tablet {
+    .sidebar-content {
+      @apply w-full;
+    }
+  }
+
+  .sidebar-sticky {
+    @apply sticky top-8 space-y-6;
+  }
+
+  /* Tidal Process Card */
+  .tidal-process-card {
+    @apply bg-white rounded-xl border border-card-border-gray p-6;
+  }
+
+  .process-card-title {
+    @apply text-xl font-bold text-dark-navy-text mb-6;
+  }
+
+  .process-section {
+    @apply rounded-xl p-4 mb-4;
+  }
+
+  .process-section.evaluation {
+    @apply bg-blue-50 border border-blue-100;
+  }
+
+  .process-section.intangibles {
+    @apply bg-green-50 border border-green-100;
+  }
+
+  .process-section.guarantee {
+    @apply bg-purple-50 border border-purple-100;
+  }
+
+  .process-header {
+    @apply flex items-center gap-3 mb-3;
+  }
+
+  .process-icon {
+    @apply w-8 h-8 bg-white rounded-lg flex items-center justify-center text-lg border border-gray-200;
+  }
+
+  .process-title {
+    @apply font-semibold text-dark-navy-text;
+  }
+
+  .process-features {
+    @apply space-y-2;
+  }
+
+  .feature-item {
+    @apply flex items-center gap-2 text-sm;
+  }
+
+  .feature-check {
+    @apply text-success-green text-xs;
+  }
+
+  .feature-text {
+    @apply text-medium-gray-text;
+  }
+
+  .guarantee-text {
+    @apply text-sm text-medium-gray-text leading-relaxed;
+  }
+
+  /* CTA Card */
+  .cta-card {
+    @apply bg-gradient-to-br from-tidal-purple to-gradient-purple-end rounded-xl p-6 text-white;
+  }
+
+  .cta-status {
+    @apply mb-4;
+  }
+
+  .cta-badge {
+    @apply inline-block px-3 py-1 bg-white/20 text-xs font-medium rounded-full mb-3;
+  }
+
+  .cta-title {
+    @apply text-lg font-bold mb-3;
+  }
+
+  .cta-description {
+    @apply text-white/90 text-sm leading-relaxed mb-6;
+  }
+
+  .cta-button {
+    @apply inline-flex items-center justify-center gap-2 w-full px-4 py-3 bg-white text-tidal-purple 
+           rounded-lg font-medium transition-all duration-300 hover:bg-gray-50 hover:scale-105 
+           focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-tidal-purple;
+  }
+
+  .cta-button-text {
+    @apply font-semibold;
+  }
+
+  .cta-button-icon {
+    @apply text-lg;
+  }
+
+  /* Failed State */
+  .failed-state {
+    @apply min-h-screen flex items-center justify-center bg-light-gray-bg px-6;
+  }
+
+  .failed-container {
+    @apply max-w-md mx-auto text-center;
+  }
+
+  .failed-icon {
+    @apply text-6xl mb-6;
+  }
+
+  .failed-title {
+    @apply text-2xl font-bold text-red-600 mb-4;
+  }
+
+  .failed-description {
+    @apply text-lg text-medium-gray-text mb-8 leading-relaxed;
+  }
+
+  .failed-actions {
+    @apply flex flex-col tablet:flex-row gap-4 justify-center;
+  }
+
+  /* Responsive adjustments */
+  @screen mobile {
+    .scan-header {
+      @apply px-6 py-6;
+    }
+    
+    .scan-title {
+      @apply text-2xl;
+    }
+    
+    .header-content {
+      @apply flex-col gap-4;
+    }
+    
+    .header-status {
+      @apply flex-row items-center;
+    }
+    
+    .results-layout {
+      @apply px-6 py-6;
+      grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+      @apply text-2xl;
+    }
+    
+    .sidebar-content {
+      @apply w-full;
+    }
+  }
+}
+
 /* Text utilities */
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Enhanced MarketScanForm Animations */
+@layer utilities {
+  .animate-slideInUp {
+    animation: slideInUp 0.4s ease-out forwards;
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 0.4s ease-out forwards;
+  }
+  
+  .animate-fadeInScale {
+    animation: fadeInScale 0.4s ease-out forwards;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* SkillsSection Component Styles - Following Tidal PRD Requirements */
+@layer components {
+  .skills-section {
+    @apply w-full bg-light-gray-bg py-16;
+  }
+
+  .skills-container {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12;
+  }
+
+  .skills-header {
+    @apply text-center mb-12;
+  }
+
+  .skills-title {
+    @apply text-3xl desktop:text-4xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .skills-subtitle {
+    @apply text-lg text-medium-gray-text max-w-2xl mx-auto;
+  }
+
+  .skills-content {
+    @apply space-y-12;
+  }
+
+  .skills-category {
+    @apply space-y-6;
+  }
+
+  .skills-category-header {
+    @apply flex items-center justify-between mb-4;
+  }
+
+  .skills-category-title {
+    @apply text-xl font-semibold text-dark-navy-text flex items-center gap-3;
+  }
+
+  .skills-category-title.must-have {
+    @apply text-tidal-purple;
+  }
+
+  .skills-category-title.nice-to-have {
+    @apply text-tidal-aqua;
+  }
+
+  .skills-category-icon {
+    @apply text-2xl;
+  }
+
+  .skills-category-count {
+    @apply text-sm font-medium text-medium-gray-text bg-gray-100 px-3 py-1 rounded-full;
+  }
+
+  .skills-grid {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .skill-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium 
+           transition-all duration-300 cursor-default;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .skill-badge-must-have {
+    @apply bg-tidal-purple/10 text-tidal-purple border border-tidal-purple/20 
+           hover:bg-tidal-purple/20 hover:border-tidal-purple/30 hover:scale-105;
+  }
+
+  .skill-badge-nice-to-have {
+    @apply bg-tidal-aqua/10 text-tidal-aqua border border-tidal-aqua/20 
+           hover:bg-tidal-aqua/20 hover:border-tidal-aqua/30 hover:scale-105;
+  }
+
+  .skill-badge-icon,
+  .skill-badge-plus {
+    @apply text-xs;
+  }
+
+  .skill-badge-text {
+    @apply font-medium;
+  }
+
+  .certifications-section {
+    @apply mt-16 pt-8 border-t border-gray-200;
+  }
+
+  .certifications-header {
+    @apply mb-6;
+  }
+
+  .certifications-title {
+    @apply text-xl font-semibold text-dark-navy-text flex items-center gap-3;
+  }
+
+  .certifications-icon {
+    @apply text-2xl;
+  }
+
+  .certifications-grid {
+    @apply grid gap-4 grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3;
+  }
+
+  .certification-badge {
+    @apply flex items-center gap-3 p-4 bg-white rounded-lg border border-gray-200 
+           hover:border-tidal-purple/30 hover:shadow-md transition-all duration-300;
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .certification-badge-icon {
+    @apply text-lg;
+  }
+
+  .certification-badge-text {
+    @apply font-medium text-dark-navy-text;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Loading skeleton styles for SkillsSection */
+  .skills-title-skeleton,
+  .skills-subtitle-skeleton,
+  .skills-category-title-skeleton,
+  .skills-category-count-skeleton,
+  .skill-badge-skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+  }
+}
+
+/* JobAnalysisSection Component Styles - Following Tidal PRD Requirements */
+@layer components {
+  .job-analysis-section {
+    @apply w-full bg-white py-16;
+  }
+
+  .job-analysis-container {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12;
+  }
+
+  .job-analysis-header {
+    @apply text-center mb-12;
+  }
+
+  .job-analysis-title {
+    @apply text-3xl desktop:text-4xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .job-analysis-subtitle {
+    @apply text-lg text-medium-gray-text max-w-2xl mx-auto;
+  }
+
+  .job-analysis-content {
+    @apply space-y-12;
+  }
+
+  .job-analysis-grid {
+    @apply grid gap-6 grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4;
+  }
+
+  .job-analysis-insight {
+    @apply bg-white rounded-xl border border-gray-200 p-6 
+           hover:border-tidal-purple/30 hover:shadow-lg transition-all duration-300;
+    animation: slideInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .job-analysis-insight.featured {
+    @apply border-tidal-purple/20 bg-gradient-to-br from-tidal-purple/5 to-tidal-aqua/5;
+  }
+
+  .insight-icon {
+    @apply w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-2xl mb-4;
+  }
+
+  .insight-content {
+    @apply space-y-2;
+  }
+
+  .insight-title {
+    @apply text-sm font-medium text-medium-gray-text uppercase tracking-wide;
+  }
+
+  .insight-value {
+    @apply text-lg font-bold text-dark-navy-text;
+  }
+
+  .insight-value-wrapper {
+    @apply flex items-center gap-2;
+  }
+
+  .insight-score {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  .insight-detail {
+    @apply text-sm text-medium-gray-text;
+  }
+
+  .insight-regions {
+    @apply flex flex-wrap gap-2;
+  }
+
+  .region-tag {
+    @apply px-3 py-1 bg-tidal-aqua/10 text-tidal-aqua text-sm font-medium rounded-full;
+  }
+
+  .job-analysis-details {
+    @apply grid gap-8 grid-cols-1 desktop:grid-cols-2;
+  }
+
+  .detail-section {
+    @apply space-y-4;
+  }
+
+  .detail-section.challenge-section {
+    @apply desktop:col-span-2;
+  }
+
+  .detail-title {
+    @apply text-xl font-semibold text-dark-navy-text flex items-center gap-3;
+  }
+
+  .detail-icon {
+    @apply text-xl;
+  }
+
+  .detail-list {
+    @apply space-y-3;
+  }
+
+  .responsibilities-list,
+  .factors-list {
+    @apply list-none;
+  }
+
+  .detail-item {
+    @apply flex items-start gap-3 text-medium-gray-text;
+    animation: fadeInLeft 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  .responsibility-bullet,
+  .factor-bullet {
+    @apply text-tidal-purple font-bold mt-0.5;
+  }
+
+  .challenge-content {
+    @apply bg-yellow-50 border border-yellow-200 rounded-lg p-4;
+  }
+
+  .challenge-text {
+    @apply text-dark-navy-text font-medium;
+  }
+
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Loading skeleton styles for JobAnalysisSection */
+  .job-analysis-title-skeleton,
+  .job-analysis-subtitle-skeleton,
+  .insight-icon-skeleton,
+  .insight-title-skeleton,
+  .insight-value-skeleton,
+  .detail-title-skeleton,
+  .detail-item-skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+  }
+}
+
+/* NextStepsSection Component Styles - Following Tidal PRD Requirements */
+@layer components {
+  .next-steps-section {
+    @apply w-full bg-light-gray-bg py-16;
+  }
+
+  .next-steps-container {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12;
+  }
+
+  .next-steps-header {
+    @apply text-center mb-12;
+  }
+
+  .next-steps-title {
+    @apply text-3xl desktop:text-4xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .next-steps-subtitle {
+    @apply text-lg text-medium-gray-text max-w-2xl mx-auto;
+  }
+
+  .next-steps-content {
+    @apply space-y-12;
+  }
+
+  .steps-grid {
+    @apply grid gap-6 grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-2;
+  }
+
+  .step-card {
+    @apply bg-white rounded-xl border p-6 hover:shadow-lg transition-all duration-300;
+    animation: slideInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .step-header {
+    @apply flex items-start justify-between mb-4;
+  }
+
+  .step-icon-container {
+    @apply w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center;
+  }
+
+  .step-icon {
+    @apply text-2xl;
+  }
+
+  .step-meta {
+    @apply text-right space-y-1;
+  }
+
+  .step-priority {
+    @apply inline-flex items-center gap-1 text-xs font-medium text-medium-gray-text;
+  }
+
+  .step-timeframe {
+    @apply inline-flex items-center gap-1 text-xs text-medium-gray-text;
+  }
+
+  .step-content {
+    @apply space-y-4;
+  }
+
+  .step-title {
+    @apply text-xl font-semibold text-dark-navy-text;
+  }
+
+  .step-description {
+    @apply text-medium-gray-text leading-relaxed;
+  }
+
+  .step-action-button {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-tidal-purple text-white 
+           font-medium rounded-lg hover:bg-gradient-purple-end transition-all duration-300 
+           focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:ring-offset-2;
+  }
+
+  .step-action-text {
+    @apply font-medium;
+  }
+
+  .step-action-arrow {
+    @apply transition-transform duration-300 group-hover:translate-x-1;
+  }
+
+  .step-action-button:hover .step-action-arrow {
+    @apply translate-x-1;
+  }
+
+  .contact-section {
+    @apply mt-16;
+  }
+
+  .contact-card {
+    @apply bg-gradient-to-br from-tidal-purple to-gradient-purple-end rounded-2xl 
+           p-8 desktop:p-12 text-white text-center;
+  }
+
+  .contact-icon {
+    @apply text-4xl mb-6;
+  }
+
+  .contact-title {
+    @apply text-2xl desktop:text-3xl font-bold mb-4;
+  }
+
+  .contact-description {
+    @apply text-lg opacity-90 max-w-2xl mx-auto mb-8;
+  }
+
+  .contact-actions {
+    @apply flex flex-col tablet:flex-row gap-4 justify-center items-center;
+  }
+
+  .contact-primary-button {
+    @apply inline-flex items-center gap-3 px-6 py-3 bg-white text-tidal-purple 
+           font-semibold rounded-lg hover:bg-gray-50 transition-all duration-300 
+           hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2;
+  }
+
+  .contact-secondary-button {
+    @apply inline-flex items-center gap-3 px-6 py-3 border-2 border-white text-white 
+           font-semibold rounded-lg hover:bg-white hover:text-tidal-purple transition-all duration-300 
+           hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2;
+  }
+
+  /* Loading skeleton styles for NextStepsSection */
+  .next-steps-title-skeleton,
+  .next-steps-subtitle-skeleton,
+  .step-icon-skeleton,
+  .step-priority-skeleton,
+  .step-title-skeleton,
+  .step-description-skeleton,
+  .step-action-skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+  }
+}
+
+/* CTASection Component Styles - Following Tidal PRD Requirements */
+@layer components {
+  .cta-section {
+    @apply w-full bg-white py-16;
+  }
+
+  .cta-container {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12;
+  }
+
+  .cta-header {
+    @apply text-center mb-12;
+  }
+
+  .cta-title {
+    @apply text-3xl desktop:text-4xl font-bold text-dark-navy-text mb-4;
+  }
+
+  .cta-subtitle {
+    @apply text-lg text-medium-gray-text max-w-2xl mx-auto;
+  }
+
+  .cta-content {
+    @apply mb-16;
+  }
+
+  .cta-layout-horizontal {
+    @apply grid gap-8 grid-cols-1 desktop:grid-cols-2;
+  }
+
+  .cta-layout-vertical {
+    @apply space-y-8;
+  }
+
+  .cta-layout-grid {
+    @apply grid gap-6 grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-3;
+  }
+
+  .cta-card {
+    @apply relative bg-white rounded-2xl border border-gray-200 p-8 
+           hover:border-tidal-purple/30 hover:shadow-xl transition-all duration-300;
+    animation: slideInUp 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .cta-card-featured {
+    @apply border-tidal-purple/30 bg-gradient-to-br from-tidal-purple/5 to-tidal-aqua/5 
+           ring-2 ring-tidal-purple/10;
+  }
+
+  .cta-badge {
+    @apply absolute -top-3 left-1/2 transform -translate-x-1/2;
+  }
+
+  .cta-badge-text {
+    @apply inline-block px-4 py-1 bg-tidal-purple text-white text-sm font-medium 
+           rounded-full shadow-md;
+  }
+
+  .cta-card-header {
+    @apply text-center mb-6;
+  }
+
+  .cta-icon-container {
+    @apply w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-tidal-purple/10 to-tidal-aqua/10 
+           flex items-center justify-center;
+  }
+
+  .cta-icon {
+    @apply text-3xl;
+  }
+
+  .cta-card-title {
+    @apply text-xl font-bold text-dark-navy-text mb-3;
+  }
+
+  .cta-card-description {
+    @apply text-medium-gray-text leading-relaxed;
+  }
+
+  .cta-features {
+    @apply mb-6;
+  }
+
+  .cta-features-list {
+    @apply space-y-3;
+  }
+
+  .cta-feature-item {
+    @apply flex items-center gap-3 text-sm text-medium-gray-text;
+    animation: fadeInLeft 0.6s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  .cta-feature-check {
+    @apply w-5 h-5 rounded-full bg-success-green text-white text-xs font-bold 
+           flex items-center justify-center flex-shrink-0;
+  }
+
+  .cta-feature-text {
+    @apply font-medium;
+  }
+
+  .cta-card-footer {
+    @apply mt-6;
+  }
+
+  .cta-button {
+    @apply w-full inline-flex items-center justify-center gap-3 px-6 py-4 
+           font-semibold rounded-lg transition-all duration-300 focus:outline-none 
+           focus:ring-2 focus:ring-offset-2 hover:scale-105;
+  }
+
+  .cta-button-primary {
+    @apply bg-gradient-to-r from-tidal-purple to-gradient-purple-end text-white 
+           hover:from-gradient-purple-end hover:to-tidal-purple shadow-lg 
+           focus:ring-tidal-purple/50;
+  }
+
+  .cta-button-secondary {
+    @apply bg-tidal-aqua text-white hover:bg-tidal-aqua/90 shadow-lg 
+           focus:ring-tidal-aqua/50;
+  }
+
+  .cta-button-outline {
+    @apply border-2 border-tidal-purple text-tidal-purple hover:bg-tidal-purple 
+           hover:text-white focus:ring-tidal-purple/50;
+  }
+
+  .cta-button-icon {
+    @apply text-lg;
+  }
+
+  .cta-button-text {
+    @apply font-semibold;
+  }
+
+  .cta-button-arrow {
+    @apply transition-transform duration-300;
+  }
+
+  .cta-button:hover .cta-button-arrow {
+    @apply translate-x-1;
+  }
+
+  .cta-trust-section {
+    @apply border-t border-gray-200 pt-12;
+  }
+
+  .cta-trust-content {
+    @apply space-y-8;
+  }
+
+  .cta-trust-stats {
+    @apply grid gap-8 grid-cols-1 tablet:grid-cols-3 text-center;
+  }
+
+  .cta-trust-stat {
+    @apply space-y-2;
+  }
+
+  .cta-trust-number {
+    @apply text-3xl font-bold text-tidal-purple;
+  }
+
+  .cta-trust-label {
+    @apply text-sm font-medium text-medium-gray-text;
+  }
+
+  .cta-trust-badges {
+    @apply flex flex-wrap justify-center gap-4;
+  }
+
+  .cta-trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 bg-gray-100 
+           text-medium-gray-text text-sm font-medium rounded-lg;
+  }
+
+  /* Loading skeleton styles for CTASection */
+  .cta-title-skeleton,
+  .cta-subtitle-skeleton,
+  .cta-icon-skeleton,
+  .cta-card-title-skeleton,
+  .cta-card-description-skeleton,
+  .cta-button-skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+  }
 }

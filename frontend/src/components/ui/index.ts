@@ -4,5 +4,14 @@ export { CandidateCardDemo } from './CandidateCardDemo'
 export { RegionCards } from './RegionCards'
 export { RegionCardsDemo } from './RegionCardsDemo'
 
+// Market Scan Results Components - Following Tidal PRD Requirements
+export { SkillsSection } from './SkillsSection'
+export { JobAnalysisSection } from './JobAnalysisSection'
+export { NextStepsSection } from './NextStepsSection'
+export { CTASection } from './CTASection'
+
+// Demo Components
+export { MarketScanResultsDemo } from './MarketScanResultsDemo'
+
 // Re-export types for convenience
-export type { CandidateProfile, SalaryRange, Region } from '../../services/types'
+export type { CandidateProfile, SalaryRange, Region, SkillsRecommendation, JobAnalysis } from '../../services/types'
