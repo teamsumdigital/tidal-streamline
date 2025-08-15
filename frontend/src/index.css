@@ -1059,8 +1059,8 @@
     @apply text-sm text-medium-gray-text leading-relaxed;
   }
 
-  /* CTA Card */
-  .cta-card {
+  /* Sidebar CTA Card */
+  .sidebar-cta-card {
     @apply bg-gradient-to-br from-tidal-purple to-gradient-purple-end rounded-xl p-6 text-white;
   }
 
@@ -1068,15 +1068,15 @@
     @apply mb-4;
   }
 
-  .cta-badge {
-    @apply inline-block px-3 py-1 bg-white/20 text-xs font-medium rounded-full mb-3;
+  .sidebar-cta-badge {
+    @apply inline-block px-3 py-1 bg-white/20 text-white text-xs font-medium rounded-full mb-3;
   }
 
-  .cta-title {
-    @apply text-lg font-bold mb-3;
+  .sidebar-cta-title {
+    @apply text-lg font-bold mb-3 text-white;
   }
 
-  .cta-description {
+  .sidebar-cta-description {
     @apply text-white/90 text-sm leading-relaxed mb-6;
   }
 
@@ -1699,7 +1699,7 @@
   }
 
   .cta-badge {
-    @apply absolute -top-3 left-1/2 transform -translate-x-1/2;
+    @apply inline-block px-3 py-1 bg-tidal-purple/20 text-tidal-purple text-xs font-medium rounded-full mb-3;
   }
 
   .cta-badge-text {

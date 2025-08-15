@@ -284,12 +284,12 @@ export const MarketScanResults: React.FC = () => {
               </div>
 
               {/* CTA Card - Analysis Complete */}
-              <div className="cta-card">
+              <div className="sidebar-cta-card">
                 <div className="cta-status">
-                  <span className="cta-badge">Analysis Complete</span>
-                  <h3 className="cta-title">Ready to Start Hiring?</h3>
+                  <span className="sidebar-cta-badge">Analysis Complete</span>
+                  <h3 className="sidebar-cta-title">Ready to Start Hiring?</h3>
                 </div>
-                <p className="cta-description">
+                <p className="sidebar-cta-description">
                   Book a 15-minute strategy call to discuss your {scan.job_title} role 
                   and see qualified candidates from our pre-vetted talent pool.
                 </p>
