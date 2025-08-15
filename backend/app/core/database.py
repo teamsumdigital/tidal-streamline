@@ -168,6 +168,42 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"❌ Failed to get candidate profiles: {e}")
             return []
+    
+    # Generated Reports Operations
+    async def save_report_record(self, report_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Save generated report record to database"""
+        try:
+            result = self.client.table('generated_reports').insert(report_data).execute()
+            logger.info(f"✅ Saved report record: {result.data[0]['id']}")
+            return result.data[0]
+        except Exception as e:
+            logger.error(f"❌ Failed to save report record: {e}")
+            raise
+    
+    async def get_report_record(self, report_id: str) -> Optional[Dict[str, Any]]:
+        """Get report record by ID"""
+        try:
+            result = self.client.table('generated_reports').select("*").eq('id', report_id).execute()
+            return result.data[0] if result.data else None
+        except Exception as e:
+            logger.error(f"❌ Failed to get report record {report_id}: {e}")
+            return None
+    
+    async def get_scan_reports(self, scan_id: str) -> List[Dict[str, Any]]:
+        """Get all reports for a specific scan"""
+        try:
+            result = (
+                self.client
+                .table('generated_reports')
+                .select("*")
+                .eq('scan_id', scan_id)
+                .order('created_at', desc=True)
+                .execute()
+            )
+            return result.data
+        except Exception as e:
+            logger.error(f"❌ Failed to get scan reports for {scan_id}: {e}")
+            return []
 
 # Global database instance
 db = DatabaseManager()

@@ -3,16 +3,15 @@ Report Generation API Endpoints
 Generate professional Tidal-branded market scan reports
 """
 
-from fastapi import APIRouter, HTTPException, Depends, BackgroundTasks
+from fastapi import APIRouter, HTTPException, BackgroundTasks
 from typing import Dict, Any, Optional
 from pydantic import BaseModel
 import json
 
-from ....core.database import get_database
+from ....core.database import db
 from ....services.report_generator import TidalReportGenerator
-from ....core.logger import get_logger
+from loguru import logger
 
-logger = get_logger(__name__)
 router = APIRouter()
 
 class ReportGenerationRequest(BaseModel):
@@ -37,8 +36,7 @@ class ReportGenerationResponse(BaseModel):
 @router.post("/generate", response_model=ReportGenerationResponse)
 async def generate_market_scan_report(
     request: ReportGenerationRequest,
-    background_tasks: BackgroundTasks,
-    db=Depends(get_database)
+    background_tasks: BackgroundTasks
 ):
     """
     Generate professional market scan report from scan data
@@ -55,7 +53,7 @@ async def generate_market_scan_report(
         logger.info(f"Starting report generation for scan ID: {request.scan_id}")
         
         # Fetch market scan data from database
-        scan_data = await get_market_scan_data(db, request.scan_id)
+        scan_data = await db.get_market_scan(request.scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -77,7 +75,7 @@ async def generate_market_scan_report(
         
         if report_result['success']:
             # Store report metadata in database
-            report_record = await save_report_record(db, {
+            report_record = await db.save_report_record({
                 "scan_id": request.scan_id,
                 "report_url": report_result['report_url'],
                 "preview_url": report_result['preview_url'],
@@ -112,7 +110,7 @@ async def generate_market_scan_report(
         raise HTTPException(status_code=500, detail=f"Report generation failed: {str(e)}")
 
 @router.get("/status/{report_id}")
-async def get_report_status(report_id: str, db=Depends(get_database)):
+async def get_report_status(report_id: str):
     """
     Get status and details of generated report
     
@@ -124,7 +122,7 @@ async def get_report_status(report_id: str, db=Depends(get_database)):
         Report status and metadata
     """
     try:
-        report_record = await get_report_record(db, report_id)
+        report_record = await db.get_report_record(report_id)
         if not report_record:
             raise HTTPException(status_code=404, detail="Report not found")
         
@@ -146,7 +144,7 @@ async def get_report_status(report_id: str, db=Depends(get_database)):
         raise HTTPException(status_code=500, detail=f"Failed to get report status: {str(e)}")
 
 @router.get("/download/{report_id}")
-async def download_report(report_id: str, db=Depends(get_database)):
+async def download_report(report_id: str):
     """
     Get download URL for generated report
     
@@ -158,7 +156,7 @@ async def download_report(report_id: str, db=Depends(get_database)):
         Direct download URL
     """
     try:
-        report_record = await get_report_record(db, report_id)
+        report_record = await db.get_report_record(report_id)
         if not report_record:
             raise HTTPException(status_code=404, detail="Report not found")
         
@@ -174,7 +172,7 @@ async def download_report(report_id: str, db=Depends(get_database)):
         raise HTTPException(status_code=500, detail=f"Failed to get download URL: {str(e)}")
 
 @router.get("/scan/{scan_id}/reports")
-async def list_scan_reports(scan_id: str, db=Depends(get_database)):
+async def list_scan_reports(scan_id: str):
     """
     List all reports generated for a specific market scan
     
@@ -186,7 +184,7 @@ async def list_scan_reports(scan_id: str, db=Depends(get_database)):
         List of reports for the scan
     """
     try:
-        reports = await get_scan_reports(db, scan_id)
+        reports = await db.get_scan_reports(scan_id)
         
         return {
             "success": True,
@@ -211,7 +209,7 @@ async def list_scan_reports(scan_id: str, db=Depends(get_database)):
         raise HTTPException(status_code=500, detail=f"Failed to list reports: {str(e)}")
 
 @router.post("/template/preview")
-async def preview_template_data(scan_id: str, db=Depends(get_database)):
+async def preview_template_data(scan_id: str):
     """
     Preview template data mapping without generating actual report
     Useful for debugging and template development
@@ -225,7 +223,7 @@ async def preview_template_data(scan_id: str, db=Depends(get_database)):
     """
     try:
         # Fetch market scan data
-        scan_data = await get_market_scan_data(db, scan_id)
+        scan_data = await db.get_market_scan(scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -253,83 +251,3 @@ async def preview_template_data(scan_id: str, db=Depends(get_database)):
         logger.error(f"Template preview error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to preview template: {str(e)}")
 
-# Database helper functions
-
-async def get_market_scan_data(db, scan_id: str) -> Optional[Dict[str, Any]]:
-    """Fetch complete market scan data from database"""
-    try:
-        # Query market scan with all related data
-        query = """
-            SELECT 
-                ms.*,
-                ms.job_analysis::jsonb as job_analysis,
-                ms.salary_recommendations::jsonb as salary_recommendations,
-                ms.skills_recommendations::jsonb as skills_recommendations
-            FROM market_scans ms 
-            WHERE ms.id = %s
-        """
-        
-        result = await db.fetch_one(query, [scan_id])
-        if result:
-            return dict(result)
-        return None
-        
-    except Exception as e:
-        logger.error(f"Database error fetching scan data: {str(e)}")
-        raise
-
-async def save_report_record(db, report_data: Dict[str, Any]) -> Dict[str, Any]:
-    """Save generated report record to database"""
-    try:
-        query = """
-            INSERT INTO generated_reports 
-            (scan_id, report_url, preview_url, client_name, role_title, pages, generated_at, format)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-            RETURNING id, *
-        """
-        
-        result = await db.fetch_one(query, [
-            report_data['scan_id'],
-            report_data['report_url'],
-            report_data.get('preview_url'),
-            report_data['client_name'],
-            report_data['role_title'],
-            report_data['pages'],
-            report_data['generated_at'],
-            report_data['format']
-        ])
-        
-        return dict(result)
-        
-    except Exception as e:
-        logger.error(f"Database error saving report record: {str(e)}")
-        raise
-
-async def get_report_record(db, report_id: str) -> Optional[Dict[str, Any]]:
-    """Get report record by ID"""
-    try:
-        query = "SELECT * FROM generated_reports WHERE id = %s"
-        result = await db.fetch_one(query, [report_id])
-        if result:
-            return dict(result)
-        return None
-        
-    except Exception as e:
-        logger.error(f"Database error fetching report record: {str(e)}")
-        raise
-
-async def get_scan_reports(db, scan_id: str) -> List[Dict[str, Any]]:
-    """Get all reports for a specific scan"""
-    try:
-        query = """
-            SELECT * FROM generated_reports 
-            WHERE scan_id = %s 
-            ORDER BY generated_at DESC
-        """
-        
-        results = await db.fetch_all(query, [scan_id])
-        return [dict(result) for result in results]
-        
-    except Exception as e:
-        logger.error(f"Database error fetching scan reports: {str(e)}")
-        raise

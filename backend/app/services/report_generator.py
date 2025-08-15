@@ -8,11 +8,7 @@ import json
 import requests
 from typing import Dict, List, Any, Optional
 from datetime import datetime
-from ..core.config import get_settings
-from ..core.logger import get_logger
-
-logger = get_logger(__name__)
-settings = get_settings()
+from loguru import logger
 
 class TidalReportGenerator:
     """
