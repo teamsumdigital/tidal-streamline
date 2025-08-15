@@ -20,9 +20,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex items-center space-x-4">
               <Link to="/" className="flex items-center">
                 <TidalLogo size="md" />
-                <div className="ml-3">
-                  <p className="text-xs text-gray-500">Streamline</p>
-                </div>
               </Link>
               
               {/* Subtitle based on current route */}
@@ -80,8 +77,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             {/* Company Info */}
             <div>
               <div className="flex items-center mb-4">
-                <TidalLogoCompact size={24} />
-                <span className="ml-2 font-semibold text-gray-900">Tidal Streamline</span>
+                <TidalLogo size="md" />
               </div>
               <p className="text-sm text-gray-600 mb-4">
                 Precision Placement for E-Commerce Teams.<br />

@@ -219,16 +219,6 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Form Header */}
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-dark-navy-text mb-4">
-          💼 Get Your Free Market Salary Analysis
-        </h2>
-        <p className="text-lg text-medium-gray-text max-w-2xl mx-auto">
-          Discover competitive salary ranges across the US, Philippines, and Latin America. 
-          Get insights that help you hire top talent while saving on costs.
-        </p>
-      </div>
 
       <form onSubmit={handleSubmit(onFormSubmit)} className="space-y-8" id="market-scan-form">
         {/* Personal Information Section */}
@@ -289,7 +279,7 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
         <div className="bg-white rounded-2xl border border-card-border-gray p-8 shadow-sm">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-10 h-10 bg-tidal-aqua/10 rounded-lg flex items-center justify-center">
-              <span className="text-xl">💼</span>
+              <span className="text-xl">📊</span>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-dark-navy-text">Role Details</h3>
@@ -346,7 +336,7 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
         <div className="bg-gradient-to-br from-tidal-purple/5 to-tidal-aqua/5 rounded-2xl border border-tidal-purple/20 p-8">
           <div className="text-center mb-6">
             <h3 className="text-xl font-semibold text-dark-navy-text mb-2">
-              🚀 What You'll Receive
+              What You'll Receive
             </h3>
             <p className="text-medium-gray-text">Your comprehensive market analysis will include:</p>
           </div>
@@ -395,7 +385,7 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
             {/* Button content */}
             <div className={`flex items-center justify-center gap-3 ${isSubmitting ? 'opacity-0' : 'opacity-100'}`}>
               <span className="text-xl">🔍</span>
-              <span className="font-semibold">Get My Free Salary Analysis</span>
+              <span className="font-semibold">Analyze Role</span>
               <svg 
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" 
                 fill="none" 

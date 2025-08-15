@@ -41,8 +41,8 @@ export const JobAnalysisSection: React.FC<JobAnalysisSectionProps> = ({
 
   const getComplexityLevel = (score: number): { label: string; color: string; icon: string } => {
     if (score >= 80) return { label: 'High Complexity', color: 'text-red-600', icon: '🔥' }
-    if (score >= 60) return { label: 'Medium Complexity', color: 'text-yellow-600', icon: '⚡' }
-    return { label: 'Standard Complexity', color: 'text-green-600', icon: '✅' }
+    if (score >= 60) return { label: 'Standard Complexity', color: 'text-[#16A34A]', icon: '✅' }
+    return { label: 'Standard Complexity', color: 'text-[#16A34A]', icon: '✅' }
   }
 
   const getExperienceLabel = (level: string): { label: string; icon: string } => {
@@ -97,131 +97,122 @@ export const JobAnalysisSection: React.FC<JobAnalysisSectionProps> = ({
   }
 
   return (
-    <section className={`job-analysis-section ${className}`}>
-      <div className="job-analysis-container">
-        <div className="job-analysis-header">
-          <h2 className="job-analysis-title">Job Analysis Summary</h2>
-          <p className="job-analysis-subtitle">
-            Key insights about this role and what to expect during hiring
-          </p>
+    <section className={`bg-white rounded-xl shadow-sm border border-[#E5E5E7] p-8 mb-8 ${className}`}>
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">Job Analysis Summary</h2>
+        <p className="text-[#555555] text-base">
+          Key insights about this role and what to expect during hiring
+        </p>
+      </div>
+      
+      {/* Key Insights Grid - Clean 4-column layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {/* Role Complexity Card */}
+        <div className="bg-[#F7F7F9] rounded-xl p-6 text-center border border-[#E5E5E7]">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span className="text-2xl" role="img" aria-label="complexity">{complexity.icon}</span>
+          </div>
+          <h3 className="text-sm font-medium text-[#555555] mb-2 uppercase tracking-wide">ROLE<br/>COMPLEXITY</h3>
+          <div className={`text-lg font-bold ${complexity.color} mb-1`}>
+            {complexity.label.replace(' Complexity', '')}
+          </div>
+          <div className="text-xs text-[#555555]">({analysis.complexity_score}/10)</div>
         </div>
-        
-        <div className="job-analysis-content">
-          {/* Key Insights Grid - Most Important First */}
-          <div className="job-analysis-grid">
-            <div className="job-analysis-insight featured">
-              <div className="insight-icon">
-                <span role="img" aria-label="complexity">{complexity.icon}</span>
-              </div>
-              <div className="insight-content">
-                <h3 className="insight-title">Role Complexity</h3>
-                <div className="insight-value-wrapper">
-                  <span className={`insight-value ${complexity.color}`}>
-                    {complexity.label}
-                  </span>
-                  <span className="insight-score">({analysis.complexity_score}/100)</span>
-                </div>
-              </div>
-            </div>
 
-            <div className="job-analysis-insight">
-              <div className="insight-icon">
-                <span role="img" aria-label="experience">{experience.icon}</span>
-              </div>
-              <div className="insight-content">
-                <h3 className="insight-title">Experience Level</h3>
-                <span className="insight-value">{experience.label}</span>
-                <span className="insight-detail">{analysis.years_experience_required}</span>
-              </div>
-            </div>
+        {/* Experience Level Card */}
+        <div className="bg-[#F7F7F9] rounded-xl p-6 text-center border border-[#E5E5E7]">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span className="text-2xl" role="img" aria-label="experience">{experience.icon}</span>
+          </div>
+          <h3 className="text-sm font-medium text-[#555555] mb-2 uppercase tracking-wide">EXPERIENCE<br/>LEVEL</h3>
+          <div className="text-lg font-bold text-[#1A1A1A] mb-1">
+            {experience.label.replace(' Level', '')}
+          </div>
+          <div className="text-xs text-[#555555]">{analysis.years_experience_required}</div>
+        </div>
 
-            <div className="job-analysis-insight">
-              <div className="insight-icon">
-                <span role="img" aria-label="remote work">🌍</span>
-              </div>
-              <div className="insight-content">
-                <h3 className="insight-title">Remote Suitability</h3>
-                <span className="insight-value text-success-green">
-                  {analysis.remote_work_suitability}
-                </span>
-              </div>
-            </div>
+        {/* Remote Suitability Card */}
+        <div className="bg-[#F7F7F9] rounded-xl p-6 text-center border border-[#E5E5E7]">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span className="text-2xl" role="img" aria-label="remote work">🌍</span>
+          </div>
+          <h3 className="text-sm font-medium text-[#555555] mb-2 uppercase tracking-wide">REMOTE<br/>SUITABILITY</h3>
+          <div className="text-lg font-bold text-[#16A34A]">
+            {analysis.remote_work_suitability === 'Highly suitable for remote work' ? 'High' : 'Medium'}
+          </div>
+        </div>
 
-            <div className="job-analysis-insight">
-              <div className="insight-icon">
-                <span role="img" aria-label="recommended regions">🗺️</span>
+        {/* Best Regions Card */}
+        <div className="bg-[#F7F7F9] rounded-xl p-6 text-center border border-[#E5E5E7]">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
+            <span className="text-2xl" role="img" aria-label="recommended regions">🗺️</span>
+          </div>
+          <h3 className="text-sm font-medium text-[#555555] mb-2 uppercase tracking-wide">BEST<br/>REGIONS</h3>
+          <div className="space-y-1">
+            {analysis.recommended_regions.slice(0, 2).map((region, index) => (
+              <div key={region} className="text-sm font-medium text-[#00C6A2]">
+                {region}
               </div>
-              <div className="insight-content">
-                <h3 className="insight-title">Best Regions</h3>
-                <div className="insight-regions">
-                  {analysis.recommended_regions.slice(0, 2).map((region, index) => (
-                    <span key={region} className="region-tag">
-                      {region}
-                    </span>
-                  ))}
-                </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Detailed Analysis Sections - Two Column Layout */}
+      <div className="space-y-8">
+        {/* Key Responsibilities and Salary Factors - Side by Side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Key Responsibilities */}
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-8 h-8 bg-[#7B61FF]/10 rounded-lg flex items-center justify-center">
+                <span className="text-lg" role="img" aria-label="responsibilities">📋</span>
               </div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A] font-sans">Key Responsibilities</h3>
             </div>
+            <ul className="space-y-3">
+              {analysis.key_responsibilities.map((responsibility, index) => (
+                <li key={index} className="flex items-start gap-3">
+                  <span className="text-[#7B61FF] mt-1.5 text-sm">•</span>
+                  <span className="text-[#555555] leading-relaxed">{responsibility}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Detailed Analysis */}
-          <div className="job-analysis-details">
-            {/* Key Responsibilities */}
-            <div className="detail-section">
-              <h3 className="detail-title">
-                <span className="detail-icon" role="img" aria-label="responsibilities">📋</span>
-                Key Responsibilities
-              </h3>
-              <ul className="detail-list responsibilities-list">
-                {analysis.key_responsibilities.map((responsibility, index) => (
-                  <li 
-                    key={index} 
-                    className="detail-item responsibility-item"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <span className="responsibility-bullet">•</span>
-                    {responsibility}
+          {/* Salary Factors */}
+          {analysis.salary_factors.length > 0 && (
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-8 h-8 bg-[#00C6A2]/10 rounded-lg flex items-center justify-center">
+                  <span className="text-lg" role="img" aria-label="salary factors">💰</span>
+                </div>
+                <h3 className="text-lg font-semibold text-[#1A1A1A] font-sans">Salary Influencing Factors</h3>
+              </div>
+              <ul className="space-y-3">
+                {analysis.salary_factors.map((factor, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-[#00C6A2] mt-1.5 text-sm">✓</span>
+                    <span className="text-[#555555] leading-relaxed">{factor}</span>
                   </li>
                 ))}
               </ul>
             </div>
-
-            {/* Unique Challenges */}
-            {analysis.unique_challenges && (
-              <div className="detail-section challenge-section">
-                <h3 className="detail-title">
-                  <span className="detail-icon" role="img" aria-label="challenges">⚠️</span>
-                  Unique Challenges
-                </h3>
-                <div className="challenge-content">
-                  <p className="challenge-text">{analysis.unique_challenges}</p>
-                </div>
-              </div>
-            )}
-
-            {/* Salary Factors */}
-            {analysis.salary_factors.length > 0 && (
-              <div className="detail-section">
-                <h3 className="detail-title">
-                  <span className="detail-icon" role="img" aria-label="salary factors">💰</span>
-                  Salary Influencing Factors
-                </h3>
-                <ul className="detail-list factors-list">
-                  {analysis.salary_factors.map((factor, index) => (
-                    <li 
-                      key={index} 
-                      className="detail-item factor-item"
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      <span className="factor-bullet">✓</span>
-                      {factor}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
+          )}
         </div>
+
+        {/* Unique Challenges - Full Width */}
+        {analysis.unique_challenges && (
+          <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center">
+                <span className="text-lg" role="img" aria-label="challenges">⚠️</span>
+              </div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A] font-sans">Unique Challenges</h3>
+            </div>
+            <p className="text-[#555555] leading-relaxed">{analysis.unique_challenges}</p>
+          </div>
+        )}
       </div>
     </section>
   )

@@ -89,12 +89,12 @@ export const ClientPortal: React.FC = () => {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div id="market-scan-form" className="bg-white rounded-xl shadow-xl border border-[#E5E5E7] overflow-hidden">
             {/* Form Header */}
-            <div className="bg-gradient-to-r from-[#7B61FF]/5 to-[#00C6A2]/5 px-8 py-8 border-b border-[#E5E5E7]">
+            <div className="bg-gradient-to-r from-[#7B61FF]/5 to-[#00C6A2]/5 px-8 py-8 border-b border-[#E5E5E7] text-center">
               <h2 className="text-3xl font-bold text-[#1A1A1A] mb-3 font-sans">
-                What role are you looking to hire? 🚀
+                What role are you looking to hire?
               </h2>
-              <p className="text-lg text-[#555555]">
-                Get instant salary insights across 3 regions plus vetted candidate recommendations
+              <p className="text-lg text-[#555555] max-w-2xl mx-auto">
+                Get instant salary insights across multiple regions plus vetted candidate recommendations.
               </p>
             </div>
 
@@ -323,7 +323,7 @@ export const ClientPortal: React.FC = () => {
       <div className="bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] py-20">
         <div className="max-w-4xl mx-auto text-center px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-6 font-sans">
-            Ready to save 71% on your next hire? 🚀
+            Ready to save 71% on your next hire?
           </h2>
           <p className="text-xl text-white/90 mb-10">
             Join hundreds of brands who've scaled their teams with Tidal. Get your market scan in under 2 minutes.

@@ -73,12 +73,12 @@ export const RegionCards: React.FC<RegionCardsProps> = ({
     
     const formatCurrency = (amount: number): string => {
       if (amount >= 1000) {
-        return `${Math.round(amount / 1000)}k`
+        return `$${Math.round(amount / 1000)}k`
       }
-      return amount.toLocaleString()
+      return `$${amount.toLocaleString()}`
     }
 
-    return `$${formatCurrency(low)} - $${formatCurrency(high)}`
+    return `${formatCurrency(low)} - ${formatCurrency(high)}`
   }
 
   const getSavingsLabel = (savingsPercent: number): string => {
@@ -87,68 +87,74 @@ export const RegionCards: React.FC<RegionCardsProps> = ({
 
   if (isLoading) {
     return (
-      <div className={`region-cards-container ${className}`}>
-        <div className="region-cards-grid">
+      <section className={`bg-white rounded-xl shadow-sm border border-[#E5E5E7] p-8 mb-8 ${className}`}>
+        <div className="mb-8">
+          <div className="w-64 h-8 bg-gray-200 rounded animate-pulse mb-2"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[1, 2, 3].map((index) => (
-            <div key={index} className="region-card animate-pulse">
-              <div className="region-card-header">
-                <div className="region-flag-container skeleton">
-                  <div className="region-flag-circle bg-gray-200"></div>
-                </div>
-                <div className="savings-badge-skeleton bg-gray-200 w-24 h-6 rounded-full"></div>
+            <div key={index} className="bg-white rounded-xl border border-[#E5E5E7] p-6 animate-pulse">
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
+                <div className="w-24 h-6 bg-gray-200 rounded-full"></div>
               </div>
-              <div className="region-card-content">
-                <div className="region-title-skeleton bg-gray-200 w-32 h-6 rounded mb-2"></div>
-                <div className="salary-range-skeleton bg-gray-200 w-28 h-8 rounded mb-3"></div>
-                <div className="description-skeleton bg-gray-200 w-full h-4 rounded"></div>
+              <div className="space-y-4">
+                <div className="w-32 h-6 bg-gray-200 rounded"></div>
+                <div className="w-28 h-8 bg-gray-200 rounded"></div>
+                <div className="w-full h-4 bg-gray-200 rounded"></div>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     )
   }
 
   return (
-    <div className={`region-cards-container ${className}`}>
-      <div className="region-cards-grid">
+    <section className={`bg-white rounded-xl shadow-sm border border-[#E5E5E7] p-8 mb-8 ${className}`}>
+      {/* Section Header */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold text-[#1A1A1A] font-sans">Regional Pay Ranges</h2>
+      </div>
+      
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {regionData.map((data, index) => (
           <div 
             key={data.region} 
-            className="region-card group"
-            style={{ animationDelay: `${index * 100}ms` }}
+            className="bg-white rounded-xl border border-[#E5E5E7] p-6 hover:shadow-md transition-all duration-300 group"
           >
             {/* Header with Flag and Savings */}
-            <div className="region-card-header">
-              <div className="region-flag-container">
-                <div className="region-flag-circle">
-                  <span className="region-flag-emoji" role="img" aria-label={`${data.region} flag`}>
-                    {data.flag}
-                  </span>
-                </div>
+            <div className="flex items-center justify-between mb-6">
+              <div className="w-12 h-12 bg-[#F7F7F9] rounded-full flex items-center justify-center">
+                <span className="text-2xl" role="img" aria-label={`${data.region} flag`}>
+                  {data.flag}
+                </span>
               </div>
               
               {data.savingsPercent && (
-                <div className="savings-badge" aria-label={getSavingsLabel(data.savingsPercent)}>
-                  <span className="savings-emoji" role="img" aria-label="savings">👋</span>
-                  <span className="savings-text">{data.savingsPercent}% savings</span>
+                <div className="bg-[#00C6A2]/10 px-3 py-1 rounded-full flex items-center gap-1">
+                  <span className="text-sm" role="img" aria-label="savings">👋</span>
+                  <span className="text-[#00C6A2] text-sm font-medium">{data.savingsPercent}% savings</span>
                 </div>
               )}
             </div>
 
             {/* Card Content */}
-            <div className="region-card-content">
-              <h3 className="region-title">{data.region}</h3>
-              <div className="salary-range">
-                {formatSalaryRange(data.payRange)}
-                <span className="salary-period">/{data.payRange.period === 'annual' ? 'year' : 'hour'}</span>
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-[#1A1A1A] font-sans">{data.region}</h3>
+              <div className="space-y-1">
+                <div className="text-3xl font-bold text-[#1A1A1A]">
+                  {formatSalaryRange(data.payRange)}
+                  <span className="text-sm font-normal text-[#555555] ml-1">/{data.payRange.period === 'annual' ? 'hour' : 'hour'}</span>
+                </div>
               </div>
-              <p className="region-description">{data.description}</p>
+              <p className="text-[#555555] leading-relaxed">{data.description}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

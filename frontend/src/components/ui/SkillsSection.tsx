@@ -14,26 +14,31 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
 }) => {
   if (isLoading) {
     return (
-      <div className={`skills-section ${className}`}>
-        <div className="skills-header-skeleton">
-          <div className="w-64 h-8 bg-gray-200 rounded animate-pulse mb-8"></div>
+      <section className={`bg-white rounded-xl shadow-sm border border-[#E5E5E7] p-8 mb-8 ${className}`}>
+        <div className="mb-8">
+          <div className="w-64 h-8 bg-gray-200 rounded animate-pulse mb-2"></div>
+          <div className="w-96 h-5 bg-gray-200 rounded animate-pulse"></div>
         </div>
         
-        <div className="skills-grid">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {[1, 2].map((index) => (
-            <div key={index} className="skills-card animate-pulse">
-              <div className="skills-card-header-skeleton">
-                <div className="w-32 h-6 bg-gray-200 rounded mb-4"></div>
+            <div key={index}>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-gray-200 rounded-lg animate-pulse"></div>
+                <div className="space-y-2">
+                  <div className="w-24 h-5 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="w-32 h-4 bg-gray-200 rounded animate-pulse"></div>
+                </div>
               </div>
-              <div className="skills-list-skeleton space-y-3">
+              <div className="space-y-3">
                 {[1, 2, 3, 4].map((skillIndex) => (
-                  <div key={skillIndex} className="w-full h-10 bg-gray-200 rounded"></div>
+                  <div key={skillIndex} className="w-full h-12 bg-gray-200 rounded-lg animate-pulse"></div>
                 ))}
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </section>
     )
   }
 
@@ -42,26 +47,30 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
   }
 
   return (
-    <div className={`skills-section ${className}`}>
-      <div className="skills-header">
-        <h2 className="skills-title">Recommended Skills & Tools</h2>
-        <p className="skills-subtitle">
+    <section className={`bg-white rounded-xl shadow-sm border border-[#E5E5E7] p-8 mb-8 ${className}`}>
+      {/* Section Header */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">Recommended Skills & Tools</h2>
+        <p className="text-[#555555] text-base">
           Based on similar successful hires in your industry
         </p>
       </div>
       
-      <div className="skills-grid">
+      {/* Skills Grid - Clean 2-column layout */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
         {/* Must Have Skills */}
-        <div className="skills-card must-have">
-          <div className="skills-card-header">
-            <div className="skills-icon must-have-icon">
-              <span role="img" aria-label="star">⭐</span>
+        <div>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-red-50 rounded-lg flex items-center justify-center">
+                <span className="text-xl" role="img" aria-label="star">⭐</span>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-[#1A1A1A] font-sans">Must Have</h3>
+                <p className="text-sm text-[#555555]">Essential requirements</p>
+              </div>
             </div>
-            <div className="skills-card-title-group">
-              <h3 className="skills-card-title">Must Have</h3>
-              <p className="skills-card-subtitle">Essential requirements</p>
-            </div>
-            <button className="skills-update-btn" aria-label="Update must-have skills">
+            <button className="flex items-center gap-2 text-sm text-[#555555] hover:text-[#7B61FF] transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -69,31 +78,32 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
             </button>
           </div>
           
-          <div className="skills-list">
+          <div className="space-y-3">
             {skillsRecommendations.must_have_skills.map((skill, index) => (
               <div 
                 key={index} 
-                className="skill-pill must-have-pill"
-                style={{ animationDelay: `${index * 50}ms` }}
+                className="flex items-center justify-between bg-red-50 border border-red-200 rounded-lg px-4 py-3"
               >
-                <span className="skill-text">{skill}</span>
-                <div className="skill-priority-indicator must-have-indicator"></div>
+                <span className="text-red-800 font-medium">{skill}</span>
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Nice to Have Skills */}
-        <div className="skills-card nice-to-have">
-          <div className="skills-card-header">
-            <div className="skills-icon nice-to-have-icon">
-              <span role="img" aria-label="plus">➕</span>
+        <div>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+                <span className="text-xl" role="img" aria-label="plus">➕</span>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-[#1A1A1A] font-sans">Nice to Have</h3>
+                <p className="text-sm text-[#555555]">Bonus qualifications</p>
+              </div>
             </div>
-            <div className="skills-card-title-group">
-              <h3 className="skills-card-title">Nice to Have</h3>
-              <p className="skills-card-subtitle">Bonus qualifications</p>
-            </div>
-            <button className="skills-update-btn" aria-label="Update nice-to-have skills">
+            <button className="flex items-center gap-2 text-sm text-[#555555] hover:text-[#7B61FF] transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -101,15 +111,14 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
             </button>
           </div>
           
-          <div className="skills-list">
+          <div className="space-y-3">
             {skillsRecommendations.nice_to_have_skills.map((skill, index) => (
               <div 
                 key={index} 
-                className="skill-pill nice-to-have-pill"
-                style={{ animationDelay: `${(index + skillsRecommendations.must_have_skills.length) * 50}ms` }}
+                className="flex items-center justify-between bg-blue-50 border border-blue-200 rounded-lg px-4 py-3"
               >
-                <span className="skill-text">{skill}</span>
-                <div className="skill-priority-indicator nice-to-have-indicator"></div>
+                <span className="text-blue-800 font-medium">{skill}</span>
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
               </div>
             ))}
           </div>
@@ -119,23 +128,22 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({
       {/* Certification Recommendations */}
       {skillsRecommendations.certification_recommendations && 
        skillsRecommendations.certification_recommendations.length > 0 && (
-        <div className="certifications-section">
-          <h3 className="certifications-title">Recommended Certifications</h3>
-          <div className="certifications-list">
+        <div>
+          <h3 className="text-lg font-semibold text-[#1A1A1A] mb-4 font-sans">Recommended Certifications</h3>
+          <div className="flex flex-wrap gap-3">
             {skillsRecommendations.certification_recommendations.map((cert, index) => (
               <div 
                 key={index} 
-                className="certification-badge"
-                style={{ animationDelay: `${index * 75}ms` }}
+                className="flex items-center gap-2 bg-[#7B61FF]/10 border border-[#7B61FF]/20 rounded-lg px-4 py-2"
               >
-                <span className="certification-icon" role="img" aria-label="certificate">🏆</span>
-                <span className="certification-text">{cert}</span>
+                <span className="text-lg" role="img" aria-label="certificate">🏆</span>
+                <span className="text-[#7B61FF] font-medium">{cert}</span>
               </div>
             ))}
           </div>
         </div>
       )}
-    </div>
+    </section>
   )
 }
 
