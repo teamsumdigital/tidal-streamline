@@ -111,15 +111,15 @@ class MarketScanResponse(BaseModel):
     hiring_challenges: Optional[str]
     
     # Analysis Results
-    job_analysis: Optional[JobAnalysis]
-    salary_recommendations: Optional[SalaryRecommendations]
-    skills_recommendations: Optional[SkillsRecommendation]
+    job_analysis: Optional[JobAnalysis] = None
+    salary_recommendations: Optional[SalaryRecommendations] = None
+    skills_recommendations: Optional[SkillsRecommendation] = None
     
     # Metadata
     status: str = Field(default="pending")  # pending, analyzing, completed, failed
     created_at: datetime
     updated_at: datetime
-    processing_time_seconds: Optional[float]
+    processing_time_seconds: Optional[float] = None
     
     # Similar Scans
     similar_scans_count: int = Field(default=0)

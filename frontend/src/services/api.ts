@@ -9,7 +9,6 @@ import {
   RoleCategory,
   SystemStats,
   RegionalSalaryComparison,
-  APIError,
   API_ENDPOINTS
 } from './types'
 

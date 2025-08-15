@@ -15,7 +15,7 @@
 /* Custom components */
 @layer components {
   .btn-primary {
-    @apply bg-tidal-600 hover:bg-tidal-700 text-white font-medium px-6 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-tidal-500 focus:ring-offset-2;
+    @apply bg-tidal-purple hover:bg-gradient-purple-end text-white font-medium px-6 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:ring-offset-2;
   }
   
   .btn-secondary {
@@ -23,15 +23,15 @@
   }
   
   .btn-outline {
-    @apply border border-tidal-600 text-tidal-600 hover:bg-tidal-600 hover:text-white font-medium px-6 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-tidal-500 focus:ring-offset-2;
+    @apply border border-tidal-purple text-tidal-purple hover:bg-tidal-purple hover:text-white font-medium px-6 py-2 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:ring-offset-2;
   }
   
   .form-input {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-tidal-500 focus:border-transparent transition-colors duration-200;
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:border-transparent transition-colors duration-200;
   }
   
   .form-textarea {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-tidal-500 focus:border-transparent transition-colors duration-200 resize-none;
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-tidal-purple/50 focus:border-transparent transition-colors duration-200 resize-none;
   }
   
   .card {
@@ -66,4 +66,176 @@
 
 .error-message {
   @apply text-red-600 text-sm mt-1 flex items-center gap-1;
+}
+
+/* RegionCards Component Styles - Following Tidal PRD Requirements */
+@layer components {
+  .region-cards-container {
+    @apply w-full max-w-7xl mx-auto px-6 desktop:px-12;
+  }
+
+  .region-cards-grid {
+    @apply grid gap-6;
+    /* Desktop: All 3 cards on single row (1200px+) */
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Responsive Breakpoints per PRD */
+  @screen tablet {
+    .region-cards-grid {
+      /* Tablet: 2 cards first row, 1 card second row (768-1199px) */
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @screen desktop {
+    .region-cards-grid {
+      /* Desktop: All 3 cards on single row (1200px+) */
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .region-card {
+    @apply relative bg-white rounded-xl shadow-sm border border-card-border-gray p-6 
+           transition-all duration-300 ease-out hover:shadow-lg hover:scale-[1.02] 
+           hover:border-tidal-purple/20 cursor-pointer overflow-hidden;
+    animation: slideInUp 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes slideInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .region-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-tidal-purple/5 to-tidal-aqua/5 
+           opacity-0 transition-opacity duration-300;
+  }
+
+  .region-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .region-card-header {
+    @apply flex items-start justify-between mb-6 relative z-10;
+  }
+
+  .region-flag-container {
+    @apply relative;
+  }
+
+  .region-flag-circle {
+    @apply w-16 h-16 rounded-full bg-white border-2 border-card-border-gray 
+           flex items-center justify-center text-2xl transition-all duration-300 
+           group-hover:border-tidal-purple/30 group-hover:shadow-lg relative;
+  }
+
+  /* Glow effect on flag circles per PRD */
+  .region-flag-circle::after {
+    content: '';
+    @apply absolute inset-0 rounded-full bg-gradient-to-br from-tidal-purple/20 to-tidal-aqua/20 
+           opacity-0 transition-opacity duration-300 -z-10;
+    filter: blur(8px);
+  }
+
+  .group:hover .region-flag-circle::after {
+    @apply opacity-100;
+  }
+
+  .region-flag-emoji {
+    @apply text-2xl transition-transform duration-300 group-hover:scale-110;
+  }
+
+  /* Green pill savings labels per PRD */
+  .savings-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full 
+           bg-tidal-aqua/10 text-tidal-aqua border border-tidal-aqua/20 
+           text-sm font-medium transition-all duration-300 
+           group-hover:bg-tidal-aqua/20 group-hover:border-tidal-aqua/30;
+  }
+
+  .savings-emoji {
+    @apply text-base;
+  }
+
+  .savings-text {
+    @apply font-semibold;
+  }
+
+  .region-card-content {
+    @apply space-y-4 relative z-10;
+  }
+
+  .region-title {
+    @apply text-xl font-bold text-dark-navy-text 
+           transition-colors duration-300 group-hover:text-tidal-purple;
+  }
+
+  .salary-range {
+    @apply text-2xl font-bold text-dark-navy-text flex items-baseline gap-1 
+           transition-colors duration-300 group-hover:text-tidal-purple;
+  }
+
+  .salary-period {
+    @apply text-sm font-normal text-medium-gray-text;
+  }
+
+  .region-description {
+    @apply text-medium-gray-text leading-relaxed text-sm 
+           transition-colors duration-300 group-hover:text-dark-navy-text;
+  }
+
+  /* Loading skeleton styles */
+  .skeleton {
+    @apply animate-pulse;
+  }
+
+  .region-card.animate-pulse {
+    @apply opacity-100;
+    transform: none;
+    animation: none;
+  }
+
+  .savings-badge-skeleton,
+  .region-title-skeleton,
+  .salary-range-skeleton,
+  .description-skeleton {
+    @apply bg-gray-200 animate-pulse rounded;
+  }
+
+  /* Mobile adjustments */
+  @screen mobile {
+    .region-cards-container {
+      @apply px-6;
+    }
+    
+    .region-card {
+      @apply p-4;
+    }
+
+    .region-title {
+      @apply text-lg;
+    }
+
+    .salary-range {
+      @apply text-xl;
+    }
+
+    .region-flag-circle {
+      @apply w-12 h-12 text-xl;
+    }
+  }
+}
+
+/* Text utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

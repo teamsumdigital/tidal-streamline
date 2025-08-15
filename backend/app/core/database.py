@@ -80,11 +80,12 @@ class DatabaseManager:
         """Search for similar market scans based on job details"""
         try:
             # Simple text search - can be enhanced with vector similarity later
+            # Simple text search using ilike - simplified for now
             result = (
                 self.client
                 .table('market_scans')
                 .select("*")
-                .or_(f"job_title.ilike.%{job_title}%,job_description.ilike.%{job_description[:100]}%")
+                .ilike('job_title', f'%{job_title}%')
                 .limit(10)
                 .execute()
             )
@@ -115,6 +116,16 @@ class DatabaseManager:
             return result.data[0]
         except Exception as e:
             logger.error(f"❌ Failed to create salary benchmark: {e}")
+            raise
+    
+    async def update_market_scan(self, scan_id: str, update_data: Dict[str, Any]) -> Dict[str, Any]:
+        """Update an existing market scan"""
+        try:
+            result = self.client.table('market_scans').update(update_data).eq('id', scan_id).execute()
+            logger.info(f"✅ Updated market scan {scan_id}")
+            return result.data[0] if result.data else {}
+        except Exception as e:
+            logger.error(f"❌ Failed to update market scan {scan_id}: {e}")
             raise
     
     # Role Management Operations

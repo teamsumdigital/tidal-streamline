@@ -3,6 +3,7 @@ import { ClientPortal } from './pages/ClientPortal'
 import { InternalDashboard } from './pages/InternalDashboard'
 import { MarketScanResults } from './pages/MarketScanResults'
 import { Layout } from './components/Layout'
+import { CandidateCardDemo } from './components/ui/CandidateCardDemo'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         {/* Internal Tidal team routes */}
         <Route path="/dashboard" element={<InternalDashboard />} />
         <Route path="/admin" element={<InternalDashboard />} />
+        
+        {/* Demo routes for development */}
+        <Route path="/demo/candidate-card" element={<CandidateCardDemo />} />
         
         {/* Catch all - redirect to client portal */}
         <Route path="*" element={<ClientPortal />} />

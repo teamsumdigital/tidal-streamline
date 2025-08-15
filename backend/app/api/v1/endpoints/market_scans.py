@@ -127,7 +127,7 @@ async def list_market_scans(
                 role_category=scan.get('role_category'),
                 status=scan['status'],
                 created_at=scan['created_at'],
-                recommended_pay_band=scan.get('salary_recommendations', {}).get('recommended_pay_band'),
+                recommended_pay_band=scan.get('salary_recommendations', {}).get('recommended_pay_band') if isinstance(scan.get('salary_recommendations'), dict) else None,
                 primary_region=scan.get('recommended_regions', [None])[0] if scan.get('recommended_regions') else None
             )
             for scan in scans
@@ -216,50 +216,53 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
     try:
         logger.info(f"🔄 Starting analysis for market scan {scan_id}")
         
-        # Step 1: AI Job Analysis
-        job_analysis = await ai_service.analyze_job_description(
+        # Step 1: AI Job Analysis using JobAnalyzer
+        job_analyzer = JobAnalyzer()
+        job_analysis = await job_analyzer.analyze_job(
             job_title=request.job_title,
             job_description=request.job_description,
             hiring_challenges=request.hiring_challenges or ""
         )
         
-        # Step 2: Find Similar Historical Scans
+        # Step 2: Generate Salary Recommendations using SalaryCalculator
+        salary_calculator = SalaryCalculator()
+        salary_recommendations = await salary_calculator.calculate_salary_recommendations(job_analysis)
+        
+        # Step 3: Find Similar Historical Scans
         similar_scans = await db.search_similar_scans(
             job_title=request.job_title,
             job_description=request.job_description
         )
         
-        # Step 3: Generate Salary Recommendations
-        salary_recommendations = await ai_service.generate_salary_recommendations(
-            job_analysis=job_analysis,
-            similar_scans=similar_scans
-        )
-        
-        # Step 4: Enhance Skills Recommendations
-        skills_recommendations = await ai_service.enhance_skills_recommendations(
-            job_analysis=job_analysis
+        # Step 4: Create basic skills recommendations
+        from app.models.market_scan import SkillsRecommendation
+        skills_recommendations = SkillsRecommendation(
+            must_have_skills=job_analysis.must_have_skills,
+            nice_to_have_skills=job_analysis.nice_to_have_skills,
+            skill_categories={"technical": job_analysis.must_have_skills[:3], "soft": job_analysis.nice_to_have_skills[:2]},
+            certification_recommendations=["Industry certification", "Relevant online courses"]
         )
         
         # Calculate processing time
         processing_time = (datetime.utcnow() - start_time).total_seconds()
         
-        # Update database with results
+        # Update database with results - convert Pydantic models to dicts
         update_data = {
-            'job_analysis': job_analysis,
-            'salary_recommendations': salary_recommendations,
-            'skills_recommendations': skills_recommendations,
+            'job_analysis': job_analysis.dict(),
+            'salary_recommendations': salary_recommendations.dict(),
+            'skills_recommendations': skills_recommendations.dict(),
             'status': 'completed',
-            'updated_at': datetime.utcnow(),
+            'updated_at': datetime.utcnow().isoformat(),
             'processing_time_seconds': processing_time,
             'similar_scans_count': len(similar_scans),
-            'role_category': job_analysis.get('role_category'),
-            'experience_level': job_analysis.get('experience_level'),
-            'recommended_regions': job_analysis.get('recommended_regions'),
+            'role_category': job_analysis.role_category.value,
+            'experience_level': job_analysis.experience_level.value,
+            'recommended_regions': [r.value for r in job_analysis.recommended_regions],
             'confidence_score': 0.85  # TODO: Calculate actual confidence score
         }
         
-        # TODO: Implement update functionality in database manager
-        # await db.update_market_scan(scan_id, update_data)
+        # Update database with completed analysis
+        await db.update_market_scan(scan_id, update_data)
         
         logger.info(f"✅ Completed analysis for market scan {scan_id} in {processing_time:.2f}s")
         
