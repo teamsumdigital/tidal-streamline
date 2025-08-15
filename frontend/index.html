@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tidal Streamline - Market Scan Automation</title>
+    <meta name="description" content="Precision Placement for E-Commerce Teams. Increase Output. Save on Payroll. Scale Confidently." />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Inter font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon and app icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="alternate icon" href="/favicon.ico">
+    
+    <!-- Meta tags for SEO -->
+    <meta property="og:title" content="Tidal Streamline - Market Scan Automation">
+    <meta property="og:description" content="Precision Placement for E-Commerce Teams. Increase Output. Save on Payroll. Scale Confidently.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hiretidal.com">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tidal Streamline - Market Scan Automation">
+    <meta name="twitter:description" content="Precision Placement for E-Commerce Teams. Increase Output. Save on Payroll. Scale Confidently.">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#0ea5e9">
+    
+    <style>
+      /* Loading spinner styles */
+      .loading-spinner {
+        border: 3px solid #f3f4f6;
+        border-top: 3px solid #0ea5e9;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Hide scrollbar for loading screen */
+      .loading-screen {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading screen while React app loads -->
+      <div class="loading-screen min-h-screen bg-gradient-to-br from-tidal-50 to-tidal-100 flex items-center justify-center">
+        <div class="text-center">
+          <div class="loading-spinner mx-auto mb-4"></div>
+          <h1 class="text-2xl font-semibold text-tidal-900 mb-2">Tidal Streamline</h1>
+          <p class="text-tidal-600">Loading Market Scan System...</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
