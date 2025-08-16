@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { ClientPortal } from './pages/ClientPortal'
 import { InternalDashboard } from './pages/InternalDashboard'
 import { MarketScanResults } from './pages/MarketScanResults'
+import { DataExport } from './pages/DataExport'
 import { Layout } from './components/Layout'
 import { CandidateCardDemo } from './components/ui/CandidateCardDemo'
 
@@ -15,6 +16,9 @@ function App() {
         
         {/* Payroll calculation results */}
         <Route path="/scan/:scanId" element={<MarketScanResults />} />
+        
+        {/* Data export for Canva templates */}
+        <Route path="/scan/:scanId/export" element={<DataExport />} />
         
         {/* Internal Tidal team routes */}
         <Route path="/dashboard" element={<InternalDashboard />} />
