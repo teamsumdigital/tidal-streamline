@@ -26,7 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <div className="hidden md:flex items-center">
                 <div className="w-px h-6 bg-gray-300 mx-4"></div>
                 <span className="text-sm text-gray-600">
-                  {isAdminRoute ? 'Admin Dashboard' : 'Market Scan'}
+                  {isAdminRoute ? 'Admin Dashboard' : 'Payroll Calculator'}
                 </span>
               </div>
             </div>
