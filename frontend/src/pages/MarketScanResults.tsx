@@ -152,14 +152,6 @@ export const MarketScanResults: React.FC = () => {
               {/* Header Actions */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  to="/"
-                  className="inline-flex items-center justify-center bg-[#7B61FF] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors group"
-                >
-                  <span className="mr-2">💰</span>
-                  New Payroll Calculation
-                  <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
-                </Link>
-                <Link
                   to="/admin"
                   className="inline-flex items-center justify-center bg-white text-[#7B61FF] border border-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
                 >
