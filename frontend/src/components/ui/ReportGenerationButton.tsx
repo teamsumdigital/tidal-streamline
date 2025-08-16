@@ -89,7 +89,7 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
         className={`inline-flex items-center justify-center w-full bg-white text-[#7B61FF] font-semibold px-4 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200 group ${className}`}
       >
         <span className="mr-2">📊</span>
-        Generate Market Scan
+        Generate Report
         <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
       </button>
     )

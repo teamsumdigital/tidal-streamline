@@ -204,10 +204,10 @@ export const MarketScanResults: React.FC = () => {
             {/* Main Content - 3/4 width */}
             <div className="xl:col-span-3 space-y-12">
               
-              {/* Section 1: Salary Insights */}
+              {/* Section 1: Salary Analysis */}
               <section>
                 <div className="mb-6">
-                  <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">💰 Salary Insights</h2>
+                  <h2 className="text-2xl font-bold text-[#1A1A1A] mb-2 font-sans">💰 Salary Analysis</h2>
                   <p className="text-[#555555]">Compare regional pay rates and potential savings</p>
                 </div>
                 <RegionCards 
@@ -262,9 +262,9 @@ export const MarketScanResults: React.FC = () => {
               
               {/* Report Generation CTA */}
               <div className="bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] rounded-xl p-6 text-white">
-                <h3 className="text-lg font-semibold mb-2">Generate Market Scan</h3>
+                <h3 className="text-lg font-semibold mb-2">Create a Market Scan</h3>
                 <p className="text-white/90 text-sm mb-4">
-                  Create a Market Scan using this analysis data.
+                  Using this analysis.
                 </p>
                 <ReportGenerationButton 
                   scanId={scan.id}
