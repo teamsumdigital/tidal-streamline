@@ -36,8 +36,8 @@ export const GenerateNewScanButton: React.FC<GenerateNewScanButtonProps> = ({
       to="/"
       className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
     >
-      <span className="mr-2">🔍</span>
-      Generate New Scan
+      <span className="mr-2">💰</span>
+      New Payroll Calculation
       <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
     </Link>
   )
@@ -82,7 +82,7 @@ export const QuickScanButton: React.FC<QuickScanButtonProps> = ({
       className={`inline-flex items-center justify-center w-full bg-[#00C6A2] text-white font-semibold px-4 py-3 rounded-lg hover:bg-[#00B096] transition-colors group ${className}`}
     >
       <span className="mr-2">⚡</span>
-      Quick Similar Scan
+      Quick Similar Calculation
       <span className="ml-2 group-hover:translate-x-0.5 transition-transform">+</span>
     </button>
   )
@@ -108,21 +108,21 @@ export const MarketScanActions: React.FC<MarketScanActionsProps> = ({
 }) => {
   return (
     <div className={`space-y-3 ${className}`}>
-      {/* Primary Action - New Scan */}
+      {/* Primary Action - New Calculation */}
       <GenerateNewScanButton variant="primary" />
       
-      {/* Secondary Action - Quick Similar Scan */}
+      {/* Secondary Action - Quick Similar Calculation */}
       {existingScanData && (
         <QuickScanButton existingScanData={existingScanData} />
       )}
       
-      {/* Tertiary Action - Browse Previous Scans */}
+      {/* Tertiary Action - Browse Previous Results */}
       <Link
         to="/admin"
         className="inline-flex items-center justify-center w-full text-[#555555] text-sm hover:text-[#1A1A1A] transition-colors"
       >
         <span className="mr-2">📊</span>
-        View All Scans
+        View Past Results
       </Link>
     </div>
   )

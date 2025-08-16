@@ -1,10 +1,10 @@
-# Tidal Streamline - Market Scan Automation System
+# Tidal Streamline - Payroll Calculator
 
 Precision Placement for E-Commerce Teams. Increase Output. Save on Payroll. Scale Confidently.
 
 ## 🌊 Overview
 
-Tidal Streamline automates the market scan process for global recruiting, transforming Tidal's manual 2-day analysis into AI-powered recommendations delivered in minutes. The system ingests 200+ historical market scans to provide accurate salary benchmarks, skills recommendations, and candidate matching across four global regions.
+Tidal Streamline is a powerful payroll calculator for global recruiting, transforming Tidal's manual 2-day analysis into AI-powered salary recommendations delivered in minutes. The system analyzes roles and generates professional market scan reports with accurate salary benchmarks, skills recommendations, and candidate matching across four global regions.
 
 ## 🏗️ Architecture
 

@@ -203,7 +203,7 @@ export const MarketScanForm: React.FC<MarketScanFormProps> = ({
           localStorage.removeItem('tidal_prefill_scan')
           
           // Show a helpful message
-          console.log('Pre-filled form with similar scan data')
+          console.log('Pre-filled form with similar calculation data')
         }
       } catch (error) {
         console.error('Error parsing pre-fill data:', error)

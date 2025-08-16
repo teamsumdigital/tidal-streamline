@@ -88,8 +88,8 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
         onClick={generateReport}
         className={`inline-flex items-center justify-center w-full bg-white text-[#7B61FF] font-semibold px-4 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200 group ${className}`}
       >
-        <span className="mr-2">📄</span>
-        Generate Report
+        <span className="mr-2">📊</span>
+        Generate Market Scan
         <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
       </button>
     )
@@ -102,7 +102,7 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <div className="w-4 h-4 border-2 border-[#7B61FF] border-t-transparent rounded-full animate-spin"></div>
-            <span className="text-[#7B61FF] font-medium text-sm">Generating Report...</span>
+            <span className="text-[#7B61FF] font-medium text-sm">Generating Market Scan...</span>
           </div>
           <span className="text-xs text-[#555555]">{state.progress}%</span>
         </div>
@@ -150,7 +150,7 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
       <div className={`bg-white rounded-lg p-4 ${className}`}>
         <div className="flex items-center gap-2 mb-3">
           <span className="text-green-500">✅</span>
-          <span className="text-green-700 font-medium text-sm">Report Generated!</span>
+          <span className="text-green-700 font-medium text-sm">Market Scan Generated!</span>
         </div>
         
         <div className="space-y-2">
@@ -160,7 +160,7 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
               className="flex items-center justify-center w-full bg-[#7B61FF]/10 text-[#7B61FF] font-medium px-3 py-2 rounded text-sm hover:bg-[#7B61FF]/20 transition-colors"
             >
               <span className="mr-2">👁️</span>
-              Preview Report
+              Preview Market Scan
             </button>
           )}
           
@@ -169,14 +169,14 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
             className="flex items-center justify-center w-full bg-[#7B61FF] text-white font-medium px-3 py-2 rounded text-sm hover:bg-[#6B51E5] transition-colors"
           >
             <span className="mr-2">⬇️</span>
-            Download Report
+            Download Market Scan
           </button>
           
           <button
             onClick={resetState}
             className="flex items-center justify-center w-full text-[#555555] text-xs hover:text-[#1A1A1A] transition-colors"
           >
-            Generate New Report
+            Generate New Market Scan
           </button>
         </div>
       </div>
@@ -189,11 +189,11 @@ export const ReportGenerationButton: React.FC<ReportGenerationButtonProps> = ({
       <div className={`bg-white rounded-lg p-4 ${className}`}>
         <div className="flex items-center gap-2 mb-3">
           <span className="text-red-500">❌</span>
-          <span className="text-red-700 font-medium text-sm">Report Failed</span>
+          <span className="text-red-700 font-medium text-sm">Market Scan Failed</span>
         </div>
         
         <p className="text-red-600 text-xs mb-3">
-          {state.error || 'Unable to generate report. Please try again.'}
+          {state.error || 'Unable to generate market scan. Please try again.'}
         </p>
         
         <div className="space-y-2">

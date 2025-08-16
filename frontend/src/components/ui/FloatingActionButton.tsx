@@ -26,10 +26,10 @@ export const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
             onClick={() => setIsExpanded(false)}
           >
             <div className="w-8 h-8 bg-[#7B61FF]/10 rounded-lg flex items-center justify-center">
-              <span className="text-sm">🔍</span>
+              <span className="text-sm">💰</span>
             </div>
             <div>
-              <div className="font-medium text-[#1A1A1A] text-sm">New Market Scan</div>
+              <div className="font-medium text-[#1A1A1A] text-sm">New Payroll Calculation</div>
               <div className="text-xs text-[#555555]">Create fresh analysis</div>
             </div>
           </Link>
@@ -43,13 +43,13 @@ export const FloatingActionButton: React.FC<FloatingActionButtonProps> = ({
               <span className="text-sm">📊</span>
             </div>
             <div>
-              <div className="font-medium text-[#1A1A1A] text-sm">View All Scans</div>
+              <div className="font-medium text-[#1A1A1A] text-sm">View Past Results</div>
               <div className="text-xs text-[#555555]">Browse history</div>
             </div>
           </Link>
           
           <a
-            href="mailto:connect@hiretidal.com?subject=New Market Scan Request"
+            href="mailto:connect@hiretidal.com?subject=New Payroll Calculation Request"
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-[#F7F7F9] transition-colors group"
             onClick={() => setIsExpanded(false)}
           >
@@ -93,9 +93,9 @@ export const FloatingNewScanButton: React.FC<{ className?: string }> = ({
     <Link
       to="/"
       className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#7B61FF] text-white rounded-full shadow-2xl hover:bg-[#6B51E5] hover:scale-110 transition-all duration-200 flex items-center justify-center group ${className}`}
-      title="Create New Market Scan"
+      title="Create New Payroll Calculation"
     >
-      <span className="text-xl group-hover:rotate-90 transition-transform">🔍</span>
+      <span className="text-xl group-hover:rotate-90 transition-transform">💰</span>
     </Link>
   )
 }

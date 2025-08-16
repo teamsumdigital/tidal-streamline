@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<ClientPortal />} />
         <Route path="/client" element={<ClientPortal />} />
         
-        {/* Market scan results */}
+        {/* Payroll calculation results */}
         <Route path="/scan/:scanId" element={<MarketScanResults />} />
         
         {/* Internal Tidal team routes */}

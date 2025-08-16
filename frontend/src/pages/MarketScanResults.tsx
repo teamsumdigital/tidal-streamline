@@ -94,7 +94,7 @@ export const MarketScanResults: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-sm text-[#555555] mb-4">
-            <Link to="/" className="hover:text-[#7B61FF] transition-colors">Market Scans</Link>
+            <Link to="/" className="hover:text-[#7B61FF] transition-colors">Payroll Calculator</Link>
             <span>/</span>
             <span className="text-[#1A1A1A] font-medium">Results</span>
           </div>
@@ -103,7 +103,7 @@ export const MarketScanResults: React.FC = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
               <h1 className="text-3xl font-bold text-[#1A1A1A] mb-2 font-sans">
-                Your {scan.job_title} Hiring Insights
+                Your {scan.job_title} Payroll Analysis
               </h1>
               <p className="text-lg text-[#555555] mb-4">
                 Review salary ranges, skill requirements, and candidate recommendations below, then book a call to see qualified candidates.
@@ -155,8 +155,8 @@ export const MarketScanResults: React.FC = () => {
                   to="/"
                   className="inline-flex items-center justify-center bg-[#7B61FF] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors group"
                 >
-                  <span className="mr-2">🔍</span>
-                  Generate New Scan
+                  <span className="mr-2">💰</span>
+                  New Payroll Calculation
                   <span className="ml-2 group-hover:translate-x-0.5 transition-transform">→</span>
                 </Link>
                 <Link
@@ -164,7 +164,7 @@ export const MarketScanResults: React.FC = () => {
                   className="inline-flex items-center justify-center bg-white text-[#7B61FF] border border-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
                 >
                   <span className="mr-2">📊</span>
-                  View All Scans
+                  View Past Results
                 </Link>
               </div>
             </div>
@@ -181,11 +181,11 @@ export const MarketScanResults: React.FC = () => {
             </div>
             <div className="processing-info">
               <h3 className="processing-title">
-                {scan.status === 'analyzing' ? 'Analysis in Progress' : 'Scan Queued'}
+                {scan.status === 'analyzing' ? 'Analysis in Progress' : 'Calculation Queued'}
               </h3>
               <p className="processing-description">
                 We're analyzing your job requirements and comparing against our database of 
-                {scan.similar_scans_count ? ` ${scan.similar_scans_count}+` : ' 200+'} market scans. 
+                {scan.similar_scans_count ? ` ${scan.similar_scans_count}+` : ' 200+'} payroll calculations. 
                 Results will update automatically.
               </p>
               <div className="processing-stats">
@@ -270,9 +270,9 @@ export const MarketScanResults: React.FC = () => {
               
               {/* Report Generation CTA */}
               <div className="bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] rounded-xl p-6 text-white">
-                <h3 className="text-lg font-semibold mb-2">Generate Professional Report</h3>
+                <h3 className="text-lg font-semibold mb-2">Generate Market Scan</h3>
                 <p className="text-white/90 text-sm mb-4">
-                  Create a branded Tidal report matching your client's format with all analysis data.
+                  Create a Market Scan using this analysis data.
                 </p>
                 <ReportGenerationButton 
                   scanId={scan.id}
@@ -333,9 +333,9 @@ export const MarketScanResults: React.FC = () => {
                 </div>
               </div>
 
-              {/* Market Scan Actions */}
+              {/* Payroll Calculator Actions */}
               <div className="bg-white rounded-xl border border-[#E5E5E7] p-6">
-                <h3 className="font-semibold text-[#1A1A1A] mb-4">Create New Scan</h3>
+                <h3 className="font-semibold text-[#1A1A1A] mb-4">New Payroll Calculation</h3>
                 <MarketScanActions 
                   existingScanData={{
                     job_title: scan.job_title,
@@ -374,17 +374,17 @@ export const MarketScanResults: React.FC = () => {
             <h2 className="text-2xl font-bold text-[#1A1A1A] mb-4">Analysis Failed</h2>
             <p className="text-[#555555] mb-8 max-w-2xl mx-auto">
               We encountered an issue analyzing your job requirements. Our team has been 
-              notified and will investigate. Please try creating a new scan or contact support.
+              notified and will investigate. Please try creating a new calculation or contact support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/" 
                 className="bg-[#7B61FF] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#6B51E5] transition-colors"
               >
-                Create New Scan
+                New Payroll Calculation
               </Link>
               <a 
-                href="mailto:connect@hiretidal.com?subject=Market Scan Error"
+                href="mailto:connect@hiretidal.com?subject=Payroll Calculation Error"
                 className="border border-[#7B61FF] text-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
               >
                 Contact Support
