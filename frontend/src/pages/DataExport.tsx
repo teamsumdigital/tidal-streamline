@@ -37,6 +37,188 @@ export const DataExport: React.FC = () => {
     }
   }
 
+  const downloadCSV = () => {
+    if (!scan) return
+    
+    const allFields = extractAllFields(scan)
+    
+    // Create CSV headers
+    const headers = ['Field Name', 'Value', 'Category', 'Description']
+    
+    // Create CSV rows
+    const rows = allFields.map(field => [
+      field.field,
+      formatValue(field.value).replace(/"/g, '""'), // Escape quotes
+      field.category,
+      field.description.replace(/"/g, '""') // Escape quotes
+    ])
+    
+    // Combine headers and rows
+    const csvContent = [headers, ...rows]
+      .map(row => row.map(cell => `"${cell}"`).join(','))
+      .join('\n')
+    
+    // Create and download file
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const link = document.createElement('a')
+    
+    if (link.download !== undefined) {
+      const url = URL.createObjectURL(blob)
+      link.setAttribute('href', url)
+      link.setAttribute('download', `tidal-market-scan-${scan.job_title.replace(/\s+/g, '-').toLowerCase()}-${new Date().toISOString().split('T')[0]}.csv`)
+      link.style.visibility = 'hidden'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  }
+
+  // NEW: Backend CSV Export with all 134 fields including candidates
+  const downloadFullCSV = async () => {
+    if (!scan || !scanId) return
+    
+    try {
+      setLoading(true)
+      const csvBlob = await apiService.exportMarketScanCSV(scanId, 'template')
+      
+      // Create and download file
+      const link = document.createElement('a')
+      const url = URL.createObjectURL(csvBlob)
+      link.setAttribute('href', url)
+      link.setAttribute('download', `tidal-full-export-${scan.job_title.replace(/\s+/g, '-').toLowerCase()}-${new Date().toISOString().split('T')[0]}.csv`)
+      link.style.visibility = 'hidden'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+      URL.revokeObjectURL(url)
+      
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to export full CSV')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const downloadTemplateCSV = () => {
+    if (!scan) return
+    
+    const allFields = extractAllFields(scan)
+    const fieldMap = allFields.reduce((acc, field) => {
+      acc[field.field] = formatValue(field.value)
+      return acc
+    }, {} as Record<string, string>)
+    
+    // Template-optimized CSV format for Canva bulk import
+    const templateData = {
+      // Company & Role
+      company_name: fieldMap.company_domain || 'N/A',
+      position_title: fieldMap.job_title || 'N/A',
+      scan_date: new Date(scan.created_at).toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      }),
+      analysis_confidence: fieldMap.confidence_score || 'N/A',
+      
+      // Primary Salary Data
+      us_salary: fieldMap.united_states_mid_salary || 'N/A',
+      us_salary_min: fieldMap.united_states_low_salary || 'N/A',
+      us_salary_max: fieldMap.united_states_high_salary || 'N/A',
+      
+      ph_salary: fieldMap.philippines_mid_salary || 'N/A',
+      ph_salary_min: fieldMap.philippines_low_salary || 'N/A',
+      ph_salary_max: fieldMap.philippines_high_salary || 'N/A',
+      ph_savings_percent: fieldMap.philippines_savings_vs_us || 'N/A',
+      
+      latam_salary: fieldMap.latin_america_mid_salary || 'N/A',
+      latam_salary_min: fieldMap.latin_america_low_salary || 'N/A',
+      latam_salary_max: fieldMap.latin_america_high_salary || 'N/A',
+      latam_savings_percent: fieldMap.latin_america_savings_vs_us || 'N/A',
+      
+      sa_salary: fieldMap.south_africa_mid_salary || 'N/A',
+      sa_salary_min: fieldMap.south_africa_low_salary || 'N/A',
+      sa_salary_max: fieldMap.south_africa_high_salary || 'N/A',
+      sa_savings_percent: fieldMap.south_africa_savings_vs_us || 'N/A',
+      
+      // Skills
+      required_skills: fieldMap.must_have_skills || 'N/A',
+      preferred_skills: fieldMap.nice_to_have_skills || 'N/A',
+      certifications: fieldMap.certification_recommendations || 'N/A',
+      tech_skills: fieldMap.technical_skills || 'N/A',
+      marketing_skills: fieldMap.marketing_skills || 'N/A',
+      analytics_skills: fieldMap.analytical_skills || 'N/A',
+      
+      // Job Analysis
+      role_complexity: fieldMap.complexity_score || 'N/A',
+      seniority_level: fieldMap.experience_level || 'N/A',
+      experience_years: fieldMap.years_experience_required || 'N/A',
+      remote_suitability: fieldMap.remote_work_suitability || 'N/A',
+      best_regions: fieldMap.recommended_regions || 'N/A',
+      main_duties: fieldMap.key_responsibilities || 'N/A',
+      role_challenges: fieldMap.unique_challenges || 'N/A',
+      
+      // Additional Insights
+      high_demand_regions: fieldMap.high_demand_regions || 'N/A',
+      competitive_factors: fieldMap.competitive_factors || 'N/A',
+      cost_efficiency: fieldMap.cost_efficiency || 'N/A',
+      salary_factors: fieldMap.salary_factors || 'N/A'
+    }
+    
+    // Create CSV with template variables as headers
+    const headers = Object.keys(templateData)
+    const values = Object.values(templateData).map(value => 
+      String(value).replace(/"/g, '""') // Escape quotes
+    )
+    
+    const csvContent = [
+      headers.join(','),
+      values.map(value => `"${value}"`).join(',')
+    ].join('\n')
+    
+    // Create and download file
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
+    const link = document.createElement('a')
+    
+    if (link.download !== undefined) {
+      const url = URL.createObjectURL(blob)
+      link.setAttribute('href', url)
+      link.setAttribute('download', `market-scan-template-${scan.job_title.replace(/\s+/g, '-').toLowerCase()}-${new Date().toISOString().split('T')[0]}.csv`)
+      link.style.visibility = 'hidden'
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  }
+
+  const copyAllFieldsAsJSON = async () => {
+    if (!scan || !scanId) return
+    
+    try {
+      // Get the same complete data as CSV export
+      const csvBlob = await apiService.exportMarketScanCSV(scanId, 'template')
+      const csvText = await csvBlob.text()
+      
+      // Parse CSV to JSON
+      const lines = csvText.split('\n').filter(line => line.trim())
+      if (lines.length < 2) throw new Error('Invalid CSV data')
+      
+      const headers = lines[0].split(',').map(header => header.replace(/"/g, ''))
+      const values = lines[1].split(',').map(value => value.replace(/"/g, ''))
+      
+      const jsonData: Record<string, string> = {}
+      headers.forEach((header, index) => {
+        jsonData[header] = values[index] || 'N/A'
+      })
+      
+      await navigator.clipboard.writeText(JSON.stringify(jsonData, null, 2))
+      setCopiedField('all-json')
+      setTimeout(() => setCopiedField(null), 3000)
+    } catch (err) {
+      console.error('Failed to copy complete JSON: ', err)
+      setError(err instanceof Error ? err.message : 'Failed to copy complete JSON data')
+    }
+  }
+
   const formatValue = (value: any): string => {
     if (value === null || value === undefined) return 'N/A'
     if (typeof value === 'object') return JSON.stringify(value, null, 2)
@@ -194,34 +376,58 @@ export const DataExport: React.FC = () => {
             <span className="text-[#1A1A1A] font-medium">Data Export</span>
           </div>
           
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-            <div>
-              <h1 className="text-3xl font-bold text-[#1A1A1A] mb-2">
-                Canva Template Data Export
-              </h1>
-              <p className="text-lg text-[#555555] mb-4">
-                Copy and paste these fields into your Canva Market Scan template variables
-              </p>
-              <div className="flex items-center gap-6 text-sm text-[#555555]">
-                <div className="flex items-center gap-2">
-                  <span>📊</span>
-                  <span>{allFields.length} total fields</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>📁</span>
-                  <span>{categories.length} categories</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span>💼</span>
-                  <span>{scan.job_title}</span>
-                </div>
+          {/* Complete Purple Header Section */}
+          <div className="bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] rounded-xl p-8 text-white">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              <div>
+                <h1 className="text-3xl font-bold text-white mb-2">
+                  Export Ready
+                </h1>
+                <p className="text-lg text-white/90 mb-4">
+                  {scan.job_title} • {new Date(scan.created_at).toLocaleDateString()}
+                </p>
+                <p className="text-white/80">
+                  Export complete market scan data for client presentations and Canva templates
+                </p>
+              </div>
+              
+              {/* Template Fields Count */}
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white">{allFields.length + 92}</div>
+                <div className="text-sm text-white/80">Template Fields</div>
               </div>
             </div>
             
-            <div className="flex gap-3">
+            {/* Action Buttons */}
+            <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-white/20">
+              <button
+                onClick={downloadFullCSV}
+                disabled={loading}
+                className="bg-gradient-to-r from-[#FF6B61] to-[#FF8E87] text-white font-semibold px-6 py-3 rounded-lg hover:from-[#E55B51] hover:to-[#E57E77] transition-all flex items-center gap-2 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+{loading ? '⏳ Exporting...' : `🚀 Complete Export (${allFields.length + 92} Fields)`}
+              </button>
+              
+              <button
+                onClick={copyAllFieldsAsJSON}
+                className={`font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2 ${
+                  copiedField === 'all-json' 
+                    ? 'bg-green-100 text-green-700 border border-green-300' 
+                    : 'bg-white text-[#7B61FF] border border-white hover:bg-white/10'
+                }`}
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                {copiedField === 'all-json' ? '✓ Copied JSON' : 'Copy All as JSON'}
+              </button>
+              
               <Link
                 to={`/scan/${scanId}`}
-                className="bg-white text-[#7B61FF] border border-[#7B61FF] font-semibold px-6 py-3 rounded-lg hover:bg-[#7B61FF]/5 transition-colors"
+                className="bg-white/10 text-white border border-white/30 font-semibold px-6 py-3 rounded-lg hover:bg-white/20 transition-colors"
               >
                 ← Back to Results
               </Link>
@@ -230,8 +436,9 @@ export const DataExport: React.FC = () => {
         </div>
       </div>
 
+
       {/* Data Tables */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pb-12">
         <div className="space-y-8">
           {categories.map(category => {
             const categoryFields = allFields.filter(f => f.category === category)
@@ -244,19 +451,19 @@ export const DataExport: React.FC = () => {
                 </div>
                 
                 <div className="overflow-x-auto">
-                  <table className="w-full">
+                  <table className="w-full table-fixed">
                     <thead className="bg-[#F7F7F9]">
                       <tr>
-                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7]">
+                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7] w-1/4">
                           Field Name
                         </th>
-                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7]">
+                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7] w-1/4">
                           Value
                         </th>
-                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7]">
+                        <th className="text-left px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7] w-5/12">
                           Description
                         </th>
-                        <th className="text-center px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7]">
+                        <th className="text-center px-6 py-3 text-sm font-semibold text-[#1A1A1A] border-b border-[#E5E5E7] w-1/12">
                           Copy
                         </th>
                       </tr>
@@ -264,20 +471,22 @@ export const DataExport: React.FC = () => {
                     <tbody>
                       {categoryFields.map((field, index) => (
                         <tr key={field.field} className={index % 2 === 0 ? 'bg-white' : 'bg-[#F7F7F9]'}>
-                          <td className="px-6 py-4 text-sm font-medium text-[#1A1A1A] border-b border-[#E5E5E7]">
-                            <code className="bg-[#7B61FF]/10 text-[#7B61FF] px-2 py-1 rounded text-xs font-mono">
+                          <td className="px-6 py-4 text-sm font-medium text-[#1A1A1A] border-b border-[#E5E5E7] w-1/4">
+                            <code className="bg-[#7B61FF]/10 text-[#7B61FF] px-2 py-1 rounded text-xs font-mono break-words">
                               {field.field}
                             </code>
                           </td>
-                          <td className="px-6 py-4 text-sm text-[#555555] border-b border-[#E5E5E7] max-w-md">
+                          <td className="px-6 py-4 text-sm text-[#555555] border-b border-[#E5E5E7] w-1/4">
                             <div className="break-words">
                               {formatValue(field.value)}
                             </div>
                           </td>
-                          <td className="px-6 py-4 text-sm text-[#555555] border-b border-[#E5E5E7]">
-                            {field.description}
+                          <td className="px-6 py-4 text-sm text-[#555555] border-b border-[#E5E5E7] w-5/12">
+                            <div className="break-words">
+                              {field.description}
+                            </div>
                           </td>
-                          <td className="px-6 py-4 text-center border-b border-[#E5E5E7]">
+                          <td className="px-6 py-4 text-center border-b border-[#E5E5E7] w-1/12">
                             <button
                               onClick={() => copyToClipboard(formatValue(field.value), field.field)}
                               className={`px-3 py-1 rounded text-xs font-medium transition-all ${
@@ -299,30 +508,6 @@ export const DataExport: React.FC = () => {
           })}
         </div>
 
-        {/* Usage Instructions */}
-        <div className="mt-12 bg-gradient-to-r from-[#7B61FF] to-[#9F7FFF] rounded-xl p-8 text-white">
-          <h3 className="text-xl font-bold mb-4">📋 How to Use This Data</h3>
-          <div className="grid md:grid-cols-2 gap-6 text-sm">
-            <div>
-              <h4 className="font-semibold mb-2">For Canva Templates:</h4>
-              <ol className="space-y-1 opacity-90">
-                <li>1. Click "Copy" next to any field value</li>
-                <li>2. In Canva, click on your template text element</li>
-                <li>3. Paste the copied value (Cmd+V / Ctrl+V)</li>
-                <li>4. Repeat for all required template variables</li>
-              </ol>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-2">Field Naming Convention:</h4>
-              <ul className="space-y-1 opacity-90">
-                <li>• <code className="bg-white/20 px-1 rounded">basic_info_*</code> - Company and job details</li>
-                <li>• <code className="bg-white/20 px-1 rounded">region_*</code> - Salary data by region</li>
-                <li>• <code className="bg-white/20 px-1 rounded">skills_*</code> - Required skills and tools</li>
-                <li>• <code className="bg-white/20 px-1 rounded">analysis_*</code> - Job complexity insights</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   )

@@ -1,0 +1,10 @@
+{
+  "error": "'execution_summary'",
+  "execution_summary": {
+    "total_tests_generated": 12,
+    "total_tests_executed": 12,
+    "successful_executions": 0,
+    "failed_executions": 0,
+    "execution_success_rate": 0
+  }
+}

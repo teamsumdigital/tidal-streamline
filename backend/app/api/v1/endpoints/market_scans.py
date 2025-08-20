@@ -2,10 +2,12 @@
 Market Scans API endpoints
 """
 
+import csv
+import io
 import uuid
 from datetime import datetime
-from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Query, BackgroundTasks
+from typing import List, Optional, Dict, Any
+from fastapi import APIRouter, HTTPException, Query, BackgroundTasks, Response
 from loguru import logger
 
 from app.models.market_scan import (
@@ -327,3 +329,168 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
             'updated_at': datetime.utcnow(),
             'error_message': str(e)
         })
+
+
+# CSV Export endpoint for Canva template integration
+@router.get("/{scan_id}/export")
+async def export_market_scan_csv(
+    scan_id: str,
+    format: str = Query("template", description="Export format: 'template' for Canva variables")
+):
+    """
+    Export market scan data as CSV with all 134 template variables for Canva integration
+    """
+    try:
+        # Get market scan data
+        scan_data = await db.get_market_scan(scan_id)
+        if not scan_data:
+            raise HTTPException(status_code=404, detail="Market scan not found")
+        
+        # Get candidate profiles from database
+        candidates = await get_candidate_profiles_for_template()
+        
+        # Generate template variables
+        template_data = generate_template_variables(scan_data, candidates)
+        
+        # Create CSV
+        csv_content = create_csv_content(template_data)
+        
+        logger.info(f"✅ Generated CSV export for scan {scan_id} with {len(template_data[0]) if template_data else 0} template variables")
+        
+        return Response(
+            content=csv_content,
+            media_type="text/csv",
+            headers={
+                "Content-Disposition": f"attachment; filename=market-scan-{scan_id}-export.csv"
+            }
+        )
+        
+    except Exception as e:
+        logger.error(f"❌ Failed to export CSV for scan {scan_id}: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to export CSV: {str(e)}")
+
+
+async def get_candidate_profiles_for_template() -> List[Dict[str, Any]]:
+    """Get candidate profiles from database for template variables"""
+    try:
+        # Get all candidate profiles from database
+        candidates_data = await db.get_all_candidate_profiles()
+        return candidates_data if candidates_data else []
+    except Exception as e:
+        logger.warning(f"Could not fetch candidate profiles: {e}")
+        # Return empty list if database fetch fails
+        return []
+
+
+def generate_template_variables(scan_data: Dict[str, Any], candidates: List[Dict[str, Any]]) -> List[Dict[str, str]]:
+    """Generate all 134+ template variables for Canva"""
+    
+    # Debug logging
+    logger.info(f"🔍 Processing scan data keys: {list(scan_data.keys())}")
+    logger.info(f"🔍 Found {len(candidates)} candidates")
+    
+    # Extract scan data fields
+    template_vars = {}
+    
+    # Basic scan information
+    template_vars.update({
+        'company_domain': scan_data.get('company_domain', ''),
+        'job_title': scan_data.get('job_title', ''),
+        'client_name': scan_data.get('client_name', ''),
+        'client_email': scan_data.get('client_email', ''),
+        'scan_date': scan_data.get('created_at', ''),
+        'status': scan_data.get('status', ''),
+        'confidence_score': str(scan_data.get('confidence_score', 0))
+    })
+    
+    # Job analysis data
+    if scan_data.get('job_analysis'):
+        job_analysis = scan_data['job_analysis']
+        template_vars.update({
+            'role_category': job_analysis.get('role_category', ''),
+            'experience_level': job_analysis.get('experience_level', ''),
+            'complexity_score': str(job_analysis.get('complexity_score', 0)),
+            'years_experience_required': job_analysis.get('years_experience_required', ''),
+            'remote_work_suitability': job_analysis.get('remote_work_suitability', ''),
+            'unique_challenges': job_analysis.get('unique_challenges', ''),
+            'key_responsibilities': ', '.join(job_analysis.get('key_responsibilities', [])),
+            'recommended_regions': ', '.join(job_analysis.get('recommended_regions', [])),
+            'salary_factors': ', '.join(job_analysis.get('salary_factors', [])),
+            'must_have_skills': ', '.join(job_analysis.get('must_have_skills', [])),
+            'nice_to_have_skills': ', '.join(job_analysis.get('nice_to_have_skills', []))
+        })
+    
+    # Salary recommendations
+    if scan_data.get('salary_recommendations'):
+        salary_recs = scan_data['salary_recommendations']
+        if salary_recs.get('salary_recommendations'):
+            for region_name, salary_data in salary_recs['salary_recommendations'].items():
+                safe_region = region_name.lower().replace(' ', '_')
+                template_vars.update({
+                    f'{safe_region}_low_salary': str(salary_data.get('low', 0)),
+                    f'{safe_region}_mid_salary': str(salary_data.get('mid', 0)),
+                    f'{safe_region}_high_salary': str(salary_data.get('high', 0)),
+                    f'{safe_region}_currency': salary_data.get('currency', ''),
+                    f'{safe_region}_period': salary_data.get('period', ''),
+                    f'{safe_region}_savings_vs_us': str(salary_data.get('savings_vs_us', 0))
+                })
+        
+        # Market insights
+        if salary_recs.get('market_insights'):
+            insights = salary_recs['market_insights']
+            template_vars.update({
+                'high_demand_regions': ', '.join(insights.get('high_demand_regions', [])),
+                'competitive_factors': ', '.join(insights.get('competitive_factors', [])),
+                'cost_efficiency': insights.get('cost_efficiency', '')
+            })
+    
+    # Skills recommendations
+    if scan_data.get('skills_recommendations'):
+        skills = scan_data['skills_recommendations']
+        template_vars.update({
+            'must_have_skills': ', '.join(skills.get('must_have_skills', [])),
+            'nice_to_have_skills': ', '.join(skills.get('nice_to_have_skills', [])),
+            'certification_recommendations': ', '.join(skills.get('certification_recommendations', [])),
+        })
+        
+        # Skill categories
+        if skills.get('skill_categories'):
+            for cat_name, cat_skills in skills['skill_categories'].items():
+                safe_cat = cat_name.lower().replace(' ', '_')
+                template_vars[f'{safe_cat}_skills'] = ', '.join(cat_skills)
+    
+    # Add candidate profile data
+    for i, candidate in enumerate(candidates[:3]):  # Limit to 3 candidates to match market scan
+        candidate_prefix = f'candidate_{i+1}'
+        template_vars.update({
+            f'{candidate_prefix}_name': candidate.get('name', ''),
+            f'{candidate_prefix}_role': candidate.get('role_category', ''),
+            f'{candidate_prefix}_experience': candidate.get('experience_years', ''),
+            f'{candidate_prefix}_region': candidate.get('region', ''),
+            f'{candidate_prefix}_skills': ', '.join(candidate.get('skills', [])),
+            f'{candidate_prefix}_bio': candidate.get('bio', ''),
+            f'{candidate_prefix}_hourly_rate': str(candidate.get('hourly_rate', 0)),
+            f'{candidate_prefix}_availability': candidate.get('availability', ''),
+            f'{candidate_prefix}_english_proficiency': candidate.get('english_proficiency', ''),
+            f'{candidate_prefix}_timezone': candidate.get('timezone', '')
+        })
+    
+    # Convert to list format for CSV
+    return [template_vars]
+
+
+def create_csv_content(template_data: List[Dict[str, str]]) -> str:
+    """Create CSV content from template data"""
+    if not template_data:
+        return ""
+    
+    output = io.StringIO()
+    
+    # Get all field names from the first row
+    fieldnames = list(template_data[0].keys())
+    
+    writer = csv.DictWriter(output, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(template_data)
+    
+    return output.getvalue()

@@ -1,0 +1,1999 @@
+[
+  {
+    "test_id": "test_01_brand_marketing_manager",
+    "test_case": {
+      "test_id": "test_01_brand_marketing_manager",
+      "role_data": {
+        "id": "d003fe31-a9e4-4a0a-b946-791672bb9e08",
+        "core_role": "Brand Marketing Manager",
+        "common_titles": [
+          "Creative Project Manager",
+          "Marketing Project Manager",
+          "Production Manager",
+          "Marketing Operations Manager"
+        ],
+        "description": "Manages brand marketing campaigns and creative projects",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Brand Marketing Manager",
+        "job_description": "We are looking for a Brand Marketing Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages brand marketing campaigns and creative projects\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Brand Marketing Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "400f2b0d-7260-4369-8606-792ffe7dc263",
+    "scan_data": {
+      "id": "400f2b0d-7260-4369-8606-792ffe7dc263",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Brand Marketing Manager",
+      "job_description": "We are looking for a Brand Marketing Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages brand marketing campaigns and creative projects\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Brand Marketing Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1500,
+            "mid": 1750,
+            "high": 2000,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2200,
+            "mid": 2500,
+            "high": 2800,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:52:44.182181Z",
+      "updated_at": "2025-08-20T04:52:45.350792Z",
+      "processing_time_seconds": 0.707244,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Brand Marketing Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:52:44.182181+00:00,completed,0,Brand Marketing Manager,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1500,1750,2000,USD,monthly,71,2200,2500,2800,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.8760948181152344,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:52:44.175977+00:00",
+      "submitted": "2025-08-20T04:52:45.388147+00:00",
+      "completed": "2025-08-20T04:52:45.633496+00:00",
+      "exported": "2025-08-20T04:52:46.051983+00:00"
+    }
+  },
+  {
+    "test_id": "test_02_community_manager",
+    "test_case": {
+      "test_id": "test_02_community_manager",
+      "role_data": {
+        "id": "c838b38e-bc1c-4c87-ae47-484c08b75c7d",
+        "core_role": "Community Manager",
+        "common_titles": [
+          "Social Media Manager",
+          "Influencer Coordinator",
+          "Affiliate Manager",
+          "Partnerships Coordinator"
+        ],
+        "description": "Manages online communities and social media presence",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Community Manager",
+        "job_description": "We are looking for a Community Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages online communities and social media presence\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Community Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "44c106d0-1723-4258-a974-7119757fd790",
+    "scan_data": {
+      "id": "44c106d0-1723-4258-a974-7119757fd790",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Community Manager",
+      "job_description": "We are looking for a Community Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages online communities and social media presence\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1229,
+            "mid": 1447,
+            "high": 1664,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1781,
+            "mid": 2096,
+            "high": 2410,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:52:48.058852Z",
+      "updated_at": "2025-08-20T04:52:48.893029Z",
+      "processing_time_seconds": 0.514104,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Community Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:52:48.058852+00:00,completed,0,Operations Manager,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1229,1447,1664,USD,monthly,71,1781,2096,2410,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.2244768142700195,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:52:48.053498+00:00",
+      "submitted": "2025-08-20T04:52:48.933785+00:00",
+      "completed": "2025-08-20T04:52:49.051964+00:00",
+      "exported": "2025-08-20T04:52:49.277892+00:00"
+    }
+  },
+  {
+    "test_id": "test_03_content_marketer",
+    "test_case": {
+      "test_id": "test_03_content_marketer",
+      "role_data": {
+        "id": "3594c5a0-395e-482b-affb-b8a033d40544",
+        "core_role": "Content Marketer",
+        "common_titles": [
+          "Brand Content Manager",
+          "Content Strategist",
+          "Digital Content Manager",
+          "Creative Content Manager"
+        ],
+        "description": "Creates and manages content marketing strategies",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Digital Content Manager",
+        "job_description": "We are looking for a Digital Content Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Creates and manages content marketing strategies\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Content Marketer",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "0f0f33ed-d980-45b9-91e6-71b8e1ae0ae0",
+    "scan_data": {
+      "id": "0f0f33ed-d980-45b9-91e6-71b8e1ae0ae0",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Digital Content Manager",
+      "job_description": "We are looking for a Digital Content Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Creates and manages content marketing strategies\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Content Marketer",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1064,
+            "mid": 1252,
+            "high": 1439,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1541,
+            "mid": 1814,
+            "high": 2086,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:52:51.282090Z",
+      "updated_at": "2025-08-20T04:52:52.349288Z",
+      "processing_time_seconds": 0.603893,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Digital Content Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:52:51.28209+00:00,completed,0,Content Marketer,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1064,1252,1439,USD,monthly,71,1541,1814,2086,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.4737639427185059,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:52:51.279148+00:00",
+      "submitted": "2025-08-20T04:52:52.403908+00:00",
+      "completed": "2025-08-20T04:52:52.512486+00:00",
+      "exported": "2025-08-20T04:52:52.752747+00:00"
+    }
+  },
+  {
+    "test_id": "test_04_retention_manager",
+    "test_case": {
+      "test_id": "test_04_retention_manager",
+      "role_data": {
+        "id": "91260cba-367d-40c5-9fd6-d059387909ef",
+        "core_role": "Retention Manager",
+        "common_titles": [
+          "Email Marketing Manager",
+          "Lifecycle Marketing Manager",
+          "CRM Manager"
+        ],
+        "description": "Focuses on customer retention and lifecycle marketing",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "CRM Manager",
+        "job_description": "We are looking for a CRM Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Focuses on customer retention and lifecycle marketing\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Retention Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "39e9c653-0211-4e8f-97e6-de91972aef73",
+    "scan_data": {
+      "id": "39e9c653-0211-4e8f-97e6-de91972aef73",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "CRM Manager",
+      "job_description": "We are looking for a CRM Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Focuses on customer retention and lifecycle marketing\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1229,
+            "mid": 1447,
+            "high": 1664,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1781,
+            "mid": 2096,
+            "high": 2410,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:52:54.760072Z",
+      "updated_at": "2025-08-20T04:52:55.377257Z",
+      "processing_time_seconds": 0.423369,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,CRM Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:52:54.760072+00:00,completed,0,Operations Manager,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1229,1447,1664,USD,monthly,71,1781,2096,2410,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.274479866027832,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:52:54.754344+00:00",
+      "submitted": "2025-08-20T04:52:55.427310+00:00",
+      "completed": "2025-08-20T04:52:55.672149+00:00",
+      "exported": "2025-08-20T04:52:56.028783+00:00"
+    }
+  },
+  {
+    "test_id": "test_05_ecommerce_manager",
+    "test_case": {
+      "test_id": "test_05_ecommerce_manager",
+      "role_data": {
+        "id": "124e1dde-13e5-4d87-b9fa-b3f4d19634c4",
+        "core_role": "Ecommerce Manager",
+        "common_titles": [
+          "E-commerce Manager",
+          "Shopify Manager",
+          "E-commerce Operations Manager",
+          "E-commerce Project Manager",
+          "Digital Commerce Manager"
+        ],
+        "description": "Manages online store operations and e-commerce strategy",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "E-commerce Project Manager",
+        "job_description": "We are seeking an experienced E-commerce Project Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages online store operations and e-commerce strategy\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Ecommerce Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "9205f9c7-8e63-4725-8a02-553fd5ddaf53",
+    "scan_data": {
+      "id": "9205f9c7-8e63-4725-8a02-553fd5ddaf53",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "E-commerce Project Manager",
+      "job_description": "We are seeking an experienced E-commerce Project Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages online store operations and e-commerce strategy\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Ecommerce Manager",
+        "experience_level": "senior",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1655,
+            "mid": 1948,
+            "high": 2240,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2398,
+            "mid": 2822,
+            "high": 3245,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:52:58.031786Z",
+      "updated_at": "2025-08-20T04:52:59.061630Z",
+      "processing_time_seconds": 0.856455,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,E-commerce Project Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:52:58.031786+00:00,completed,0,Ecommerce Manager,senior,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1655,1948,2240,USD,monthly,71,2398,2822,3245,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.6489300727844238,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:52:58.029951+00:00",
+      "submitted": "2025-08-20T04:52:59.096082+00:00",
+      "completed": "2025-08-20T04:52:59.349869+00:00",
+      "exported": "2025-08-20T04:52:59.678842+00:00"
+    }
+  },
+  {
+    "test_id": "test_06_sales_operations_manager",
+    "test_case": {
+      "test_id": "test_06_sales_operations_manager",
+      "role_data": {
+        "id": "46d2dc95-f60d-47f8-9a36-b457f33c5183",
+        "core_role": "Sales Operations Manager",
+        "common_titles": [
+          "Operations Manager",
+          "RevOps Manager",
+          "Amazon/Shopify/Sales Channel Manager"
+        ],
+        "description": "Optimizes sales processes and revenue operations",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Sales Operations Manager",
+        "job_description": "We are seeking an experienced Sales Operations Manager to streamline our operations.\n\nKey Responsibilities:\n- Optimizes sales processes and revenue operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Sales Operations Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "b23b239b-c61b-491c-895b-528ed1828c02",
+    "scan_data": {
+      "id": "b23b239b-c61b-491c-895b-528ed1828c02",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Sales Operations Manager",
+      "job_description": "We are seeking an experienced Sales Operations Manager to streamline our operations.\n\nKey Responsibilities:\n- Optimizes sales processes and revenue operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "senior",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1585,
+            "mid": 1865,
+            "high": 2144,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2295,
+            "mid": 2701,
+            "high": 3106,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:01.684102Z",
+      "updated_at": "2025-08-20T04:53:02.283786Z",
+      "processing_time_seconds": 0.365445,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Sales Operations Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:01.684102+00:00,completed,0,Operations Manager,senior,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1585,1865,2144,USD,monthly,71,2295,2701,3106,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.0850780010223389,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:01.680129+00:00",
+      "submitted": "2025-08-20T04:53:02.336546+00:00",
+      "completed": "2025-08-20T04:53:02.500489+00:00",
+      "exported": "2025-08-20T04:53:02.765027+00:00"
+    }
+  },
+  {
+    "test_id": "test_07_data_analyst",
+    "test_case": {
+      "test_id": "test_07_data_analyst",
+      "role_data": {
+        "id": "3ed86925-9cdb-49dd-acad-afdf5c3851f2",
+        "core_role": "Data Analyst",
+        "common_titles": [
+          "Data Engineer",
+          "Marketing Data Analyst",
+          "Business Intelligence Analyst",
+          "Digital Analytics Specialist",
+          "Reporting Analyst",
+          "Performance Marketing Analyst"
+        ],
+        "description": "Analyzes data to drive business insights and decisions",
+        "category": "Analytics",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Reporting Analyst",
+        "job_description": "We need a detail-oriented Reporting Analyst to drive data-driven decision making.\n\nKey Responsibilities:\n- Analyzes data to drive business insights and decisions\n- Collect, analyze, and interpret complex datasets\n- Create dashboards and automated reporting systems\n- Provide actionable insights to stakeholders\n- Collaborate with teams to implement data solutions\n- Ensure data quality and accuracy across systems\n\nRequirements:\n- 3-5 years of data analysis experience\n- Proficiency in SQL, Excel, and analytics tools\n- Experience with business intelligence platforms\n- Strong statistical analysis and visualization skills\n- Excellent communication of technical concepts\n- Remote collaboration experience required\n\nHelp us turn data into strategic advantages.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Data Analyst",
+        "category_type": "Analytics",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "dbd2b7b5-e3df-47de-98ec-f5f7d9a84922",
+    "scan_data": {
+      "id": "dbd2b7b5-e3df-47de-98ec-f5f7d9a84922",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Reporting Analyst",
+      "job_description": "We need a detail-oriented Reporting Analyst to drive data-driven decision making.\n\nKey Responsibilities:\n- Analyzes data to drive business insights and decisions\n- Collect, analyze, and interpret complex datasets\n- Create dashboards and automated reporting systems\n- Provide actionable insights to stakeholders\n- Collaborate with teams to implement data solutions\n- Ensure data quality and accuracy across systems\n\nRequirements:\n- 3-5 years of data analysis experience\n- Proficiency in SQL, Excel, and analytics tools\n- Experience with business intelligence platforms\n- Strong statistical analysis and visualization skills\n- Excellent communication of technical concepts\n- Remote collaboration experience required\n\nHelp us turn data into strategic advantages.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Data Analyst",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1200,
+            "mid": 1450,
+            "high": 1700,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1800,
+            "mid": 2100,
+            "high": 2400,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:04.770049Z",
+      "updated_at": "2025-08-20T04:53:05.408210Z",
+      "processing_time_seconds": 0.431262,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Reporting Analyst,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:04.770049+00:00,completed,0,Data Analyst,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1200,1450,1700,USD,monthly,71,1800,2100,2400,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.1089468002319336,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:04.766085+00:00",
+      "submitted": "2025-08-20T04:53:05.473234+00:00",
+      "completed": "2025-08-20T04:53:05.596224+00:00",
+      "exported": "2025-08-20T04:53:05.874958+00:00"
+    }
+  },
+  {
+    "test_id": "test_08_logistics_manager",
+    "test_case": {
+      "test_id": "test_08_logistics_manager",
+      "role_data": {
+        "id": "38c3fe55-c906-49b0-9139-80e219da07a5",
+        "core_role": "Logistics Manager",
+        "common_titles": [
+          "Supply Chain Coordinator",
+          "Operations Manager",
+          "Fulfillment Operations Manager",
+          "Freight Coordinator",
+          "EDI/ERP Coordinator"
+        ],
+        "description": "Manages supply chain and logistics operations",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Supply Chain Coordinator",
+        "job_description": "We are seeking an experienced Supply Chain Coordinator to streamline our operations.\n\nKey Responsibilities:\n- Manages supply chain and logistics operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Logistics Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "ea7b2c2f-deec-4b71-9620-d143afc19bef",
+    "scan_data": {
+      "id": "ea7b2c2f-deec-4b71-9620-d143afc19bef",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Supply Chain Coordinator",
+      "job_description": "We are seeking an experienced Supply Chain Coordinator to streamline our operations.\n\nKey Responsibilities:\n- Manages supply chain and logistics operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "senior",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1585,
+            "mid": 1865,
+            "high": 2144,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2295,
+            "mid": 2701,
+            "high": 3106,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:07.883773Z",
+      "updated_at": "2025-08-20T04:53:08.517109Z",
+      "processing_time_seconds": 0.411321,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Supply Chain Coordinator,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:07.883773+00:00,completed,0,Operations Manager,senior,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1585,1865,2144,USD,monthly,71,2295,2701,3106,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.2319262027740479,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:07.876477+00:00",
+      "submitted": "2025-08-20T04:53:08.562854+00:00",
+      "completed": "2025-08-20T04:53:08.828265+00:00",
+      "exported": "2025-08-20T04:53:09.108358+00:00"
+    }
+  },
+  {
+    "test_id": "test_09_demand_planner",
+    "test_case": {
+      "test_id": "test_09_demand_planner",
+      "role_data": {
+        "id": "fc47efc3-931c-4070-980d-ff1c3f00916a",
+        "core_role": "Demand Planner",
+        "common_titles": [
+          "Inventory Planner",
+          "Supply Planner",
+          "Merchandise Planner",
+          "Sales & Operations Planning (S&OP) Analyst",
+          "Forecasting Analyst",
+          "Planning & Inventory Analyst"
+        ],
+        "description": "Plans and forecasts product demand, manages inventory levels and supply planning",
+        "category": "Operations",
+        "created_at": "2025-08-19T02:26:04.596446+00:00",
+        "updated_at": "2025-08-19T02:26:04.59648+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Demand Planner",
+        "job_description": "We are seeking an experienced Demand Planner to streamline our operations.\n\nKey Responsibilities:\n- Plans and forecasts product demand, manages inventory levels and supply planning\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Demand Planner",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "e51ef859-868b-427a-b094-27f7d5098751",
+    "scan_data": {
+      "id": "e51ef859-868b-427a-b094-27f7d5098751",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Demand Planner",
+      "job_description": "We are seeking an experienced Demand Planner to streamline our operations.\n\nKey Responsibilities:\n- Plans and forecasts product demand, manages inventory levels and supply planning\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "senior",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1585,
+            "mid": 1865,
+            "high": 2144,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2295,
+            "mid": 2701,
+            "high": 3106,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:11.115118Z",
+      "updated_at": "2025-08-20T04:53:11.982092Z",
+      "processing_time_seconds": 0.424112,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Demand Planner,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:11.115118+00:00,completed,0,Operations Manager,senior,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1585,1865,2144,USD,monthly,71,2295,2701,3106,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.5085320472717285,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:11.109573+00:00",
+      "submitted": "2025-08-20T04:53:12.016326+00:00",
+      "completed": "2025-08-20T04:53:12.232601+00:00",
+      "exported": "2025-08-20T04:53:12.618025+00:00"
+    }
+  },
+  {
+    "test_id": "test_10_product_development_manager",
+    "test_case": {
+      "test_id": "test_10_product_development_manager",
+      "role_data": {
+        "id": "d2f7c016-5ca8-4da5-a338-749b487b2542",
+        "core_role": "Product Development Manager",
+        "common_titles": [
+          "Sourcing Manager",
+          "Product Lifecycle Manager",
+          "Production Manager",
+          "Product Operations Manager"
+        ],
+        "description": "Manages product development lifecycle from concept to market launch",
+        "category": "Product",
+        "created_at": "2025-08-19T02:26:04.596526+00:00",
+        "updated_at": "2025-08-19T02:26:04.596542+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Production Manager",
+        "job_description": "We are looking for a strategic Production Manager to lead our product initiatives.\n\nKey Responsibilities:\n- Manages product development lifecycle from concept to market launch\n- Manage product roadmap and feature development\n- Coordinate with engineering and design teams\n- Conduct market research and competitive analysis\n- Define product requirements and user stories\n- Monitor product performance and user feedback\n\nRequirements:\n- 4-7 years of product management experience\n- Strong project management and leadership skills\n- Experience with product development methodologies\n- Excellent analytical and strategic thinking abilities\n- Strong communication and stakeholder management skills\n- Experience working with remote teams\n\nDrive innovation and product excellence with us.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Product Development Manager",
+        "category_type": "Product",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "e036285d-58b2-4d61-bad5-f82e43907bab",
+    "scan_data": {
+      "id": "e036285d-58b2-4d61-bad5-f82e43907bab",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Production Manager",
+      "job_description": "We are looking for a strategic Production Manager to lead our product initiatives.\n\nKey Responsibilities:\n- Manages product development lifecycle from concept to market launch\n- Manage product roadmap and feature development\n- Coordinate with engineering and design teams\n- Conduct market research and competitive analysis\n- Define product requirements and user stories\n- Monitor product performance and user feedback\n\nRequirements:\n- 4-7 years of product management experience\n- Strong project management and leadership skills\n- Experience with product development methodologies\n- Excellent analytical and strategic thinking abilities\n- Strong communication and stakeholder management skills\n- Experience working with remote teams\n\nDrive innovation and product excellence with us.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "senior",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1585,
+            "mid": 1865,
+            "high": 2144,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2295,
+            "mid": 2701,
+            "high": 3106,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:14.624873Z",
+      "updated_at": "2025-08-20T04:53:15.200660Z",
+      "processing_time_seconds": 0.363175,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Production Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:14.624873+00:00,completed,0,Operations Manager,senior,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1585,1865,2144,USD,monthly,71,2295,2701,3106,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.0286049842834473,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:14.619338+00:00",
+      "submitted": "2025-08-20T04:53:15.258075+00:00",
+      "completed": "2025-08-20T04:53:15.371864+00:00",
+      "exported": "2025-08-20T04:53:15.647807+00:00"
+    }
+  },
+  {
+    "test_id": "test_11_customer_experience_manager",
+    "test_case": {
+      "test_id": "test_11_customer_experience_manager",
+      "role_data": {
+        "id": "912cbd96-77ef-4c81-9844-7671c0555407",
+        "core_role": "Customer Experience Manager",
+        "common_titles": [
+          "CX Lead",
+          "Customer Success Manager",
+          "Customer Experience Specialist",
+          "CX Operations Manager"
+        ],
+        "description": "Manages customer experience strategy and satisfaction initiatives",
+        "category": "Customer Success",
+        "created_at": "2025-08-19T02:26:04.596572+00:00",
+        "updated_at": "2025-08-19T02:26:04.596585+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "CX Operations Manager",
+        "job_description": "We are seeking a customer-focused CX Operations Manager to enhance our customer experience.\n\nKey Responsibilities:\n- Manages customer experience strategy and satisfaction initiatives\n- Develop and implement customer success strategies\n- Monitor customer satisfaction and engagement metrics\n- Handle customer inquiries and resolve issues promptly\n- Create customer onboarding and retention programs\n- Collaborate with sales and product teams on customer feedback\n\nRequirements:\n- 3-5 years of customer success or CX experience\n- Strong interpersonal and communication skills\n- Experience with CRM and customer success tools\n- Analytical mindset with focus on metrics\n- Problem-solving and conflict resolution abilities\n- Comfortable with remote customer interactions\n\nHelp us deliver exceptional customer experiences.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Customer Experience Manager",
+        "category_type": "Customer Success",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "22cb3c8c-7c2c-4ad5-b992-a606e8c7c6cb",
+    "scan_data": {
+      "id": "22cb3c8c-7c2c-4ad5-b992-a606e8c7c6cb",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "CX Operations Manager",
+      "job_description": "We are seeking a customer-focused CX Operations Manager to enhance our customer experience.\n\nKey Responsibilities:\n- Manages customer experience strategy and satisfaction initiatives\n- Develop and implement customer success strategies\n- Monitor customer satisfaction and engagement metrics\n- Handle customer inquiries and resolve issues promptly\n- Create customer onboarding and retention programs\n- Collaborate with sales and product teams on customer feedback\n\nRequirements:\n- 3-5 years of customer success or CX experience\n- Strong interpersonal and communication skills\n- Experience with CRM and customer success tools\n- Analytical mindset with focus on metrics\n- Problem-solving and conflict resolution abilities\n- Comfortable with remote customer interactions\n\nHelp us deliver exceptional customer experiences.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1229,
+            "mid": 1447,
+            "high": 1664,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1781,
+            "mid": 2096,
+            "high": 2410,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:17.656391Z",
+      "updated_at": "2025-08-20T04:53:18.143390Z",
+      "processing_time_seconds": 0.279958,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,CX Operations Manager,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:17.656391+00:00,completed,0,Operations Manager,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1229,1447,1664,USD,monthly,71,1781,2096,2410,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 0.9265038967132568,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:17.648813+00:00",
+      "submitted": "2025-08-20T04:53:18.187894+00:00",
+      "completed": "2025-08-20T04:53:18.309783+00:00",
+      "exported": "2025-08-20T04:53:18.575245+00:00"
+    }
+  },
+  {
+    "test_id": "test_12_admin_&_ea",
+    "test_case": {
+      "test_id": "test_12_admin_&_ea",
+      "role_data": {
+        "id": "87444e7c-4e76-4280-8ff9-9c0f4543a5af",
+        "core_role": "Admin & EA",
+        "common_titles": [
+          "Administrative Assistant",
+          "Executive Assistant",
+          "Virtual Assistant",
+          "Chief of Staff",
+          "Operations Manager"
+        ],
+        "description": "Provides administrative and executive support, manages operations and coordination",
+        "category": "Administrative",
+        "created_at": "2025-08-19T02:26:04.596613+00:00",
+        "updated_at": "2025-08-19T02:26:04.596637+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Admin & EA",
+        "job_description": "We need an organized Admin & EA to support our executive team and operations.\n\nKey Responsibilities:\n- Provides administrative and executive support, manages operations and coordination\n- Provide administrative and executive support\n- Manage schedules, meetings, and travel arrangements\n- Coordinate projects and cross-functional initiatives\n- Maintain filing systems and documentation\n- Handle communications and correspondence\n\nRequirements:\n- 3-5 years of administrative or EA experience\n- Excellent organizational and time management skills\n- Proficiency in office software and productivity tools\n- Strong written and verbal communication abilities\n- Discretion and ability to handle confidential information\n- Experience supporting remote executives preferred\n\nJoin our team and keep our operations running smoothly.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Admin & EA",
+        "category_type": "Administrative",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "c3237db1-59bc-4f3c-b49f-74ee0dbc20ed",
+    "scan_data": {
+      "id": "c3237db1-59bc-4f3c-b49f-74ee0dbc20ed",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Admin & EA",
+      "job_description": "We need an organized Admin & EA to support our executive team and operations.\n\nKey Responsibilities:\n- Provides administrative and executive support, manages operations and coordination\n- Provide administrative and executive support\n- Manage schedules, meetings, and travel arrangements\n- Coordinate projects and cross-functional initiatives\n- Maintain filing systems and documentation\n- Handle communications and correspondence\n\nRequirements:\n- 3-5 years of administrative or EA experience\n- Excellent organizational and time management skills\n- Proficiency in office software and productivity tools\n- Strong written and verbal communication abilities\n- Discretion and ability to handle confidential information\n- Experience supporting remote executives preferred\n\nJoin our team and keep our operations running smoothly.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "key_responsibilities": [
+          "Manage daily operations",
+          "Coordinate with teams",
+          "Analyze performance"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 5,
+        "recommended_regions": [
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Standard remote role requirements",
+        "salary_factors": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1229,
+            "mid": 1447,
+            "high": 1664,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1781,
+            "mid": 2096,
+            "high": 2410,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience level",
+          "Technical skills",
+          "Industry knowledge"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "Standard market competition"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Communication",
+          "Project Management",
+          "Analytical Thinking"
+        ],
+        "nice_to_have_skills": [
+          "Remote Work Experience",
+          "Industry Knowledge"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote Work Experience",
+            "Industry Knowledge"
+          ],
+          "technical": [
+            "Communication",
+            "Project Management",
+            "Analytical Thinking"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T04:53:20.581715Z",
+      "updated_at": "2025-08-20T04:53:21.911200Z",
+      "processing_time_seconds": 1.14178,
+      "similar_scans_count": 0,
+      "confidence_score": 0.0
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone,candidate_4_name,candidate_4_role,candidate_4_experience,candidate_4_region,candidate_4_skills,candidate_4_bio,candidate_4_hourly_rate,candidate_4_availability,candidate_4_english_proficiency,candidate_4_timezone,candidate_5_name,candidate_5_role,candidate_5_experience,candidate_5_region,candidate_5_skills,candidate_5_bio,candidate_5_hourly_rate,candidate_5_availability,candidate_5_english_proficiency,candidate_5_timezone,candidate_6_name,candidate_6_role,candidate_6_experience,candidate_6_region,candidate_6_skills,candidate_6_bio,candidate_6_hourly_rate,candidate_6_availability,candidate_6_english_proficiency,candidate_6_timezone,candidate_7_name,candidate_7_role,candidate_7_experience,candidate_7_region,candidate_7_skills,candidate_7_bio,candidate_7_hourly_rate,candidate_7_availability,candidate_7_english_proficiency,candidate_7_timezone,candidate_8_name,candidate_8_role,candidate_8_experience,candidate_8_region,candidate_8_skills,candidate_8_bio,candidate_8_hourly_rate,candidate_8_availability,candidate_8_english_proficiency,candidate_8_timezone,candidate_9_name,candidate_9_role,candidate_9_experience,candidate_9_region,candidate_9_skills,candidate_9_bio,candidate_9_hourly_rate,candidate_9_availability,candidate_9_english_proficiency,candidate_9_timezone,candidate_10_name,candidate_10_role,candidate_10_experience,candidate_10_region,candidate_10_skills,candidate_10_bio,candidate_10_hourly_rate,candidate_10_availability,candidate_10_english_proficiency,candidate_10_timezone\r\nwww.sumdigital.com,Admin & EA,Joey Muller,joey@sumdigital.com,2025-08-20T04:53:20.581715+00:00,completed,0,Operations Manager,mid,5,3-5 years,high,Standard remote role requirements,\"Manage daily operations, Coordinate with teams, Analyze performance\",\"Philippines, Latin America\",\"Experience level, Technical skills, Industry knowledge\",\"Communication, Project Management, Analytical Thinking\",\"Remote Work Experience, Industry Knowledge\",1229,1447,1664,USD,monthly,71,1781,2096,2410,USD,monthly,58,\"Philippines, Latin America\",Standard market competition,High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote Work Experience, Industry Knowledge\",\"Communication, Project Management, Analytical Thinking\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2,Sofia Mendoza,Brand Marketing Manager,5-8 years,Latin America,\"Project Management, Creative Direction, Marketing Automation, Adobe Creative Suite\",Brand marketing manager with extensive experience in campaign management and creative coordination for international brands.,22,Available,Fluent,GMT-5,Jin Watanabe,Data Analyst,9+ years,Philippines,\"Advanced Excel, SQL, Python, Power BI, Statistical Analysis\",Senior data analyst with expertise in marketing analytics and business intelligence. Experience with complex data modeling and automated reporting.,25,Available,Fluent,GMT+8,Aria,Content Creation & Marketing,5+ years,Argentina,\"Klaviyo, Figma, ChatGPT, Creative Copywriting\",,None,Available,Fluent,EST,Thuli,Graphic Design & Influencer,5+ years,South Africa,\"Adobe Creative Suite, Canva, Google Analytics, Social Media Management\",,None,Available,Fluent,EST,Karl,Retention Manager,5+ years,Philippines,\"Email Marketing, Klaviyo, A/B Testing, Segmentation Strategies, Google Analytics\",,None,Available,Fluent,EST,Uki,Programmatic & Influencer,5+ years,Argentina,\"Creative Copywriting, Creative Briefs, Creative Strategy, Content Creation, Sourcing Creative Talents\",,None,Available,Fluent,EST,John,Brand and Advertising,5+ years,Philippines,\"HubSpot, Meta Ads Manager, Canva, Google Analytics\",,None,Available,Fluent,EST\r\n",
+    "execution_time": 1.8058500289916992,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T04:53:20.576613+00:00",
+      "submitted": "2025-08-20T04:53:21.945595+00:00",
+      "completed": "2025-08-20T04:53:22.151253+00:00",
+      "exported": "2025-08-20T04:53:22.382395+00:00"
+    }
+  }
+]

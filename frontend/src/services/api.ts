@@ -393,6 +393,37 @@ class APIService {
     return this.request(`${API_ENDPOINTS.REPORTS}/scan/${scanId}/reports`)
   }
 
+  // CSV Export API - NEW
+  async exportMarketScanCSV(scanId: string, format: string = 'template'): Promise<Blob> {
+    const url = `${API_BASE_URL}/api/v1/market-scans/${scanId}/export?format=${format}`
+    
+    try {
+      const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+          'Accept': 'text/csv',
+        },
+      })
+      
+      if (!response.ok) {
+        throw new APIError(
+          `Failed to export CSV: ${response.status} ${response.statusText}`,
+          response.status
+        )
+      }
+      
+      return await response.blob()
+    } catch (error) {
+      if (error instanceof APIError) {
+        throw error
+      }
+      
+      throw new APIError(
+        error instanceof Error ? error.message : 'Failed to export CSV'
+      )
+    }
+  }
+
   async previewTemplateData(scanId: string): Promise<{
     success: boolean
     scan_id: string

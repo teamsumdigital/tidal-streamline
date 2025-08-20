@@ -57,3 +57,4 @@ api_router.include_router(
     prefix="/reports",
     tags=["reports"]
 )
+

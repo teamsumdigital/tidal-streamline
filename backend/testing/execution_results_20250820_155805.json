@@ -1,0 +1,2253 @@
+[
+  {
+    "test_id": "test_01_brand_marketing_manager",
+    "test_case": {
+      "test_id": "test_01_brand_marketing_manager",
+      "role_data": {
+        "id": "d003fe31-a9e4-4a0a-b946-791672bb9e08",
+        "core_role": "Brand Marketing Manager",
+        "common_titles": [
+          "Creative Project Manager",
+          "Marketing Project Manager",
+          "Production Manager",
+          "Marketing Operations Manager"
+        ],
+        "description": "Manages brand marketing campaigns and creative projects",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Marketing Operations Manager",
+        "job_description": "We are looking for a Marketing Operations Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages brand marketing campaigns and creative projects\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Brand Marketing Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "22aabd03-a8f6-4f28-b65e-17c0e8b86ab2",
+    "scan_data": {
+      "id": "22aabd03-a8f6-4f28-b65e-17c0e8b86ab2",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Marketing Operations Manager",
+      "job_description": "We are looking for a Marketing Operations Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages brand marketing campaigns and creative projects\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Ecommerce Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Digital marketing",
+          "Project management",
+          "Marketing automation tools",
+          "Campaign management",
+          "Budget management"
+        ],
+        "nice_to_have_skills": [
+          "Creative thinking",
+          "Vendor management",
+          "Communication"
+        ],
+        "key_responsibilities": [
+          "Manage brand marketing campaigns",
+          "Develop and execute marketing campaigns",
+          "Collaborate with teams for brand awareness",
+          "Analyze and optimize campaign performance",
+          "Manage marketing budgets and vendor relationships"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is skilled, affordable, and reliable",
+        "salary_factors": [
+          "Experience",
+          "Skill set",
+          "Geographical location",
+          "Budget management experience"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1400,
+            "mid": 1600,
+            "high": 1800,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2000,
+            "mid": 2300,
+            "high": 2600,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4500,
+            "mid": 5500,
+            "high": 6500,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience",
+          "Skill set",
+          "Geographical location",
+          "Budget management experience"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Digital marketing",
+          "Project management",
+          "Marketing automation tools",
+          "Campaign management",
+          "Budget management"
+        ],
+        "nice_to_have_skills": [
+          "Creative thinking",
+          "Vendor management",
+          "Communication"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Creative thinking",
+            "Vendor management"
+          ],
+          "technical": [
+            "Digital marketing",
+            "Project management",
+            "Marketing automation tools"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:55:28.942051Z",
+      "updated_at": "2025-08-20T15:55:39.022409Z",
+      "processing_time_seconds": 9.76259,
+      "similar_scans_count": 5,
+      "confidence_score": 0.985436
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Marketing Operations Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:55:28.942051+00:00,completed,0.985436,Ecommerce Manager,mid,7,3-5 years,high,\"Finding a candidate who is skilled, affordable, and reliable\",\"Manage brand marketing campaigns, Develop and execute marketing campaigns, Collaborate with teams for brand awareness, Analyze and optimize campaign performance, Manage marketing budgets and vendor relationships\",\"United States, Philippines, Latin America\",\"Experience, Skill set, Geographical location, Budget management experience\",\"Digital marketing, Project management, Marketing automation tools, Campaign management, Budget management\",\"Creative thinking, Vendor management, Communication\",1400,1600,1800,USD,monthly,71,2000,2300,2600,USD,monthly,58,4500,5500,6500,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Creative thinking, Vendor management\",\"Digital marketing, Project management, Marketing automation tools\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 10.6561918258667,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:55:28.938529+00:00",
+      "submitted": "2025-08-20T15:55:39.147088+00:00",
+      "completed": "2025-08-20T15:55:39.249763+00:00",
+      "exported": "2025-08-20T15:55:39.594656+00:00"
+    }
+  },
+  {
+    "test_id": "test_02_community_manager",
+    "test_case": {
+      "test_id": "test_02_community_manager",
+      "role_data": {
+        "id": "c838b38e-bc1c-4c87-ae47-484c08b75c7d",
+        "core_role": "Community Manager",
+        "common_titles": [
+          "Social Media Manager",
+          "Influencer Coordinator",
+          "Affiliate Manager",
+          "Partnerships Coordinator"
+        ],
+        "description": "Manages online communities and social media presence",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Community Manager",
+        "job_description": "We are looking for a Community Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages online communities and social media presence\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Community Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "cd030a01-c381-436a-84c3-a3d4123ae679",
+    "scan_data": {
+      "id": "cd030a01-c381-436a-84c3-a3d4123ae679",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Community Manager",
+      "job_description": "We are looking for a Community Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages online communities and social media presence\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Community Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Digital marketing",
+          "Analytical skills",
+          "Project management",
+          "Marketing automation tools",
+          "Communication",
+          "Creative thinking"
+        ],
+        "nice_to_have_skills": [
+          "Experience in e-commerce",
+          "Experience in remote work",
+          "Budget management",
+          "Vendor management"
+        ],
+        "key_responsibilities": [
+          "Manage online communities and social media presence",
+          "Develop and execute marketing campaigns",
+          "Collaborate with cross-functional teams",
+          "Analyze campaign performance",
+          "Manage marketing budgets and vendor relationships"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is skilled, reliable and affordable",
+        "salary_factors": [
+          "Experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1025,
+            "mid": 1206,
+            "high": 1386,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1484,
+            "mid": 1747,
+            "high": 2009,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 3536,
+            "mid": 4160,
+            "high": 4784,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Digital marketing",
+          "Analytical skills",
+          "Project management",
+          "Marketing automation tools",
+          "Communication",
+          "Creative thinking"
+        ],
+        "nice_to_have_skills": [
+          "Experience in e-commerce",
+          "Experience in remote work",
+          "Budget management",
+          "Vendor management"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Experience in e-commerce",
+            "Experience in remote work"
+          ],
+          "technical": [
+            "Digital marketing",
+            "Analytical skills",
+            "Project management"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:55:41.600912Z",
+      "updated_at": "2025-08-20T15:55:53.233892Z",
+      "processing_time_seconds": 11.3232,
+      "similar_scans_count": 5,
+      "confidence_score": 0.985319
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Community Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:55:41.600912+00:00,completed,0.985319,Community Manager,mid,7,3-5 years,high,\"Finding a candidate who is skilled, reliable and affordable\",\"Manage online communities and social media presence, Develop and execute marketing campaigns, Collaborate with cross-functional teams, Analyze campaign performance, Manage marketing budgets and vendor relationships\",\"United States, Philippines, Latin America\",\"Experience, Skill set, Location, Performance\",\"Digital marketing, Analytical skills, Project management, Marketing automation tools, Communication, Creative thinking\",\"Experience in e-commerce, Experience in remote work, Budget management, Vendor management\",1025,1206,1386,USD,monthly,71,1484,1747,2009,USD,monthly,58,3536,4160,4784,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Experience in e-commerce, Experience in remote work\",\"Digital marketing, Analytical skills, Project management\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 11.977813959121704,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:55:41.596099+00:00",
+      "submitted": "2025-08-20T15:55:53.262802+00:00",
+      "completed": "2025-08-20T15:55:53.369508+00:00",
+      "exported": "2025-08-20T15:55:53.573830+00:00"
+    }
+  },
+  {
+    "test_id": "test_03_content_marketer",
+    "test_case": {
+      "test_id": "test_03_content_marketer",
+      "role_data": {
+        "id": "3594c5a0-395e-482b-affb-b8a033d40544",
+        "core_role": "Content Marketer",
+        "common_titles": [
+          "Brand Content Manager",
+          "Content Strategist",
+          "Digital Content Manager",
+          "Creative Content Manager"
+        ],
+        "description": "Creates and manages content marketing strategies",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Content Marketer",
+        "job_description": "We are looking for a Content Marketer to join our growing e-commerce team. \n\nKey Responsibilities:\n- Creates and manages content marketing strategies\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Content Marketer",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "88f935f1-8c2d-40fc-94f6-7c949586ff10",
+    "scan_data": {
+      "id": "88f935f1-8c2d-40fc-94f6-7c949586ff10",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Content Marketer",
+      "job_description": "We are looking for a Content Marketer to join our growing e-commerce team. \n\nKey Responsibilities:\n- Creates and manages content marketing strategies\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Content Marketer",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Content marketing strategies",
+          "Marketing campaign development and execution",
+          "Cross-functional collaboration",
+          "Campaign performance analysis",
+          "Marketing budget and vendor management"
+        ],
+        "nice_to_have_skills": [
+          "Experience with marketing automation tools",
+          "Remote work experience",
+          "Marketing automation tools",
+          "Campaign development and execution"
+        ],
+        "key_responsibilities": [
+          "Creates and manages content marketing strategies",
+          "Develop and execute marketing campaigns across multiple channels",
+          "Collaborate with cross-functional teams to drive brand awareness",
+          "Analyze campaign performance and optimize for better ROI",
+          "Manage marketing budgets and vendor relationships"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is skilled, affordable, and reliable",
+        "salary_factors": [
+          "Years of experience",
+          "Skill level",
+          "Geographical location",
+          "Performance metrics"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1153,
+            "mid": 1357,
+            "high": 1560,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1670,
+            "mid": 1965,
+            "high": 2259,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 3978,
+            "mid": 4680,
+            "high": 5382,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Skill level",
+          "Geographical location",
+          "Performance metrics"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Content marketing strategies",
+          "Marketing campaign development and execution",
+          "Cross-functional collaboration",
+          "Campaign performance analysis",
+          "Marketing budget and vendor management"
+        ],
+        "nice_to_have_skills": [
+          "Experience with marketing automation tools",
+          "Remote work experience",
+          "Marketing automation tools",
+          "Campaign development and execution"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Experience with marketing automation tools",
+            "Remote work experience"
+          ],
+          "technical": [
+            "Content marketing strategies",
+            "Marketing campaign development and execution",
+            "Cross-functional collaboration"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:55:55.581536Z",
+      "updated_at": "2025-08-20T15:56:10.055255Z",
+      "processing_time_seconds": 14.1459,
+      "similar_scans_count": 5,
+      "confidence_score": 0.957471
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Content Marketer,Joey Muller,joey@sumdigital.com,2025-08-20T15:55:55.581536+00:00,completed,0.957471,Content Marketer,mid,7,3-5 years,high,\"Finding a candidate who is skilled, affordable, and reliable\",\"Creates and manages content marketing strategies, Develop and execute marketing campaigns across multiple channels, Collaborate with cross-functional teams to drive brand awareness, Analyze campaign performance and optimize for better ROI, Manage marketing budgets and vendor relationships\",\"United States, Philippines, Latin America\",\"Years of experience, Skill level, Geographical location, Performance metrics\",\"Content marketing strategies, Marketing campaign development and execution, Cross-functional collaboration, Campaign performance analysis, Marketing budget and vendor management\",\"Experience with marketing automation tools, Remote work experience, Marketing automation tools, Campaign development and execution\",1153,1357,1560,USD,monthly,71,1670,1965,2259,USD,monthly,58,3978,4680,5382,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Experience with marketing automation tools, Remote work experience\",\"Content marketing strategies, Marketing campaign development and execution, Cross-functional collaboration\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 15.114184856414795,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:55:55.575171+00:00",
+      "submitted": "2025-08-20T15:56:10.084565+00:00",
+      "completed": "2025-08-20T15:56:10.208396+00:00",
+      "exported": "2025-08-20T15:56:10.689218+00:00"
+    }
+  },
+  {
+    "test_id": "test_04_retention_manager",
+    "test_case": {
+      "test_id": "test_04_retention_manager",
+      "role_data": {
+        "id": "91260cba-367d-40c5-9fd6-d059387909ef",
+        "core_role": "Retention Manager",
+        "common_titles": [
+          "Email Marketing Manager",
+          "Lifecycle Marketing Manager",
+          "CRM Manager"
+        ],
+        "description": "Focuses on customer retention and lifecycle marketing",
+        "category": "Marketing",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Retention Manager",
+        "job_description": "We are looking for a Retention Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Focuses on customer retention and lifecycle marketing\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Retention Manager",
+        "category_type": "Marketing",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "17e26942-ec0a-4c5f-a7b0-408c8788a7f7",
+    "scan_data": {
+      "id": "17e26942-ec0a-4c5f-a7b0-408c8788a7f7",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Retention Manager",
+      "job_description": "We are looking for a Retention Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Focuses on customer retention and lifecycle marketing\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Retention Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Digital marketing",
+          "Analytical skills",
+          "Project management",
+          "Marketing automation tools",
+          "Communication",
+          "Creative thinking"
+        ],
+        "nice_to_have_skills": [
+          "Experience in e-commerce",
+          "Experience in remote work"
+        ],
+        "key_responsibilities": [
+          "Customer retention and lifecycle marketing",
+          "Develop and execute marketing campaigns",
+          "Collaborate with cross-functional teams",
+          "Analyze campaign performance",
+          "Manage marketing budgets and vendor relationships"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is skilled, affordable, and reliable",
+        "salary_factors": [
+          "Experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1281,
+            "mid": 1508,
+            "high": 1734,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1856,
+            "mid": 2184,
+            "high": 2511,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4420,
+            "mid": 5200,
+            "high": 5979,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Digital marketing",
+          "Analytical skills",
+          "Project management",
+          "Marketing automation tools",
+          "Communication",
+          "Creative thinking"
+        ],
+        "nice_to_have_skills": [
+          "Experience in e-commerce",
+          "Experience in remote work"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Experience in e-commerce",
+            "Experience in remote work"
+          ],
+          "technical": [
+            "Digital marketing",
+            "Analytical skills",
+            "Project management"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:56:12.694718Z",
+      "updated_at": "2025-08-20T15:56:22.511021Z",
+      "processing_time_seconds": 9.33178,
+      "similar_scans_count": 5,
+      "confidence_score": 0.977933
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Retention Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:56:12.694718+00:00,completed,0.977933,Retention Manager,mid,7,3-5 years,high,\"Finding a candidate who is skilled, affordable, and reliable\",\"Customer retention and lifecycle marketing, Develop and execute marketing campaigns, Collaborate with cross-functional teams, Analyze campaign performance, Manage marketing budgets and vendor relationships\",\"United States, Philippines, Latin America\",\"Experience, Skill set, Location, Performance\",\"Digital marketing, Analytical skills, Project management, Marketing automation tools, Communication, Creative thinking\",\"Experience in e-commerce, Experience in remote work\",1281,1508,1734,USD,monthly,71,1856,2184,2511,USD,monthly,58,4420,5200,5979,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Experience in e-commerce, Experience in remote work\",\"Digital marketing, Analytical skills, Project management\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 10.2568838596344,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:56:12.690621+00:00",
+      "submitted": "2025-08-20T15:56:22.565303+00:00",
+      "completed": "2025-08-20T15:56:22.684253+00:00",
+      "exported": "2025-08-20T15:56:22.947316+00:00"
+    }
+  },
+  {
+    "test_id": "test_05_ecommerce_manager",
+    "test_case": {
+      "test_id": "test_05_ecommerce_manager",
+      "role_data": {
+        "id": "124e1dde-13e5-4d87-b9fa-b3f4d19634c4",
+        "core_role": "Ecommerce Manager",
+        "common_titles": [
+          "E-commerce Manager",
+          "Shopify Manager",
+          "E-commerce Operations Manager",
+          "E-commerce Project Manager",
+          "Digital Commerce Manager"
+        ],
+        "description": "Manages online store operations and e-commerce strategy",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Ecommerce Manager",
+        "job_description": "We are seeking an experienced Ecommerce Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages online store operations and e-commerce strategy\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Ecommerce Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "eb0ac0cc-1172-4c57-9722-332963a19134",
+    "scan_data": {
+      "id": "eb0ac0cc-1172-4c57-9722-332963a19134",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Ecommerce Manager",
+      "job_description": "We are seeking an experienced Ecommerce Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages online store operations and e-commerce strategy\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Ecommerce Manager",
+        "experience_level": "mid",
+        "years_experience_required": "4-6 years",
+        "must_have_skills": [
+          "Operations management",
+          "Analytical and problem-solving skills",
+          "Experience with operational software and systems",
+          "Excellent organizational and communication skills",
+          "Ability to manage multiple projects simultaneously"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Operational process optimization",
+          "Operational systems implementation and maintenance"
+        ],
+        "key_responsibilities": [
+          "Manages online store operations and e-commerce strategy",
+          "Optimize operational processes and workflows",
+          "Coordinate with multiple departments to ensure efficiency",
+          "Implement and maintain operational systems and tools",
+          "Monitor KPIs and create performance reports"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "South Africa"
+        ],
+        "unique_challenges": "Finding a candidate who is experienced, reliable, and affordable",
+        "salary_factors": [
+          "Years of experience",
+          "Skill level",
+          "Geographical location",
+          "Size of the company"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1400,
+            "mid": 1600,
+            "high": 1800,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "South Africa": {
+            "low": 2600,
+            "mid": 2900,
+            "high": 3200,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 48
+          },
+          "United States": {
+            "low": 4500,
+            "mid": 5500,
+            "high": 6500,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Skill level",
+          "Geographical location",
+          "Size of the company"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "South Africa"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Operations management",
+          "Analytical and problem-solving skills",
+          "Experience with operational software and systems",
+          "Excellent organizational and communication skills",
+          "Ability to manage multiple projects simultaneously"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Operational process optimization",
+          "Operational systems implementation and maintenance"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote work experience",
+            "Operational process optimization"
+          ],
+          "technical": [
+            "Operations management",
+            "Analytical and problem-solving skills",
+            "Experience with operational software and systems"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:56:24.953041Z",
+      "updated_at": "2025-08-20T15:56:39.229216Z",
+      "processing_time_seconds": 13.829,
+      "similar_scans_count": 5,
+      "confidence_score": 0.987403
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,south_africa_low_salary,south_africa_mid_salary,south_africa_high_salary,south_africa_currency,south_africa_period,south_africa_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Ecommerce Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:56:24.953041+00:00,completed,0.987403,Ecommerce Manager,mid,7,4-6 years,high,\"Finding a candidate who is experienced, reliable, and affordable\",\"Manages online store operations and e-commerce strategy, Optimize operational processes and workflows, Coordinate with multiple departments to ensure efficiency, Implement and maintain operational systems and tools, Monitor KPIs and create performance reports\",\"United States, Philippines, South Africa\",\"Years of experience, Skill level, Geographical location, Size of the company\",\"Operations management, Analytical and problem-solving skills, Experience with operational software and systems, Excellent organizational and communication skills, Ability to manage multiple projects simultaneously\",\"Remote work experience, Operational process optimization, Operational systems implementation and maintenance\",1400,1600,1800,USD,monthly,71,2600,2900,3200,USD,monthly,48,4500,5500,6500,USD,monthly,0,\"Philippines, South Africa\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote work experience, Operational process optimization\",\"Operations management, Analytical and problem-solving skills, Experience with operational software and systems\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 14.839117050170898,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:56:24.948507+00:00",
+      "submitted": "2025-08-20T15:56:39.262358+00:00",
+      "completed": "2025-08-20T15:56:39.509145+00:00",
+      "exported": "2025-08-20T15:56:39.787556+00:00"
+    }
+  },
+  {
+    "test_id": "test_06_sales_operations_manager",
+    "test_case": {
+      "test_id": "test_06_sales_operations_manager",
+      "role_data": {
+        "id": "46d2dc95-f60d-47f8-9a36-b457f33c5183",
+        "core_role": "Sales Operations Manager",
+        "common_titles": [
+          "Operations Manager",
+          "RevOps Manager",
+          "Amazon/Shopify/Sales Channel Manager"
+        ],
+        "description": "Optimizes sales processes and revenue operations",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Sales Operations Manager",
+        "job_description": "We are seeking an experienced Sales Operations Manager to streamline our operations.\n\nKey Responsibilities:\n- Optimizes sales processes and revenue operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Sales Operations Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "7cee2f61-1743-422e-95ca-6d0d7135ceea",
+    "scan_data": {
+      "id": "7cee2f61-1743-422e-95ca-6d0d7135ceea",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Sales Operations Manager",
+      "job_description": "We are seeking an experienced Sales Operations Manager to streamline our operations.\n\nKey Responsibilities:\n- Optimizes sales processes and revenue operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Sales Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "4-6 years",
+        "must_have_skills": [
+          "Optimizing sales processes and revenue operations",
+          "Operational process and workflow optimization",
+          "Coordination with multiple departments",
+          "Implementation and maintenance of operational systems and tools",
+          "Monitoring KPIs and creating performance reports"
+        ],
+        "nice_to_have_skills": [
+          "Process improvement initiatives",
+          "Remote work experience",
+          "KPI monitoring and report creation",
+          "Operational systems implementation and maintenance"
+        ],
+        "key_responsibilities": [
+          "Optimizes sales processes and revenue operations",
+          "Optimize operational processes and workflows",
+          "Coordinate with multiple departments to ensure efficiency",
+          "Implement and maintain operational systems and tools",
+          "Monitor KPIs and create performance reports"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is good, cheap, and reliable",
+        "salary_factors": [
+          "Years of experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1409,
+            "mid": 1658,
+            "high": 1906,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2041,
+            "mid": 2402,
+            "high": 2762,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4862,
+            "mid": 5720,
+            "high": 6577,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Skill set",
+          "Location",
+          "Performance"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Optimizing sales processes and revenue operations",
+          "Operational process and workflow optimization",
+          "Coordination with multiple departments",
+          "Implementation and maintenance of operational systems and tools",
+          "Monitoring KPIs and creating performance reports"
+        ],
+        "nice_to_have_skills": [
+          "Process improvement initiatives",
+          "Remote work experience",
+          "KPI monitoring and report creation",
+          "Operational systems implementation and maintenance"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Process improvement initiatives",
+            "Remote work experience"
+          ],
+          "technical": [
+            "Optimizing sales processes and revenue operations",
+            "Operational process and workflow optimization",
+            "Coordination with multiple departments"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:56:41.792845Z",
+      "updated_at": "2025-08-20T15:56:53.105213Z",
+      "processing_time_seconds": 11.0826,
+      "similar_scans_count": 5,
+      "confidence_score": 0.969263
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Sales Operations Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:56:41.792845+00:00,completed,0.969263,Sales Operations Manager,mid,7,4-6 years,high,\"Finding a candidate who is good, cheap, and reliable\",\"Optimizes sales processes and revenue operations, Optimize operational processes and workflows, Coordinate with multiple departments to ensure efficiency, Implement and maintain operational systems and tools, Monitor KPIs and create performance reports\",\"United States, Philippines, Latin America\",\"Years of experience, Skill set, Location, Performance\",\"Optimizing sales processes and revenue operations, Operational process and workflow optimization, Coordination with multiple departments, Implementation and maintenance of operational systems and tools, Monitoring KPIs and creating performance reports\",\"Process improvement initiatives, Remote work experience, KPI monitoring and report creation, Operational systems implementation and maintenance\",1409,1658,1906,USD,monthly,71,2041,2402,2762,USD,monthly,58,4862,5720,6577,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Process improvement initiatives, Remote work experience\",\"Optimizing sales processes and revenue operations, Operational process and workflow optimization, Coordination with multiple departments\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 11.820407152175903,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:56:41.788838+00:00",
+      "submitted": "2025-08-20T15:56:53.133741+00:00",
+      "completed": "2025-08-20T15:56:53.365003+00:00",
+      "exported": "2025-08-20T15:56:53.609172+00:00"
+    }
+  },
+  {
+    "test_id": "test_07_data_analyst",
+    "test_case": {
+      "test_id": "test_07_data_analyst",
+      "role_data": {
+        "id": "3ed86925-9cdb-49dd-acad-afdf5c3851f2",
+        "core_role": "Data Analyst",
+        "common_titles": [
+          "Data Engineer",
+          "Marketing Data Analyst",
+          "Business Intelligence Analyst",
+          "Digital Analytics Specialist",
+          "Reporting Analyst",
+          "Performance Marketing Analyst"
+        ],
+        "description": "Analyzes data to drive business insights and decisions",
+        "category": "Analytics",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Digital Analytics Specialist",
+        "job_description": "We need a detail-oriented Digital Analytics Specialist to drive data-driven decision making.\n\nKey Responsibilities:\n- Analyzes data to drive business insights and decisions\n- Collect, analyze, and interpret complex datasets\n- Create dashboards and automated reporting systems\n- Provide actionable insights to stakeholders\n- Collaborate with teams to implement data solutions\n- Ensure data quality and accuracy across systems\n\nRequirements:\n- 3-5 years of data analysis experience\n- Proficiency in SQL, Excel, and analytics tools\n- Experience with business intelligence platforms\n- Strong statistical analysis and visualization skills\n- Excellent communication of technical concepts\n- Remote collaboration experience required\n\nHelp us turn data into strategic advantages.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Data Analyst",
+        "category_type": "Analytics",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "5d771e0e-2667-4eda-8e49-290ab6685edd",
+    "scan_data": {
+      "id": "5d771e0e-2667-4eda-8e49-290ab6685edd",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Digital Analytics Specialist",
+      "job_description": "We need a detail-oriented Digital Analytics Specialist to drive data-driven decision making.\n\nKey Responsibilities:\n- Analyzes data to drive business insights and decisions\n- Collect, analyze, and interpret complex datasets\n- Create dashboards and automated reporting systems\n- Provide actionable insights to stakeholders\n- Collaborate with teams to implement data solutions\n- Ensure data quality and accuracy across systems\n\nRequirements:\n- 3-5 years of data analysis experience\n- Proficiency in SQL, Excel, and analytics tools\n- Experience with business intelligence platforms\n- Strong statistical analysis and visualization skills\n- Excellent communication of technical concepts\n- Remote collaboration experience required\n\nHelp us turn data into strategic advantages.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Data Analyst",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Data analysis",
+          "SQL",
+          "Excel",
+          "Analytics tools",
+          "Business intelligence platforms",
+          "Statistical analysis and visualization"
+        ],
+        "nice_to_have_skills": [
+          "Remote collaboration",
+          "Dashboard creation",
+          "Automated reporting systems",
+          "Statistical analysis"
+        ],
+        "key_responsibilities": [
+          "Analyzes data to drive business insights and decisions",
+          "Collect, analyze, and interpret complex datasets",
+          "Create dashboards and automated reporting systems",
+          "Provide actionable insights to stakeholders",
+          "Collaborate with teams to implement data solutions"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a skilled and reliable candidate at a reasonable cost",
+        "salary_factors": [
+          "Years of experience",
+          "Proficiency in required skills",
+          "Experience with business intelligence platforms",
+          "Remote collaboration experience"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1200,
+            "mid": 1450,
+            "high": 1700,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1800,
+            "mid": 2100,
+            "high": 2400,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4000,
+            "mid": 5000,
+            "high": 6000,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Proficiency in required skills",
+          "Experience with business intelligence platforms",
+          "Remote collaboration experience"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Data analysis",
+          "SQL",
+          "Excel",
+          "Analytics tools",
+          "Business intelligence platforms",
+          "Statistical analysis and visualization"
+        ],
+        "nice_to_have_skills": [
+          "Remote collaboration",
+          "Dashboard creation",
+          "Automated reporting systems",
+          "Statistical analysis"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote collaboration",
+            "Dashboard creation"
+          ],
+          "technical": [
+            "Data analysis",
+            "SQL",
+            "Excel"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:56:55.614686Z",
+      "updated_at": "2025-08-20T15:57:05.537058Z",
+      "processing_time_seconds": 9.6015,
+      "similar_scans_count": 3,
+      "confidence_score": 0.878349
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Digital Analytics Specialist,Joey Muller,joey@sumdigital.com,2025-08-20T15:56:55.614686+00:00,completed,0.878349,Data Analyst,mid,7,3-5 years,high,Finding a skilled and reliable candidate at a reasonable cost,\"Analyzes data to drive business insights and decisions, Collect, analyze, and interpret complex datasets, Create dashboards and automated reporting systems, Provide actionable insights to stakeholders, Collaborate with teams to implement data solutions\",\"United States, Philippines, Latin America\",\"Years of experience, Proficiency in required skills, Experience with business intelligence platforms, Remote collaboration experience\",\"Data analysis, SQL, Excel, Analytics tools, Business intelligence platforms, Statistical analysis and visualization\",\"Remote collaboration, Dashboard creation, Automated reporting systems, Statistical analysis\",1200,1450,1700,USD,monthly,71,1800,2100,2400,USD,monthly,58,4000,5000,6000,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote collaboration, Dashboard creation\",\"Data analysis, SQL, Excel\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 10.436722040176392,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:56:55.610436+00:00",
+      "submitted": "2025-08-20T15:57:05.681061+00:00",
+      "completed": "2025-08-20T15:57:05.813671+00:00",
+      "exported": "2025-08-20T15:57:06.047014+00:00"
+    }
+  },
+  {
+    "test_id": "test_08_logistics_manager",
+    "test_case": {
+      "test_id": "test_08_logistics_manager",
+      "role_data": {
+        "id": "38c3fe55-c906-49b0-9139-80e219da07a5",
+        "core_role": "Logistics Manager",
+        "common_titles": [
+          "Supply Chain Coordinator",
+          "Operations Manager",
+          "Fulfillment Operations Manager",
+          "Freight Coordinator",
+          "EDI/ERP Coordinator"
+        ],
+        "description": "Manages supply chain and logistics operations",
+        "category": "Operations",
+        "created_at": "2025-08-14T23:50:19.446617+00:00",
+        "updated_at": "2025-08-14T23:50:19.446617+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Logistics Manager",
+        "job_description": "We are seeking an experienced Logistics Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages supply chain and logistics operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Logistics Manager",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "ebc6a940-da4b-4be9-b76b-04eea2aa59ca",
+    "scan_data": {
+      "id": "ebc6a940-da4b-4be9-b76b-04eea2aa59ca",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Logistics Manager",
+      "job_description": "We are seeking an experienced Logistics Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages supply chain and logistics operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Logistics Manager",
+        "experience_level": "mid",
+        "years_experience_required": "4-6 years",
+        "must_have_skills": [
+          "Supply chain and logistics management",
+          "Operational process optimization",
+          "Operational systems implementation and maintenance",
+          "KPI monitoring and report creation",
+          "Process improvement leadership"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Multi-department coordination",
+          "Project management",
+          "Optimizing sales processes and revenue operations",
+          "Operational process and workflow optimization"
+        ],
+        "key_responsibilities": [
+          "Manages supply chain and logistics operations",
+          "Optimize operational processes and workflows",
+          "Implement and maintain operational systems and tools",
+          "Monitor KPIs and create performance reports",
+          "Lead process improvement initiatives"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate with the right balance of experience, reliability, and affordability",
+        "salary_factors": [
+          "Years of experience",
+          "Specific skill set",
+          "Geographical location",
+          "Level of responsibility"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1281,
+            "mid": 1508,
+            "high": 1734,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1856,
+            "mid": 2184,
+            "high": 2511,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4420,
+            "mid": 5200,
+            "high": 5979,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Specific skill set",
+          "Geographical location",
+          "Level of responsibility"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Supply chain and logistics management",
+          "Operational process optimization",
+          "Operational systems implementation and maintenance",
+          "KPI monitoring and report creation",
+          "Process improvement leadership"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Multi-department coordination",
+          "Project management",
+          "Optimizing sales processes and revenue operations",
+          "Operational process and workflow optimization"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote work experience",
+            "Multi-department coordination"
+          ],
+          "technical": [
+            "Supply chain and logistics management",
+            "Operational process optimization",
+            "Operational systems implementation and maintenance"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:57:08.057550Z",
+      "updated_at": "2025-08-20T15:57:17.988158Z",
+      "processing_time_seconds": 9.60666,
+      "similar_scans_count": 5,
+      "confidence_score": 0.92512
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Logistics Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:57:08.05755+00:00,completed,0.92512,Logistics Manager,mid,7,4-6 years,high,\"Finding a candidate with the right balance of experience, reliability, and affordability\",\"Manages supply chain and logistics operations, Optimize operational processes and workflows, Implement and maintain operational systems and tools, Monitor KPIs and create performance reports, Lead process improvement initiatives\",\"United States, Philippines, Latin America\",\"Years of experience, Specific skill set, Geographical location, Level of responsibility\",\"Supply chain and logistics management, Operational process optimization, Operational systems implementation and maintenance, KPI monitoring and report creation, Process improvement leadership\",\"Remote work experience, Multi-department coordination, Project management, Optimizing sales processes and revenue operations, Operational process and workflow optimization\",1281,1508,1734,USD,monthly,71,1856,2184,2511,USD,monthly,58,4420,5200,5979,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote work experience, Multi-department coordination\",\"Supply chain and logistics management, Operational process optimization, Operational systems implementation and maintenance\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 10.78209900856018,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:57:08.047888+00:00",
+      "submitted": "2025-08-20T15:57:18.069779+00:00",
+      "completed": "2025-08-20T15:57:18.331855+00:00",
+      "exported": "2025-08-20T15:57:18.829828+00:00"
+    }
+  },
+  {
+    "test_id": "test_09_demand_planner",
+    "test_case": {
+      "test_id": "test_09_demand_planner",
+      "role_data": {
+        "id": "fc47efc3-931c-4070-980d-ff1c3f00916a",
+        "core_role": "Demand Planner",
+        "common_titles": [
+          "Inventory Planner",
+          "Supply Planner",
+          "Merchandise Planner",
+          "Sales & Operations Planning (S&OP) Analyst",
+          "Forecasting Analyst",
+          "Planning & Inventory Analyst"
+        ],
+        "description": "Plans and forecasts product demand, manages inventory levels and supply planning",
+        "category": "Operations",
+        "created_at": "2025-08-19T02:26:04.596446+00:00",
+        "updated_at": "2025-08-19T02:26:04.59648+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Demand Planner",
+        "job_description": "We are seeking an experienced Demand Planner to streamline our operations.\n\nKey Responsibilities:\n- Plans and forecasts product demand, manages inventory levels and supply planning\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Demand Planner",
+        "category_type": "Operations",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "34eeb528-882d-4279-9ca8-0b70b9959c3c",
+    "scan_data": {
+      "id": "34eeb528-882d-4279-9ca8-0b70b9959c3c",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Demand Planner",
+      "job_description": "We are seeking an experienced Demand Planner to streamline our operations.\n\nKey Responsibilities:\n- Plans and forecasts product demand, manages inventory levels and supply planning\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "4-6 years",
+        "must_have_skills": [
+          "Operations experience",
+          "Analytical and problem-solving skills",
+          "Experience with operational software and systems",
+          "Excellent organizational and communication skills",
+          "Ability to manage multiple projects simultaneously"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Supply chain and logistics management",
+          "Operational systems implementation and maintenance"
+        ],
+        "key_responsibilities": [
+          "Plans and forecasts product demand, manages inventory levels and supply planning",
+          "Optimize operational processes and workflows",
+          "Coordinate with multiple departments to ensure efficiency",
+          "Implement and maintain operational systems and tools",
+          "Monitor KPIs and create performance reports",
+          "Lead process improvement initiatives"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is good, cheap and reliable",
+        "salary_factors": [
+          "Years of experience",
+          "Skill set",
+          "Location",
+          "Project complexity"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1332,
+            "mid": 1568,
+            "high": 1803,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 1930,
+            "mid": 2271,
+            "high": 2611,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4596,
+            "mid": 5408,
+            "high": 6219,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Skill set",
+          "Location",
+          "Project complexity"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Operations experience",
+          "Analytical and problem-solving skills",
+          "Experience with operational software and systems",
+          "Excellent organizational and communication skills",
+          "Ability to manage multiple projects simultaneously"
+        ],
+        "nice_to_have_skills": [
+          "Remote work experience",
+          "Supply chain and logistics management",
+          "Operational systems implementation and maintenance"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Remote work experience",
+            "Supply chain and logistics management"
+          ],
+          "technical": [
+            "Operations experience",
+            "Analytical and problem-solving skills",
+            "Experience with operational software and systems"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:57:20.838556Z",
+      "updated_at": "2025-08-20T15:57:30.418771Z",
+      "processing_time_seconds": 9.16502,
+      "similar_scans_count": 5,
+      "confidence_score": 0.999954
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Demand Planner,Joey Muller,joey@sumdigital.com,2025-08-20T15:57:20.838556+00:00,completed,0.999954,Operations Manager,mid,7,4-6 years,high,\"Finding a candidate who is good, cheap and reliable\",\"Plans and forecasts product demand, manages inventory levels and supply planning, Optimize operational processes and workflows, Coordinate with multiple departments to ensure efficiency, Implement and maintain operational systems and tools, Monitor KPIs and create performance reports, Lead process improvement initiatives\",\"United States, Philippines, Latin America\",\"Years of experience, Skill set, Location, Project complexity\",\"Operations experience, Analytical and problem-solving skills, Experience with operational software and systems, Excellent organizational and communication skills, Ability to manage multiple projects simultaneously\",\"Remote work experience, Supply chain and logistics management, Operational systems implementation and maintenance\",1332,1568,1803,USD,monthly,71,1930,2271,2611,USD,monthly,58,4596,5408,6219,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Remote work experience, Supply chain and logistics management\",\"Operations experience, Analytical and problem-solving skills, Experience with operational software and systems\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 10.024317979812622,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:57:20.831614+00:00",
+      "submitted": "2025-08-20T15:57:30.452924+00:00",
+      "completed": "2025-08-20T15:57:30.559827+00:00",
+      "exported": "2025-08-20T15:57:30.855782+00:00"
+    }
+  },
+  {
+    "test_id": "test_10_product_development_manager",
+    "test_case": {
+      "test_id": "test_10_product_development_manager",
+      "role_data": {
+        "id": "d2f7c016-5ca8-4da5-a338-749b487b2542",
+        "core_role": "Product Development Manager",
+        "common_titles": [
+          "Sourcing Manager",
+          "Product Lifecycle Manager",
+          "Production Manager",
+          "Product Operations Manager"
+        ],
+        "description": "Manages product development lifecycle from concept to market launch",
+        "category": "Product",
+        "created_at": "2025-08-19T02:26:04.596526+00:00",
+        "updated_at": "2025-08-19T02:26:04.596542+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Product Development Manager",
+        "job_description": "We are looking for a strategic Product Development Manager to lead our product initiatives.\n\nKey Responsibilities:\n- Manages product development lifecycle from concept to market launch\n- Manage product roadmap and feature development\n- Coordinate with engineering and design teams\n- Conduct market research and competitive analysis\n- Define product requirements and user stories\n- Monitor product performance and user feedback\n\nRequirements:\n- 4-7 years of product management experience\n- Strong project management and leadership skills\n- Experience with product development methodologies\n- Excellent analytical and strategic thinking abilities\n- Strong communication and stakeholder management skills\n- Experience working with remote teams\n\nDrive innovation and product excellence with us.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Product Development Manager",
+        "category_type": "Product",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "8b2d46d7-ae1b-4178-ab93-a5a092614956",
+    "scan_data": {
+      "id": "8b2d46d7-ae1b-4178-ab93-a5a092614956",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Product Development Manager",
+      "job_description": "We are looking for a strategic Product Development Manager to lead our product initiatives.\n\nKey Responsibilities:\n- Manages product development lifecycle from concept to market launch\n- Manage product roadmap and feature development\n- Coordinate with engineering and design teams\n- Conduct market research and competitive analysis\n- Define product requirements and user stories\n- Monitor product performance and user feedback\n\nRequirements:\n- 4-7 years of product management experience\n- Strong project management and leadership skills\n- Experience with product development methodologies\n- Excellent analytical and strategic thinking abilities\n- Strong communication and stakeholder management skills\n- Experience working with remote teams\n\nDrive innovation and product excellence with us.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "4-7 years",
+        "must_have_skills": [
+          "Product management",
+          "Project management",
+          "Leadership",
+          "Product development methodologies",
+          "Analytical and strategic thinking",
+          "Communication and stakeholder management"
+        ],
+        "nice_to_have_skills": [
+          "Experience with remote teams",
+          "Market research",
+          "Competitive analysis"
+        ],
+        "key_responsibilities": [
+          "Manage product development lifecycle",
+          "Manage product roadmap and feature development",
+          "Coordinate with engineering and design teams",
+          "Conduct market research and competitive analysis",
+          "Monitor product performance and user feedback"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 8,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "Latin America"
+        ],
+        "unique_challenges": "Finding a candidate who is skilled, reliable, and affordable",
+        "salary_factors": [
+          "Years of experience",
+          "Leadership skills",
+          "Product management expertise",
+          "Remote work experience"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1383,
+            "mid": 1628,
+            "high": 1872,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "Latin America": {
+            "low": 2004,
+            "mid": 2358,
+            "high": 2711,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 58
+          },
+          "United States": {
+            "low": 4773,
+            "mid": 5616,
+            "high": 6458,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Leadership skills",
+          "Product management expertise",
+          "Remote work experience"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "Latin America"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Product management",
+          "Project management",
+          "Leadership",
+          "Product development methodologies",
+          "Analytical and strategic thinking",
+          "Communication and stakeholder management"
+        ],
+        "nice_to_have_skills": [
+          "Experience with remote teams",
+          "Market research",
+          "Competitive analysis"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Experience with remote teams",
+            "Market research"
+          ],
+          "technical": [
+            "Product management",
+            "Project management",
+            "Leadership"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:57:32.863827Z",
+      "updated_at": "2025-08-20T15:57:38.818710Z",
+      "processing_time_seconds": 5.74536,
+      "similar_scans_count": 2,
+      "confidence_score": 0.96777
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,latin_america_low_salary,latin_america_mid_salary,latin_america_high_salary,latin_america_currency,latin_america_period,latin_america_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Product Development Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:57:32.863827+00:00,completed,0.96777,Operations Manager,mid,8,4-7 years,high,\"Finding a candidate who is skilled, reliable, and affordable\",\"Manage product development lifecycle, Manage product roadmap and feature development, Coordinate with engineering and design teams, Conduct market research and competitive analysis, Monitor product performance and user feedback\",\"United States, Philippines, Latin America\",\"Years of experience, Leadership skills, Product management expertise, Remote work experience\",\"Product management, Project management, Leadership, Product development methodologies, Analytical and strategic thinking, Communication and stakeholder management\",\"Experience with remote teams, Market research, Competitive analysis\",1383,1628,1872,USD,monthly,71,2004,2358,2711,USD,monthly,58,4773,5616,6458,USD,monthly,0,\"Philippines, Latin America\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"Experience with remote teams, Market research\",\"Product management, Project management, Leadership\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 6.309486150741577,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:57:32.857352+00:00",
+      "submitted": "2025-08-20T15:57:38.841925+00:00",
+      "completed": "2025-08-20T15:57:38.945223+00:00",
+      "exported": "2025-08-20T15:57:39.166763+00:00"
+    }
+  },
+  {
+    "test_id": "test_11_customer_experience_manager",
+    "test_case": {
+      "test_id": "test_11_customer_experience_manager",
+      "role_data": {
+        "id": "912cbd96-77ef-4c81-9844-7671c0555407",
+        "core_role": "Customer Experience Manager",
+        "common_titles": [
+          "CX Lead",
+          "Customer Success Manager",
+          "Customer Experience Specialist",
+          "CX Operations Manager"
+        ],
+        "description": "Manages customer experience strategy and satisfaction initiatives",
+        "category": "Customer Success",
+        "created_at": "2025-08-19T02:26:04.596572+00:00",
+        "updated_at": "2025-08-19T02:26:04.596585+00:00"
+      },
+      "variation_type": "core_role",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Customer Experience Manager",
+        "job_description": "We are seeking a customer-focused Customer Experience Manager to enhance our customer experience.\n\nKey Responsibilities:\n- Manages customer experience strategy and satisfaction initiatives\n- Develop and implement customer success strategies\n- Monitor customer satisfaction and engagement metrics\n- Handle customer inquiries and resolve issues promptly\n- Create customer onboarding and retention programs\n- Collaborate with sales and product teams on customer feedback\n\nRequirements:\n- 3-5 years of customer success or CX experience\n- Strong interpersonal and communication skills\n- Experience with CRM and customer success tools\n- Analytical mindset with focus on metrics\n- Problem-solving and conflict resolution abilities\n- Comfortable with remote customer interactions\n\nHelp us deliver exceptional customer experiences.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Customer Experience Manager",
+        "category_type": "Customer Success",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "f0d8b99c-fb0d-479b-bc97-3c010a0be9c8",
+    "scan_data": {
+      "id": "f0d8b99c-fb0d-479b-bc97-3c010a0be9c8",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Customer Experience Manager",
+      "job_description": "We are seeking a customer-focused Customer Experience Manager to enhance our customer experience.\n\nKey Responsibilities:\n- Manages customer experience strategy and satisfaction initiatives\n- Develop and implement customer success strategies\n- Monitor customer satisfaction and engagement metrics\n- Handle customer inquiries and resolve issues promptly\n- Create customer onboarding and retention programs\n- Collaborate with sales and product teams on customer feedback\n\nRequirements:\n- 3-5 years of customer success or CX experience\n- Strong interpersonal and communication skills\n- Experience with CRM and customer success tools\n- Analytical mindset with focus on metrics\n- Problem-solving and conflict resolution abilities\n- Comfortable with remote customer interactions\n\nHelp us deliver exceptional customer experiences.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Retention Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Customer experience strategy",
+          "Customer success strategies",
+          "Customer satisfaction and engagement metrics",
+          "Customer inquiries handling",
+          "Customer onboarding and retention programs"
+        ],
+        "nice_to_have_skills": [
+          "CRM",
+          "Customer success tools",
+          "Remote customer interactions"
+        ],
+        "key_responsibilities": [
+          "Manages customer experience strategy and satisfaction initiatives",
+          "Develop and implement customer success strategies",
+          "Monitor customer satisfaction and engagement metrics",
+          "Handle customer inquiries and resolve issues promptly",
+          "Create customer onboarding and retention programs"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "South Africa"
+        ],
+        "unique_challenges": "Finding a candidate with a balance of customer experience, analytical skills, and affordability",
+        "salary_factors": [
+          "Years of experience",
+          "Skill set",
+          "Geographical location",
+          "Industry standards"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1281,
+            "mid": 1508,
+            "high": 1734,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "South Africa": {
+            "low": 2298,
+            "mid": 2704,
+            "high": 3109,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 48
+          },
+          "United States": {
+            "low": 4420,
+            "mid": 5200,
+            "high": 5979,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Skill set",
+          "Geographical location",
+          "Industry standards"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "South Africa"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Customer experience strategy",
+          "Customer success strategies",
+          "Customer satisfaction and engagement metrics",
+          "Customer inquiries handling",
+          "Customer onboarding and retention programs"
+        ],
+        "nice_to_have_skills": [
+          "CRM",
+          "Customer success tools",
+          "Remote customer interactions"
+        ],
+        "skill_categories": {
+          "soft": [
+            "CRM",
+            "Customer success tools"
+          ],
+          "technical": [
+            "Customer experience strategy",
+            "Customer success strategies",
+            "Customer satisfaction and engagement metrics"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:57:41.169556Z",
+      "updated_at": "2025-08-20T15:57:48.890999Z",
+      "processing_time_seconds": 7.54555,
+      "similar_scans_count": 2,
+      "confidence_score": 0.999956
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,south_africa_low_salary,south_africa_mid_salary,south_africa_high_salary,south_africa_currency,south_africa_period,south_africa_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Customer Experience Manager,Joey Muller,joey@sumdigital.com,2025-08-20T15:57:41.169556+00:00,completed,0.999956,Retention Manager,mid,7,3-5 years,high,\"Finding a candidate with a balance of customer experience, analytical skills, and affordability\",\"Manages customer experience strategy and satisfaction initiatives, Develop and implement customer success strategies, Monitor customer satisfaction and engagement metrics, Handle customer inquiries and resolve issues promptly, Create customer onboarding and retention programs\",\"United States, Philippines, South Africa\",\"Years of experience, Skill set, Geographical location, Industry standards\",\"Customer experience strategy, Customer success strategies, Customer satisfaction and engagement metrics, Customer inquiries handling, Customer onboarding and retention programs\",\"CRM, Customer success tools, Remote customer interactions\",1281,1508,1734,USD,monthly,71,2298,2704,3109,USD,monthly,48,4420,5200,5979,USD,monthly,0,\"Philippines, South Africa\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",\"CRM, Customer success tools\",\"Customer experience strategy, Customer success strategies, Customer satisfaction and engagement metrics\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 8.11882495880127,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:57:41.167941+00:00",
+      "submitted": "2025-08-20T15:57:48.914885+00:00",
+      "completed": "2025-08-20T15:57:49.019319+00:00",
+      "exported": "2025-08-20T15:57:49.286635+00:00"
+    }
+  },
+  {
+    "test_id": "test_12_admin_&_ea",
+    "test_case": {
+      "test_id": "test_12_admin_&_ea",
+      "role_data": {
+        "id": "87444e7c-4e76-4280-8ff9-9c0f4543a5af",
+        "core_role": "Admin & EA",
+        "common_titles": [
+          "Administrative Assistant",
+          "Executive Assistant",
+          "Virtual Assistant",
+          "Chief of Staff",
+          "Operations Manager"
+        ],
+        "description": "Provides administrative and executive support, manages operations and coordination",
+        "category": "Administrative",
+        "created_at": "2025-08-19T02:26:04.596613+00:00",
+        "updated_at": "2025-08-19T02:26:04.596637+00:00"
+      },
+      "variation_type": "common_title",
+      "market_scan_request": {
+        "client_name": "Joey Muller",
+        "client_email": "joey@sumdigital.com",
+        "company_domain": "www.sumdigital.com",
+        "job_title": "Executive Assistant",
+        "job_description": "We need an organized Executive Assistant to support our executive team and operations.\n\nKey Responsibilities:\n- Provides administrative and executive support, manages operations and coordination\n- Provide administrative and executive support\n- Manage schedules, meetings, and travel arrangements\n- Coordinate projects and cross-functional initiatives\n- Maintain filing systems and documentation\n- Handle communications and correspondence\n\nRequirements:\n- 3-5 years of administrative or EA experience\n- Excellent organizational and time management skills\n- Proficiency in office software and productivity tools\n- Strong written and verbal communication abilities\n- Discretion and ability to handle confidential information\n- Experience supporting remote executives preferred\n\nJoin our team and keep our operations running smoothly.",
+        "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+      },
+      "expected_outcomes": {
+        "role_category": "Admin & EA",
+        "category_type": "Administrative",
+        "should_have_salary_data": true,
+        "should_have_skills_data": true,
+        "should_have_regional_data": true,
+        "expected_regions": [
+          "Philippines",
+          "Latin America",
+          "South Africa"
+        ],
+        "expected_experience_levels": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "min_confidence_score": 0.7
+      }
+    },
+    "status": "completed",
+    "scan_id": "35262d66-e6bb-4ba2-af3b-4628c1472a21",
+    "scan_data": {
+      "id": "35262d66-e6bb-4ba2-af3b-4628c1472a21",
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Executive Assistant",
+      "job_description": "We need an organized Executive Assistant to support our executive team and operations.\n\nKey Responsibilities:\n- Provides administrative and executive support, manages operations and coordination\n- Provide administrative and executive support\n- Manage schedules, meetings, and travel arrangements\n- Coordinate projects and cross-functional initiatives\n- Maintain filing systems and documentation\n- Handle communications and correspondence\n\nRequirements:\n- 3-5 years of administrative or EA experience\n- Excellent organizational and time management skills\n- Proficiency in office software and productivity tools\n- Strong written and verbal communication abilities\n- Discretion and ability to handle confidential information\n- Experience supporting remote executives preferred\n\nJoin our team and keep our operations running smoothly.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable",
+      "job_analysis": {
+        "role_category": "Operations Manager",
+        "experience_level": "mid",
+        "years_experience_required": "3-5 years",
+        "must_have_skills": [
+          "Administrative support",
+          "Time management",
+          "Proficiency in office software",
+          "Written and verbal communication",
+          "Discretion and confidentiality"
+        ],
+        "nice_to_have_skills": [
+          "Experience supporting remote executives"
+        ],
+        "key_responsibilities": [
+          "Provide administrative and executive support",
+          "Manage schedules, meetings, and travel arrangements",
+          "Coordinate projects and cross-functional initiatives",
+          "Maintain filing systems and documentation",
+          "Handle communications and correspondence"
+        ],
+        "remote_work_suitability": "high",
+        "complexity_score": 7,
+        "recommended_regions": [
+          "United States",
+          "Philippines",
+          "South Africa"
+        ],
+        "unique_challenges": "Finding a reliable and cost-effective candidate with the necessary skills and experience",
+        "salary_factors": [
+          "Years of experience",
+          "Level of expertise",
+          "Geographical location",
+          "Size of the company"
+        ]
+      },
+      "salary_recommendations": {
+        "salary_recommendations": {
+          "Philippines": {
+            "low": 1332,
+            "mid": 1568,
+            "high": 1803,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 71
+          },
+          "South Africa": {
+            "low": 2390,
+            "mid": 2812,
+            "high": 3233,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 48
+          },
+          "United States": {
+            "low": 4596,
+            "mid": 5408,
+            "high": 6219,
+            "currency": "USD",
+            "period": "monthly",
+            "savings_vs_us": 0
+          }
+        },
+        "recommended_pay_band": "mid",
+        "factors_considered": [
+          "Years of experience",
+          "Level of expertise",
+          "Geographical location",
+          "Size of the company"
+        ],
+        "market_insights": {
+          "high_demand_regions": [
+            "Philippines",
+            "South Africa"
+          ],
+          "competitive_factors": [
+            "High complexity role requires experienced candidates",
+            "Multiple required skills narrow candidate pool"
+          ],
+          "cost_efficiency": "High cost savings available through strategic regional hiring"
+        }
+      },
+      "skills_recommendations": {
+        "must_have_skills": [
+          "Administrative support",
+          "Time management",
+          "Proficiency in office software",
+          "Written and verbal communication",
+          "Discretion and confidentiality"
+        ],
+        "nice_to_have_skills": [
+          "Experience supporting remote executives"
+        ],
+        "skill_categories": {
+          "soft": [
+            "Experience supporting remote executives"
+          ],
+          "technical": [
+            "Administrative support",
+            "Time management",
+            "Proficiency in office software"
+          ]
+        },
+        "certification_recommendations": [
+          "Industry certification",
+          "Relevant online courses"
+        ]
+      },
+      "status": "completed",
+      "created_at": "2025-08-20T15:57:51.293433Z",
+      "updated_at": "2025-08-20T15:58:03.080743Z",
+      "processing_time_seconds": 11.5547,
+      "similar_scans_count": 2,
+      "confidence_score": 0.978911
+    },
+    "csv_export": "company_domain,job_title,client_name,client_email,scan_date,status,confidence_score,role_category,experience_level,complexity_score,years_experience_required,remote_work_suitability,unique_challenges,key_responsibilities,recommended_regions,salary_factors,must_have_skills,nice_to_have_skills,philippines_low_salary,philippines_mid_salary,philippines_high_salary,philippines_currency,philippines_period,philippines_savings_vs_us,south_africa_low_salary,south_africa_mid_salary,south_africa_high_salary,south_africa_currency,south_africa_period,south_africa_savings_vs_us,united_states_low_salary,united_states_mid_salary,united_states_high_salary,united_states_currency,united_states_period,united_states_savings_vs_us,high_demand_regions,competitive_factors,cost_efficiency,certification_recommendations,soft_skills,technical_skills,candidate_1_name,candidate_1_role,candidate_1_experience,candidate_1_region,candidate_1_skills,candidate_1_bio,candidate_1_hourly_rate,candidate_1_availability,candidate_1_english_proficiency,candidate_1_timezone,candidate_2_name,candidate_2_role,candidate_2_experience,candidate_2_region,candidate_2_skills,candidate_2_bio,candidate_2_hourly_rate,candidate_2_availability,candidate_2_english_proficiency,candidate_2_timezone,candidate_3_name,candidate_3_role,candidate_3_experience,candidate_3_region,candidate_3_skills,candidate_3_bio,candidate_3_hourly_rate,candidate_3_availability,candidate_3_english_proficiency,candidate_3_timezone\r\nwww.sumdigital.com,Executive Assistant,Joey Muller,joey@sumdigital.com,2025-08-20T15:57:51.293433+00:00,completed,0.978911,Operations Manager,mid,7,3-5 years,high,Finding a reliable and cost-effective candidate with the necessary skills and experience,\"Provide administrative and executive support, Manage schedules, meetings, and travel arrangements, Coordinate projects and cross-functional initiatives, Maintain filing systems and documentation, Handle communications and correspondence\",\"United States, Philippines, South Africa\",\"Years of experience, Level of expertise, Geographical location, Size of the company\",\"Administrative support, Time management, Proficiency in office software, Written and verbal communication, Discretion and confidentiality\",Experience supporting remote executives,1332,1568,1803,USD,monthly,71,2390,2812,3233,USD,monthly,48,4596,5408,6219,USD,monthly,0,\"Philippines, South Africa\",\"High complexity role requires experienced candidates, Multiple required skills narrow candidate pool\",High cost savings available through strategic regional hiring,\"Industry certification, Relevant online courses\",Experience supporting remote executives,\"Administrative support, Time management, Proficiency in office software\",Maria Santos,Ecommerce Manager,5-8 years,Philippines,\"Shopify Admin, Google Analytics, Email Marketing, Project Management\",Experienced e-commerce manager with 6 years of experience managing Shopify stores for US-based brands. Specialized in conversion optimization and customer retention strategies.,15,Available,Fluent,GMT+8,Carlos Rodriguez,Data Analyst,3-6 years,Latin America,\"Excel Advanced, SQL, Python, Tableau, Google Analytics\",Data analyst with strong background in e-commerce analytics and reporting. Experience with large datasets and automated reporting systems.,18,Available,Fluent,GMT-3,Thandiwe Mokwena,Content Marketer,2-4 years,South Africa,\"Content Creation, Social Media, SEO, Adobe Creative Suite\",Creative content marketer with experience in B2C brands. Strong background in social media content and email marketing campaigns.,20,Available,Fluent,GMT+2\r\n",
+    "execution_time": 12.159640073776245,
+    "error_message": null,
+    "timestamps": {
+      "start": "2025-08-20T15:57:51.288208+00:00",
+      "submitted": "2025-08-20T15:58:03.111561+00:00",
+      "completed": "2025-08-20T15:58:03.225529+00:00",
+      "exported": "2025-08-20T15:58:03.447716+00:00"
+    }
+  }
+]

@@ -103,7 +103,7 @@ async def get_candidate_profile(candidate_id: str):
 @router.get("/for-role/{role_category}")
 async def get_candidates_for_role(
     role_category: str,
-    limit: int = Query(10, ge=1, le=50, description="Number of candidates to return")
+    limit: int = Query(3, ge=1, le=50, description="Number of candidates to return")
 ):
     """
     Get candidate profiles specifically matching a role category

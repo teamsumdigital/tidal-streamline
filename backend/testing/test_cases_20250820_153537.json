@@ -1,0 +1,535 @@
+[
+  {
+    "test_id": "test_01_brand_marketing_manager",
+    "role_data": {
+      "id": "d003fe31-a9e4-4a0a-b946-791672bb9e08",
+      "core_role": "Brand Marketing Manager",
+      "common_titles": [
+        "Creative Project Manager",
+        "Marketing Project Manager",
+        "Production Manager",
+        "Marketing Operations Manager"
+      ],
+      "description": "Manages brand marketing campaigns and creative projects",
+      "category": "Marketing",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Marketing Operations Manager",
+      "job_description": "We are looking for a Marketing Operations Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages brand marketing campaigns and creative projects\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Brand Marketing Manager",
+      "category_type": "Marketing",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_02_community_manager",
+    "role_data": {
+      "id": "c838b38e-bc1c-4c87-ae47-484c08b75c7d",
+      "core_role": "Community Manager",
+      "common_titles": [
+        "Social Media Manager",
+        "Influencer Coordinator",
+        "Affiliate Manager",
+        "Partnerships Coordinator"
+      ],
+      "description": "Manages online communities and social media presence",
+      "category": "Marketing",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "core_role",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Community Manager",
+      "job_description": "We are looking for a Community Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Manages online communities and social media presence\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Community Manager",
+      "category_type": "Marketing",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_03_content_marketer",
+    "role_data": {
+      "id": "3594c5a0-395e-482b-affb-b8a033d40544",
+      "core_role": "Content Marketer",
+      "common_titles": [
+        "Brand Content Manager",
+        "Content Strategist",
+        "Digital Content Manager",
+        "Creative Content Manager"
+      ],
+      "description": "Creates and manages content marketing strategies",
+      "category": "Marketing",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Brand Content Manager",
+      "job_description": "We are looking for a Brand Content Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Creates and manages content marketing strategies\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Content Marketer",
+      "category_type": "Marketing",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_04_retention_manager",
+    "role_data": {
+      "id": "91260cba-367d-40c5-9fd6-d059387909ef",
+      "core_role": "Retention Manager",
+      "common_titles": [
+        "Email Marketing Manager",
+        "Lifecycle Marketing Manager",
+        "CRM Manager"
+      ],
+      "description": "Focuses on customer retention and lifecycle marketing",
+      "category": "Marketing",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Email Marketing Manager",
+      "job_description": "We are looking for a Email Marketing Manager to join our growing e-commerce team. \n\nKey Responsibilities:\n- Focuses on customer retention and lifecycle marketing\n- Develop and execute marketing campaigns across multiple channels\n- Collaborate with cross-functional teams to drive brand awareness\n- Analyze campaign performance and optimize for better ROI\n- Manage marketing budgets and vendor relationships\n\nRequirements:\n- 3-5 years of experience in digital marketing\n- Strong analytical and project management skills\n- Experience with marketing automation tools\n- Excellent communication and creative thinking abilities\n- Ability to work independently in a remote environment\n\nThis is a full-time remote position with competitive compensation.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Retention Manager",
+      "category_type": "Marketing",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_05_ecommerce_manager",
+    "role_data": {
+      "id": "124e1dde-13e5-4d87-b9fa-b3f4d19634c4",
+      "core_role": "Ecommerce Manager",
+      "common_titles": [
+        "E-commerce Manager",
+        "Shopify Manager",
+        "E-commerce Operations Manager",
+        "E-commerce Project Manager",
+        "Digital Commerce Manager"
+      ],
+      "description": "Manages online store operations and e-commerce strategy",
+      "category": "Operations",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "core_role",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Ecommerce Manager",
+      "job_description": "We are seeking an experienced Ecommerce Manager to streamline our operations.\n\nKey Responsibilities:\n- Manages online store operations and e-commerce strategy\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Ecommerce Manager",
+      "category_type": "Operations",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_06_sales_operations_manager",
+    "role_data": {
+      "id": "46d2dc95-f60d-47f8-9a36-b457f33c5183",
+      "core_role": "Sales Operations Manager",
+      "common_titles": [
+        "Operations Manager",
+        "RevOps Manager",
+        "Amazon/Shopify/Sales Channel Manager"
+      ],
+      "description": "Optimizes sales processes and revenue operations",
+      "category": "Operations",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Amazon/Shopify/Sales Channel Manager",
+      "job_description": "We are seeking an experienced Amazon/Shopify/Sales Channel Manager to streamline our operations.\n\nKey Responsibilities:\n- Optimizes sales processes and revenue operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Sales Operations Manager",
+      "category_type": "Operations",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_07_data_analyst",
+    "role_data": {
+      "id": "3ed86925-9cdb-49dd-acad-afdf5c3851f2",
+      "core_role": "Data Analyst",
+      "common_titles": [
+        "Data Engineer",
+        "Marketing Data Analyst",
+        "Business Intelligence Analyst",
+        "Digital Analytics Specialist",
+        "Reporting Analyst",
+        "Performance Marketing Analyst"
+      ],
+      "description": "Analyzes data to drive business insights and decisions",
+      "category": "Analytics",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "core_role",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Data Analyst",
+      "job_description": "We need a detail-oriented Data Analyst to drive data-driven decision making.\n\nKey Responsibilities:\n- Analyzes data to drive business insights and decisions\n- Collect, analyze, and interpret complex datasets\n- Create dashboards and automated reporting systems\n- Provide actionable insights to stakeholders\n- Collaborate with teams to implement data solutions\n- Ensure data quality and accuracy across systems\n\nRequirements:\n- 3-5 years of data analysis experience\n- Proficiency in SQL, Excel, and analytics tools\n- Experience with business intelligence platforms\n- Strong statistical analysis and visualization skills\n- Excellent communication of technical concepts\n- Remote collaboration experience required\n\nHelp us turn data into strategic advantages.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Data Analyst",
+      "category_type": "Analytics",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_08_logistics_manager",
+    "role_data": {
+      "id": "38c3fe55-c906-49b0-9139-80e219da07a5",
+      "core_role": "Logistics Manager",
+      "common_titles": [
+        "Supply Chain Coordinator",
+        "Operations Manager",
+        "Fulfillment Operations Manager",
+        "Freight Coordinator",
+        "EDI/ERP Coordinator"
+      ],
+      "description": "Manages supply chain and logistics operations",
+      "category": "Operations",
+      "created_at": "2025-08-14T23:50:19.446617+00:00",
+      "updated_at": "2025-08-14T23:50:19.446617+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Freight Coordinator",
+      "job_description": "We are seeking an experienced Freight Coordinator to streamline our operations.\n\nKey Responsibilities:\n- Manages supply chain and logistics operations\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Logistics Manager",
+      "category_type": "Operations",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_09_demand_planner",
+    "role_data": {
+      "id": "fc47efc3-931c-4070-980d-ff1c3f00916a",
+      "core_role": "Demand Planner",
+      "common_titles": [
+        "Inventory Planner",
+        "Supply Planner",
+        "Merchandise Planner",
+        "Sales & Operations Planning (S&OP) Analyst",
+        "Forecasting Analyst",
+        "Planning & Inventory Analyst"
+      ],
+      "description": "Plans and forecasts product demand, manages inventory levels and supply planning",
+      "category": "Operations",
+      "created_at": "2025-08-19T02:26:04.596446+00:00",
+      "updated_at": "2025-08-19T02:26:04.59648+00:00"
+    },
+    "variation_type": "core_role",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Demand Planner",
+      "job_description": "We are seeking an experienced Demand Planner to streamline our operations.\n\nKey Responsibilities:\n- Plans and forecasts product demand, manages inventory levels and supply planning\n- Optimize operational processes and workflows\n- Coordinate with multiple departments to ensure efficiency\n- Implement and maintain operational systems and tools\n- Monitor KPIs and create performance reports\n- Lead process improvement initiatives\n\nRequirements:\n- 4-6 years of operations experience\n- Strong analytical and problem-solving skills\n- Experience with operational software and systems\n- Excellent organizational and communication skills\n- Ability to manage multiple projects simultaneously\n- Remote work experience preferred\n\nJoin our team and help scale our operations efficiently.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Demand Planner",
+      "category_type": "Operations",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_10_product_development_manager",
+    "role_data": {
+      "id": "d2f7c016-5ca8-4da5-a338-749b487b2542",
+      "core_role": "Product Development Manager",
+      "common_titles": [
+        "Sourcing Manager",
+        "Product Lifecycle Manager",
+        "Production Manager",
+        "Product Operations Manager"
+      ],
+      "description": "Manages product development lifecycle from concept to market launch",
+      "category": "Product",
+      "created_at": "2025-08-19T02:26:04.596526+00:00",
+      "updated_at": "2025-08-19T02:26:04.596542+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Product Lifecycle Manager",
+      "job_description": "We are looking for a strategic Product Lifecycle Manager to lead our product initiatives.\n\nKey Responsibilities:\n- Manages product development lifecycle from concept to market launch\n- Manage product roadmap and feature development\n- Coordinate with engineering and design teams\n- Conduct market research and competitive analysis\n- Define product requirements and user stories\n- Monitor product performance and user feedback\n\nRequirements:\n- 4-7 years of product management experience\n- Strong project management and leadership skills\n- Experience with product development methodologies\n- Excellent analytical and strategic thinking abilities\n- Strong communication and stakeholder management skills\n- Experience working with remote teams\n\nDrive innovation and product excellence with us.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Product Development Manager",
+      "category_type": "Product",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_11_customer_experience_manager",
+    "role_data": {
+      "id": "912cbd96-77ef-4c81-9844-7671c0555407",
+      "core_role": "Customer Experience Manager",
+      "common_titles": [
+        "CX Lead",
+        "Customer Success Manager",
+        "Customer Experience Specialist",
+        "CX Operations Manager"
+      ],
+      "description": "Manages customer experience strategy and satisfaction initiatives",
+      "category": "Customer Success",
+      "created_at": "2025-08-19T02:26:04.596572+00:00",
+      "updated_at": "2025-08-19T02:26:04.596585+00:00"
+    },
+    "variation_type": "common_title",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "CX Operations Manager",
+      "job_description": "We are seeking a customer-focused CX Operations Manager to enhance our customer experience.\n\nKey Responsibilities:\n- Manages customer experience strategy and satisfaction initiatives\n- Develop and implement customer success strategies\n- Monitor customer satisfaction and engagement metrics\n- Handle customer inquiries and resolve issues promptly\n- Create customer onboarding and retention programs\n- Collaborate with sales and product teams on customer feedback\n\nRequirements:\n- 3-5 years of customer success or CX experience\n- Strong interpersonal and communication skills\n- Experience with CRM and customer success tools\n- Analytical mindset with focus on metrics\n- Problem-solving and conflict resolution abilities\n- Comfortable with remote customer interactions\n\nHelp us deliver exceptional customer experiences.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Customer Experience Manager",
+      "category_type": "Customer Success",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  },
+  {
+    "test_id": "test_12_admin_&_ea",
+    "role_data": {
+      "id": "87444e7c-4e76-4280-8ff9-9c0f4543a5af",
+      "core_role": "Admin & EA",
+      "common_titles": [
+        "Administrative Assistant",
+        "Executive Assistant",
+        "Virtual Assistant",
+        "Chief of Staff",
+        "Operations Manager"
+      ],
+      "description": "Provides administrative and executive support, manages operations and coordination",
+      "category": "Administrative",
+      "created_at": "2025-08-19T02:26:04.596613+00:00",
+      "updated_at": "2025-08-19T02:26:04.596637+00:00"
+    },
+    "variation_type": "core_role",
+    "market_scan_request": {
+      "client_name": "Joey Muller",
+      "client_email": "joey@sumdigital.com",
+      "company_domain": "www.sumdigital.com",
+      "job_title": "Admin & EA",
+      "job_description": "We need an organized Admin & EA to support our executive team and operations.\n\nKey Responsibilities:\n- Provides administrative and executive support, manages operations and coordination\n- Provide administrative and executive support\n- Manage schedules, meetings, and travel arrangements\n- Coordinate projects and cross-functional initiatives\n- Maintain filing systems and documentation\n- Handle communications and correspondence\n\nRequirements:\n- 3-5 years of administrative or EA experience\n- Excellent organizational and time management skills\n- Proficiency in office software and productivity tools\n- Strong written and verbal communication abilities\n- Discretion and ability to handle confidential information\n- Experience supporting remote executives preferred\n\nJoin our team and keep our operations running smoothly.",
+      "hiring_challenges": "It's hard to find someone good and cheap and reliable"
+    },
+    "expected_outcomes": {
+      "role_category": "Admin & EA",
+      "category_type": "Administrative",
+      "should_have_salary_data": true,
+      "should_have_skills_data": true,
+      "should_have_regional_data": true,
+      "expected_regions": [
+        "Philippines",
+        "Latin America",
+        "South Africa"
+      ],
+      "expected_experience_levels": [
+        "junior",
+        "mid",
+        "senior"
+      ],
+      "min_confidence_score": 0.7
+    }
+  }
+]

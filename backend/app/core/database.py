@@ -204,6 +204,20 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"❌ Failed to get scan reports for {scan_id}: {e}")
             return []
+    
+    async def get_all_candidate_profiles(self) -> List[Dict[str, Any]]:
+        """Get all candidate profiles from database for template generation"""
+        try:
+            result = (
+                self.client
+                .table('candidate_profiles')
+                .select("*")
+                .execute()
+            )
+            return result.data
+        except Exception as e:
+            logger.error(f"❌ Failed to get candidate profiles: {e}")
+            return []
 
 # Global database instance
 db = DatabaseManager()

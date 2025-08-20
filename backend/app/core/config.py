@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     
     # AI Services
     OPENAI_API_KEY: str = Field(..., description="OpenAI API key")
-    OPENAI_MODEL: str = Field(default="gpt-4", description="OpenAI model to use")
+    OPENAI_MODEL: str = Field(default="gpt-4o", description="OpenAI model to use")
     
     # Vector Store (Pinecone)
     PINECONE_API_KEY: str = Field(default="pcsk_2asZaU_4JFVKA6KRDqh2i37Vn8bcWRx5cPhhGDhYcDmcemg3GGpG2m44TPouFMVkEzQqBe", description="Pinecone API key")
