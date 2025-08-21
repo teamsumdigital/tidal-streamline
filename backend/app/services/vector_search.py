@@ -60,7 +60,7 @@ class VectorSearchService:
     def _calculate_confidence_score(self, similar_scans: List[Dict[str, Any]]) -> float:
         """Calculate confidence score based on similarity results"""
         if not similar_scans:
-            return 0.0
+            return 0.8  # ✅ Default confidence for new scans without similar matches
         
         # Use weighted average of top similarities
         total_weight = 0

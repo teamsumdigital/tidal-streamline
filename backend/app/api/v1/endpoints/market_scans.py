@@ -346,8 +346,11 @@ async def export_market_scan_csv(
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
-        # Get candidate profiles from database
-        candidates = await get_candidate_profiles_for_template()
+        # Get candidate profiles from database matching the role category
+        role_category = ''
+        if scan_data.get('job_analysis'):
+            role_category = scan_data['job_analysis'].get('role_category', '')
+        candidates = await get_candidate_profiles_for_template(role_category)
         
         # Generate template variables
         template_data = generate_template_variables(scan_data, candidates)
@@ -370,10 +373,19 @@ async def export_market_scan_csv(
         raise HTTPException(status_code=500, detail=f"Failed to export CSV: {str(e)}")
 
 
-async def get_candidate_profiles_for_template() -> List[Dict[str, Any]]:
-    """Get candidate profiles from database for template variables"""
+async def get_candidate_profiles_for_template(role_category: str = '') -> List[Dict[str, Any]]:
+    """Get candidate profiles from database for template variables, filtered by role category"""
     try:
-        # Get all candidate profiles from database
+        if role_category:
+            # Try to get candidates matching the specific role category
+            candidates_data = await db.get_candidate_profiles(role_category=role_category)
+            if candidates_data:
+                logger.info(f"✅ Found {len(candidates_data)} candidates for role: {role_category}")
+                return candidates_data
+            else:
+                logger.info(f"⚠️ No candidates found for role '{role_category}', falling back to all candidates")
+        
+        # Fall back to all candidates if no role-specific candidates found
         candidates_data = await db.get_all_candidate_profiles()
         return candidates_data if candidates_data else []
     except Exception as e:
