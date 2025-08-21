@@ -15,11 +15,11 @@ class Settings(BaseSettings):
     DEBUG_MODE: bool = Field(default=True, description="Debug mode")
     
     # Database Configuration (Supabase)
-    SUPABASE_URL: str = Field(..., description="Supabase project URL")
-    SUPABASE_SERVICE_KEY: str = Field(..., description="Supabase service role key")
+    SUPABASE_URL: Optional[str] = Field(default=None, description="Supabase project URL")
+    SUPABASE_SERVICE_KEY: Optional[str] = Field(default=None, description="Supabase service role key")
     
     # AI Services
-    OPENAI_API_KEY: str = Field(..., description="OpenAI API key")
+    OPENAI_API_KEY: Optional[str] = Field(default=None, description="OpenAI API key")
     OPENAI_MODEL: str = Field(default="gpt-4o", description="OpenAI model to use")
     
     # Vector Store (Pinecone)

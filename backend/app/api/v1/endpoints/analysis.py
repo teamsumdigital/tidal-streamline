@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from loguru import logger
 
 from app.core.ai_service import ai_service
-from app.core.database import db
+from app.core.database import get_database
 
 router = APIRouter()
 
@@ -63,7 +63,7 @@ async def compare_job_to_historical(request: JobAnalysisRequest):
     """
     try:
         # Find similar historical scans
-        similar_scans = await db.search_similar_scans(
+        similar_scans = await get_database().search_similar_scans(
             job_title=request.job_title,
             job_description=request.job_description
         )
@@ -106,7 +106,7 @@ async def get_role_categories():
     Get available role categories and their common titles
     """
     try:
-        role_mappings = await db.get_role_mappings()
+        role_mappings = await get_database().get_role_mappings()
         
         if not role_mappings:
             # Return default categories if no data in database
@@ -168,7 +168,7 @@ async def get_common_skills_for_role(role_category: str):
     """
     try:
         # Get historical data for this role
-        historical_scans = await db.get_market_scans(limit=50)
+        historical_scans = await get_database().get_market_scans(limit=50)
         role_scans = [
             scan for scan in historical_scans 
             if scan.get('role_category') == role_category

@@ -17,6 +17,12 @@ class DatabaseManager:
     def _initialize_client(self):
         """Initialize Supabase client connection"""
         try:
+            # Validate required environment variables first
+            if not settings.SUPABASE_URL:
+                raise ValueError("SUPABASE_URL environment variable is required")
+            if not settings.SUPABASE_SERVICE_KEY:
+                raise ValueError("SUPABASE_SERVICE_KEY environment variable is required")
+                
             self.client = create_client(
                 settings.SUPABASE_URL,
                 settings.SUPABASE_SERVICE_KEY
@@ -219,9 +225,19 @@ class DatabaseManager:
             logger.error(f"❌ Failed to get candidate profiles: {e}")
             return []
 
-# Global database instance
-db = DatabaseManager()
+# Global database instance (lazy initialization)
+_db_instance = None
+
+def get_database() -> DatabaseManager:
+    """Get or create the database manager instance"""
+    global _db_instance
+    if _db_instance is None:
+        _db_instance = DatabaseManager()
+    return _db_instance
 
 def get_supabase_client() -> Client:
     """Get the Supabase client instance"""
-    return db.client
+    return get_database().client
+
+# Maintain backward compatibility
+db = None  # Will be initialized when first accessed

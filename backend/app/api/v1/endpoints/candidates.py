@@ -7,7 +7,7 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 from loguru import logger
 
-from app.core.database import db
+from app.core.database import get_database
 
 router = APIRouter()
 
@@ -40,7 +40,7 @@ async def get_candidate_profiles(
     """
     try:
         # Get candidate profiles from database
-        profiles = await db.get_candidate_profiles(role_category=role_category)
+        profiles = await get_database().get_candidate_profiles(role_category=role_category)
         
         # Apply additional filters
         if region:
@@ -110,7 +110,7 @@ async def get_candidates_for_role(
     """
     try:
         # Get candidates for specific role
-        profiles = await db.get_candidate_profiles(role_category=role_category)
+        profiles = await get_database().get_candidate_profiles(role_category=role_category)
         
         if not profiles:
             # Return mock candidates if no data available
@@ -152,7 +152,7 @@ async def get_candidates_by_region(
     """
     try:
         # Get all candidates and filter by region
-        all_profiles = await db.get_candidate_profiles()
+        all_profiles = await get_database().get_candidate_profiles()
         
         if not all_profiles:
             # Return mock data if no database data

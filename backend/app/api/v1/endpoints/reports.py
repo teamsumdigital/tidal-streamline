@@ -53,7 +53,7 @@ async def generate_market_scan_report(
         logger.info(f"Starting report generation for scan ID: {request.scan_id}")
         
         # Fetch market scan data from database
-        scan_data = await db.get_market_scan(request.scan_id)
+        scan_data = await get_database().get_market_scan(request.scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -75,7 +75,7 @@ async def generate_market_scan_report(
         
         if report_result['success']:
             # Store report metadata in database
-            report_record = await db.save_report_record({
+            report_record = await get_database().save_report_record({
                 "scan_id": request.scan_id,
                 "report_url": report_result['report_url'],
                 "preview_url": report_result['preview_url'],
@@ -122,7 +122,7 @@ async def get_report_status(report_id: str):
         Report status and metadata
     """
     try:
-        report_record = await db.get_report_record(report_id)
+        report_record = await get_database().get_report_record(report_id)
         if not report_record:
             raise HTTPException(status_code=404, detail="Report not found")
         
@@ -156,7 +156,7 @@ async def download_report(report_id: str):
         Direct download URL
     """
     try:
-        report_record = await db.get_report_record(report_id)
+        report_record = await get_database().get_report_record(report_id)
         if not report_record:
             raise HTTPException(status_code=404, detail="Report not found")
         
@@ -184,7 +184,7 @@ async def list_scan_reports(scan_id: str):
         List of reports for the scan
     """
     try:
-        reports = await db.get_scan_reports(scan_id)
+        reports = await get_database().get_scan_reports(scan_id)
         
         return {
             "success": True,
@@ -223,7 +223,7 @@ async def preview_template_data(scan_id: str):
     """
     try:
         # Fetch market scan data
-        scan_data = await db.get_market_scan(scan_id)
+        scan_data = await get_database().get_market_scan(scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         

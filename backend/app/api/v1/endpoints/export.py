@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional
 from fastapi import APIRouter, HTTPException, Query, Response
 from loguru import logger
 
-from app.core.database import db
+from app.core.database import get_database
 from app.models.market_scan import MarketScanResponse
 
 router = APIRouter()
@@ -26,7 +26,7 @@ async def export_market_scan_csv(
     """
     try:
         # Get market scan data
-        scan_data = await db.get_market_scan(scan_id)
+        scan_data = await get_database().get_market_scan(scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -59,7 +59,7 @@ async def get_candidate_profiles_for_template() -> List[Dict[str, Any]]:
     """Get candidate profiles for template generation"""
     try:
         # Get 3 candidates from different regions for template profiles
-        candidates = await db.get_candidate_profiles()
+        candidates = await get_database().get_candidate_profiles()
         
         if candidates and len(candidates) >= 3:
             # Get candidates from different regions if possible

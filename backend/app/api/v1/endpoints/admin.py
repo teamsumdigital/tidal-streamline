@@ -7,7 +7,7 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from loguru import logger
 
-from app.core.database import db
+from app.core.database import get_database
 
 router = APIRouter()
 
@@ -28,7 +28,7 @@ async def get_system_statistics():
     """
     try:
         # Get all market scans for analysis
-        all_scans = await db.get_market_scans(limit=1000)
+        all_scans = await get_database().get_market_scans(limit=1000)
         
         # Calculate statistics
         total_scans = len(all_scans)
@@ -86,7 +86,7 @@ async def get_quality_metrics():
     Get quality metrics for coaching and improvement
     """
     try:
-        all_scans = await db.get_market_scans(limit=500)
+        all_scans = await get_database().get_market_scans(limit=500)
         completed_scans = [s for s in all_scans if s.get('status') == 'completed']
         
         if not completed_scans:
@@ -145,7 +145,7 @@ async def get_failed_scans():
     Get failed scans for debugging and improvement
     """
     try:
-        all_scans = await db.get_market_scans(limit=200)
+        all_scans = await get_database().get_market_scans(limit=200)
         failed_scans = [s for s in all_scans if s.get('status') == 'failed']
         
         failed_analysis = []
@@ -179,7 +179,7 @@ async def retrain_recommendations():
         # In a real implementation, this would trigger ML model retraining
         # For now, we'll just analyze current data quality
         
-        all_scans = await db.get_market_scans(limit=1000)
+        all_scans = await get_database().get_market_scans(limit=1000)
         completed_scans = [s for s in all_scans if s.get('status') == 'completed']
         
         training_data_quality = {

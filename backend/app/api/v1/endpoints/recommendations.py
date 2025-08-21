@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from loguru import logger
 
 from app.core.ai_service import ai_service
-from app.core.database import db
+from app.core.database import get_database
 
 router = APIRouter()
 
@@ -27,7 +27,7 @@ async def get_salary_recommendations(request: SalaryRequest):
     """
     try:
         # Get historical salary data for similar roles
-        salary_benchmarks = await db.get_salary_benchmarks(
+        salary_benchmarks = await get_database().get_salary_benchmarks(
             role_category=request.role_category
         )
         
@@ -67,7 +67,7 @@ async def get_regional_salary_comparison(
     """
     try:
         # Get salary data by region
-        all_benchmarks = await db.get_salary_benchmarks(role_category=role_category)
+        all_benchmarks = await get_database().get_salary_benchmarks(role_category=role_category)
         
         # Group by region
         regional_data = {}
@@ -110,7 +110,7 @@ async def get_skills_recommendations(role_category: str):
     """
     try:
         # Get historical market scans for this role
-        historical_scans = await db.get_market_scans(limit=100)
+        historical_scans = await get_database().get_market_scans(limit=100)
         role_specific_scans = [
             scan for scan in historical_scans
             if scan.get('role_category') == role_category
@@ -172,7 +172,7 @@ async def get_market_insights(role_category: str):
     """
     try:
         # Get recent market scans for trend analysis
-        recent_scans = await db.get_market_scans(limit=50)
+        recent_scans = await get_database().get_market_scans(limit=50)
         role_scans = [
             scan for scan in recent_scans
             if scan.get('role_category') == role_category

@@ -17,7 +17,7 @@ from app.models.market_scan import (
     MarketScanList,
     MarketScanDB
 )
-from app.core.database import db
+from app.core.database import get_database
 from app.core.ai_service import ai_service
 from app.services.job_analyzer import JobAnalyzer
 from app.services.salary_calculator import SalaryCalculator
@@ -54,7 +54,7 @@ async def create_market_scan(
         scan_dict = scan_data.dict()
         scan_dict['created_at'] = scan_dict['created_at'].isoformat() if scan_dict.get('created_at') else None
         scan_dict['updated_at'] = scan_dict['updated_at'].isoformat() if scan_dict.get('updated_at') else None
-        created_scan = await db.create_market_scan(scan_dict)
+        created_scan = await get_database().create_market_scan(scan_dict)
         
         # Start background analysis
         background_tasks.add_task(
@@ -89,7 +89,7 @@ async def get_market_scan(scan_id: str):
     Retrieve a specific market scan by ID
     """
     try:
-        scan_data = await db.get_market_scan(scan_id)
+        scan_data = await get_database().get_market_scan(scan_id)
         
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
@@ -117,7 +117,7 @@ async def list_market_scans(
         offset = (page - 1) * page_size
         
         # Get filtered scans
-        scans = await db.get_market_scans(limit=page_size, offset=offset)
+        scans = await get_database().get_market_scans(limit=page_size, offset=offset)
         
         # Convert to summary format
         scan_summaries = [
@@ -157,12 +157,12 @@ async def delete_market_scan(scan_id: str):
     """
     try:
         # Check if scan exists
-        existing_scan = await db.get_market_scan(scan_id)
+        existing_scan = await get_database().get_market_scan(scan_id)
         if not existing_scan:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
         # TODO: Implement delete functionality in database manager
-        # await db.delete_market_scan(scan_id)
+        # await get_database().delete_market_scan(scan_id)
         
         logger.info(f"✅ Deleted market scan {scan_id}")
         return {"message": "Market scan deleted successfully"}
@@ -184,7 +184,7 @@ async def get_similar_scans(
     """
     try:
         # Get the original scan
-        scan_data = await db.get_market_scan(scan_id)
+        scan_data = await get_database().get_market_scan(scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -316,7 +316,7 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
         }
         
         # Update database with completed analysis
-        await db.update_market_scan(scan_id, update_data)
+        await get_database().update_market_scan(scan_id, update_data)
         
         logger.info(f"✅ Completed analysis for market scan {scan_id} in {processing_time:.2f}s")
         
@@ -324,7 +324,7 @@ async def process_market_scan_analysis(scan_id: str, request: MarketScanRequest)
         logger.error(f"❌ Failed to process market scan {scan_id}: {e}")
         
         # Update status to failed
-        await db.update_market_scan(scan_id, {
+        await get_database().update_market_scan(scan_id, {
             'status': 'failed',
             'updated_at': datetime.utcnow(),
             'error_message': str(e)
@@ -342,7 +342,7 @@ async def export_market_scan_csv(
     """
     try:
         # Get market scan data
-        scan_data = await db.get_market_scan(scan_id)
+        scan_data = await get_database().get_market_scan(scan_id)
         if not scan_data:
             raise HTTPException(status_code=404, detail="Market scan not found")
         
@@ -378,7 +378,7 @@ async def get_candidate_profiles_for_template(role_category: str = '') -> List[D
     try:
         if role_category:
             # Try to get candidates matching the specific role category
-            candidates_data = await db.get_candidate_profiles(role_category=role_category)
+            candidates_data = await get_database().get_candidate_profiles(role_category=role_category)
             if candidates_data:
                 logger.info(f"✅ Found {len(candidates_data)} candidates for role: {role_category}")
                 return candidates_data
@@ -386,7 +386,7 @@ async def get_candidate_profiles_for_template(role_category: str = '') -> List[D
                 logger.info(f"⚠️ No candidates found for role '{role_category}', falling back to all candidates")
         
         # Fall back to all candidates if no role-specific candidates found
-        candidates_data = await db.get_all_candidate_profiles()
+        candidates_data = await get_database().get_all_candidate_profiles()
         return candidates_data if candidates_data else []
     except Exception as e:
         logger.warning(f"Could not fetch candidate profiles: {e}")
