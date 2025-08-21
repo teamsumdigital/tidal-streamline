@@ -40,9 +40,20 @@ app = FastAPI(
 )
 
 # CORS middleware for frontend communication
+cors_origins = [
+    "http://localhost:3000",  # Local development (Vite default)
+    "http://localhost:3008",  # Local development (custom port)
+    "http://127.0.0.1:3008",  # Local development
+]
+
+# Add production CORS origins from environment
+cors_env = os.getenv("CORS_ORIGINS", "")
+if cors_env:
+    cors_origins.extend([origin.strip() for origin in cors_env.split(",") if origin.strip()])
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3008", "http://127.0.0.1:3008"],  # Frontend port
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
